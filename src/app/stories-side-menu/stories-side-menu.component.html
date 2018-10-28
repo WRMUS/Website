@@ -1,0 +1,73 @@
+<!---
+        <div class="sidebar-style" >
+            <a class="list-group-item" routerLink="support" >         Support</a> 
+            <a class="list-group-item" routerLink="accountability" >  Accountability </a>
+            <a class="list-group-item" routerLink="community" >       Community</a>
+        </div>
+
+--->
+   <div class="sidebar-style">
+            <div *ngIf="router.url.match('/stories/support.*')">
+                <a class="list-group-item" routerLink="/stories/support/a" >
+                    <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>                     
+                    Support Survivors</a> 
+                <a class="list-group-item" routerLink="/stories/support/b" >
+                    <svg-icon src="/assets/images/nouns/facilitate.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>
+                    Facilitate a Process </a>
+                <a class="list-group-item" routerLink="/stories/support/c" >
+                    <svg-icon src="/assets/images/nouns/supportchallenges1.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>
+                    Challenges</a>
+            </div>
+            <div *ngIf="router.url.match('/stories/accountability.*')">
+                <a class="list-group-item" routerLink="/stories/accountability/a" >
+                    <svg-icon src="/assets/images/nouns/beginning.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>
+                    The Beginning</a> 
+                <a class="list-group-item" routerLink="/stories/accountability/b" >
+                    <svg-icon src="/assets/images/nouns/process.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>
+                    The Process </a>
+                <a class="list-group-item" routerLink="/stories/accountability/c" >
+                    <svg-icon src="/assets/images/nouns/end.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>
+                    The End </a>
+            </div>
+            <div *ngIf="router.url.match('/stories/community.*')">
+                <a class="list-group-item" routerLink="/stories/community/a" >    
+                    <svg-icon src="/assets/images/nouns/communitydefinitions.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>
+                    Definitions</a> 
+                <a class="list-group-item" routerLink="/stories/community/b" >    
+                    <svg-icon src="/assets/images/nouns/involvement.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>
+                    Community Involvement </a>
+                <a class="list-group-item" routerLink="/stories/community/c" >    
+                    <svg-icon src="/assets/images/nouns/communitychallenges.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>
+                    Challenges </a>
+                <a class="list-group-item" routerLink="/stories/community/d" >    
+                    <svg-icon src="/assets/images/nouns/state.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>
+                    State & Beyond </a>
+            </div>
+        </div>
+
+       <div >
+            <a style="color: white;border: none;pointer-events: none;" class="list-group-item" >What challenges have you faced?</a>
+        </div>
+
+
+

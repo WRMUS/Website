@@ -1,0 +1,137 @@
+<div class="wrapper">
+  <div class="container">
+    <h2 class="title-font">Was macht uns <em>wirklich</em> sicher? Projekt</h2>
+    <div class="frame__video-container frame__video-container_margin_b">
+      <img src="//img.youtube.com/vi/op_aSoFmcls/0.jpg" alt="What would really make us safe?" class='frame__video-img'>
+      <iframe src="https://www.youtube.com/embed/op_aSoFmcls" frameborder="0" allowfullscreen class='frame__video-player'></iframe>
+    </div>
+    <a href="https://www.youtube.com/watch?v=9aJLUA0iYFE" class='btn' target="_blank">English Version</a>
+  </div>
+  <div class="container">
+    <div class="controll-buttons">
+      <div class="controll-button" (click)='currentFrame = "Podiumsdiskussion" ' [class.controll-button_cur]='currentFrame == "Podiumsdiskussion"'>
+        <div class="controll-button__bg controll-button__bg_podium"></div>
+        <span class="controll-button__text">Podiumsdiskussion</span>
+      </div>
+      <div class="controll-button controll-button_toolkit" (click)='currentFrame = "Toolkit" ' [class.controll-button_cur]='currentFrame == "Toolkit"'>
+        <div class="controll-button__bg controll-button__bg_toolkit"></div>
+        <span class="controll-button__text">Toolkit</span>
+      </div>
+      <div class="controll-button controll-button_labor" (click)='currentFrame = "Labor" ' [class.controll-button_cur]='currentFrame == "Labor"'>
+        <div class="controll-button__bg controll-button__bg_labor"></div>
+        <span class="controll-button__text">Labor für Alternativen</span>
+      </div>
+    </div>
+  </div>
+  <div class="container frames">
+    <div class="frame" [class.frame_visible]='currentFrame == "Podiumsdiskussion"'>
+      <div class="frame__video-container">
+        <img src="//img.youtube.com/vi/zuWdof5hJWo/0.jpg" alt="What would really make us safe?" class='frame__video-img'>
+        <iframe src="https://www.youtube.com/embed/zuWdof5hJWo?ecver=1" frameborder="0" allowfullscreen class='frame__video-player'></iframe>
+      </div>
+      <ul class="thumbnails">
+        <li class="thumbnail" (click)='openModal(content, "/assets/images/poster.jpg")'>
+          <img src="/assets/images/poster-thumb.jpg" alt="" class='thumbnail__img'>
+        </li>
+        <li class="thumbnail" (click)='openModal(content ,"/assets/images/poster-de.jpg")'>
+          <img src="/assets/images/poster-de-thumb.jpg" alt="" class='thumbnail__img'>
+        </li>
+        <li class="thumbnail">
+          <a href="/assets/pdf/1.pdf" target="_blank">
+            <img src="/assets/images/256x256.jpg" alt="" class='thumbnail__img'>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="frame" [class.frame_visible]='currentFrame == "Toolkit"'>
+      <ul class="thumbnails">
+        <li class="thumbnail_center">
+          <a href="/assets/pdf/toolkit.pdf" target="_blank">
+            <img src="/assets/images/256x256.jpg" alt="" class='thumbnail__img'>
+          </a>
+        </li>
+      </ul>
+      <h3 class="frame__title">Mit Beiträgen von:</h3>
+      <ul class="organisations">
+        <li class="organisation">
+          <img src="/assets/images/women.png" alt="">
+        </li>
+        <li class="organisation">
+          <img src="/assets/images/Fluechtlingsrat_Brandenburg.jpg" alt="">
+        </li>
+        <li class="organisation">
+          <img src="/assets/images/KOP.png" alt="">
+        </li>
+        <li class="organisation">
+          <img src="/assets/images/lesmigras_logo_oben.jpg" alt="">
+        </li>
+        <li class="organisation">
+          <img src="/assets/images/logo_Hydra_01.jpg" alt="">
+        </li>
+        <li class="organisation">
+          <img src="/assets/images/reach_out_logo_small_1.png" alt="">
+        </li>
+        <li class="organisation">
+          <img src="/assets/images/MSO.png" alt="">
+        </li>
+      </ul>
+    </div>
+
+    <div class="frame" [class.frame_visible]='currentFrame == "Labor"'>
+      <ul class="thumbnails thumbnails_center">
+        <li class="thumbnail" (click)='openModal(content, "/assets/images/final.jpeg")'>
+          <img src="/assets/images/final.jpeg" alt="" class='thumbnail__img'>
+        </li>
+        <li class="thumbnail">
+          <a href="/assets/pdf/lab.pdf" target="_blank">
+            <img src="/assets/images/256x256.jpg" alt="" class='thumbnail__img'>
+          </a>
+        </li>
+      </ul>
+      <div class="frame__video-container">
+        <img src="//img.youtube.com/vi/9aJLUA0iYFE/0.jpg" alt="What would really make us safe?" class='frame__video-img'>
+        <iframe src="https://www.youtube.com/embed/9aJLUA0iYFE?ecver=1" frameborder="0" allowfullscreen class='frame__video-player'></iframe>
+      </div>
+      <ul class="photos">
+        <li class="photo" *ngFor='let photo of photos' >
+          <img src="/assets/images/{{photo.src}}" alt="{{photo.text}}" *ngIf="photo.type !='pdf' " (click)="modalPhoto(photoWindow, photo.src, photo.text)">
+          <a href="/assets/pdf/{{photo.href}}.pdf" target="_blank" *ngIf="photo.type =='pdf' ">
+            <img src="/assets/images/{{photo.src}}" alt="{{photo.text}}">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    Organisiert von Melanie Brazzell, <br>
+  <a href="//www.transformativejustice.eu" target='_blank'>Transformative Justice Kollektiv Berlin</a> <br>
+  & das „Was macht uns wirklich sicher“ Crew
+
+  </footer>
+</div>
+
+
+<ng-template #content let-c="close">
+  <div class="modal-header modal-header-de">
+    <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body modal-body-de">
+    <img src="{{currentImg}}" alt="">
+  </div>
+</ng-template>
+
+<ng-template #photoWindow let-c="close">
+  <div class="modal-header ">
+    <h4 class="modal-title title-font">
+      {{photo.text}}
+    </h4>
+    <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body modal-body-de">
+    <img src="/assets/images/{{photo.src}}" alt="{{photo.text}}">
+  </div>
+</ng-template>

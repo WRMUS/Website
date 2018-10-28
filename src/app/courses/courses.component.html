@@ -1,0 +1,19 @@
+<main>
+    <div class="container">
+        <div class="row row-offcanvas row-offcanvas-right" >
+            <router-outlet name="sidemenu"></router-outlet>  
+            <div class="col-xs-9">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                    <li class="breadcrumb-item active">Courses</li>
+                </ol>
+                <div class="jumbotron">
+                    <h1>Course Categories!</h1>
+                    <p>This is a list of course categories, click on each to see a list of courses for a given
+                        category.</p>
+                </div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>  
+    </div>
+</main>

@@ -1,0 +1,74 @@
+<div class="detail-container" *ngIf="router.url == '/about/redundant'">
+    <div class="question-content">
+      <div id="TheWebsite" class="title title-font title-font-bg">
+          About the website      
+        <svg-icon src="/assets/images/nouns/website.svg" [stretch]="true"
+            [svgStyle]="{'height.px':100,'padding.px':1,'margin.px':3}">
+        </svg-icon> 
+      </div>
+    </div>
+    <div class="question-content">
+        <div id="Different approach: Vertical, instead of horizontal" class="title">Vertical, not horizontal approach</div>
+        <div class="question">
+            Many accounts of CA-TJ work currently out there offer narratives or models for a single community-based process, following narrative arcs of ups and downs and the interactions between various players as they move through a process.
+            This website approaches CA-TJ work differently: by cutting it vertically rather than horizontally. Rather than looking at full stories, the website gathers several voices and hears what they each have to say about the same general question: What is a community after all? How do we get people to change? Where is the movement headed?
+        </div>
+    </div>
+    <div class="question-content">
+        <div id="How to navigate the site" class="title">How to navigate the site</div>
+        <div class="question">
+          To access these questions, you can navigate through various 'chapters':
+          <br>
+          <ul>
+            <li>
+                <a routerLink="/people/a" target="_blank">‘Collaborators’</a> offers biographies of the activists interviewed, as well as their personal  and organizational stories. 
+            </li>
+              <br/>
+            <li>
+                The chapter <a routerLink="/movement/tj" target="_blank">‘Movement’</a> puts the movement in its larger historical and social context, including a section on the <a routerLink="/movement/principles" target="_blank">Principles</a> behind the work. 
+            </li>
+               <br/>
+              <li>
+                  <a routerLink="/stories/support" target="_blank">‘Stories’</a> focuses on the interviewees’ praxis: <a routerLink="/stories/support/c" target="_blank">Support</a> for survivors, <a routerLink="/stories/accountability" target="_blank">Accountability</a> for those who cause harm, and engagement with the broader <a routerLink="/stories/community" target="_blank">Community</a>. 
+                  
+              </li>
+              <br/>            
+          </ul>                    
+          <br>
+          <br>
+        </div>
+    </div>
+</div>
+
+
+<ng-template #rollover let-c="close">
+  <div class="modal-header">
+    <h4 class="modal-title title-font">{{ selectedRollover.title }}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p [innerHTML]="selectedRollover.quote"></p>
+  </div>
+</ng-template>
+<ng-template #content let-c="close">
+  <div class="modal-header">
+    <h4>
+      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank' *ngIf='getPerson(selectedQuote.personId).link'> 
+          {{ getPerson(selectedQuote.personId)?.name }}
+      </a>
+      <span *ngIf='!getPerson(selectedQuote.personId).link'> 
+          {{ getPerson(selectedQuote.personId)?.name }} : {{ selectedQuote.tagline }} 
+      </span>
+    </h4>
+    <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="person-photo-container" [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'> 
+    </div>
+    <p [innerHTML]="selectedQuote.quote"></p>
+  </div>
+</ng-template>

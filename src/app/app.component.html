@@ -1,20 +1,150 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<main>
+ 
+    <div style="padding-bottom:5%" align="center" *ngIf="router.url != '/home' && router.url != '/'">
+<!---        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> --->
+            <nav class="navbar fixed-top navbar-expand-lg bg-light"> 
+        <!---    <div class="container">    --->
+                <logo style="margin-right:2%;">
+                    <img src="assets/images/logo.png" height="80" class="d-inline-block align-top" alt="">
+                    <a class="navbar-brand logo-name" href="#" style="color: black;font-size: 1.1em;">
+                        <font face="roman">What <i>really</i> makes us safe?</font>
+                    </a>
+                </logo>
+                <button class="navbar-toggler" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    
+                        <span class="navbar-toggler-icon">
+                        </span>
+                
+                </button>     
+                
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">                    
+                    <div  *ngIf="router.url != '/dehome'">
+                        <ul class="navbar-nav" align="center" >                                                
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/about.*'))}}" 
+                                       id="navbarDropdownMenuLink1" 
+                                       data-toggle="dropdown" 
+                                       aria-haspopup="true" 
+                                       aria-expanded="true">
+                                        Project
+                                    </a>
 
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a  class="dropdown-item" routerLink="about">Research</a>
+                                <a  class="dropdown-item" routerLink="about/a">Website</a>
+                                </div>
+                            </li>
+                        
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/movement.*'))}}" 
+                                   id="navbarDropdownMenuLink" 
+                                   data-toggle="dropdown" 
+                                   aria-haspopup="true" 
+                                   aria-expanded="false">
+                                    Movement
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" routerLink="movement/tj">Transformative Justice</a>
+                                <a class="dropdown-item" routerLink="movement/principles">Principles</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/people.*'))}}" 
+                                   id="navbarDropdownMenuLink" 
+                                   data-toggle="dropdown" 
+                                   aria-haspopup="true" 
+                                   aria-expanded="false">
+                                    Collaborators
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                   
+                                    <a class="dropdown-item" routerLink="people/a">Bios</a>   
+                                    <a class="dropdown-item" routerLink="people/c">Organizations</a>
+                                    <a class="dropdown-item" routerLink="people/b">Histories</a>
+                                    
+                                    <a class="dropdown-item" routerLink="people/d">Challenges</a>           
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/stories.*'))}}" 
+                                   id="navbarDropdownMenuLink" 
+                                   data-toggle="dropdown" 
+                                   aria-haspopup="true" 
+                                   aria-expanded="false">
+                                    Stories
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" routerLink="stories/support">Support</a>
+                                    <a class="dropdown-item" routerLink="stories/accountability">Accountability</a>
+                                    <a class="dropdown-item" routerLink="stories/community">Community</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="margin-left: auto; margin-right:0;">
+                        <ul class="navbar-nav" >
+                            <li class="nav-link">
+                                <a  href="https://www.facebook.com/transformativejusticekollektiv/" target="_blank" >
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li> 
+                            <li class="nav-link">
+                                <a  href="https://twitter.com/WhatMakesUsSafe" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a  href="https://www.instagram.com/whatreallymakesussafe/" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-link">
+                                <a  href="mailto:whatreallymakesussafe@riseup.net">
+                                    <i class="fa fa-envelope-o"></i>
+                                </a>
+                            </li>                    
+                            <li class="nav-link">
+                                <a  href="https://www.youtube.com/channel/UC-6u-6bXKoMKvlFfVBZZHkA" target="_blank">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+<!---                            <li class="nav-link"><a href="#"><i class="fa"></i></a></li>  --->                         
+                        </ul> 
+                    </div>
+            
+                </div>
+     <!---       </div>  --->
+        </nav>
+    </div>
+    <div class = "try" align="center">
+        <div *ngIf="router.url == '/home' || router.url == '/' || router.url == '/nahome'">
+            <div>
+                  
+                <div *ngIf="router.url == '/home' || router.url == '/' ">            
+                        <a routerLink="nahome"> <button class="btn" style="border:solid 0px; background:transparent;font-weight:1000;font-size:3em">North America</button></a>
+                        <span style="padding-left:50%"></span>
+                        <a routerLink="dehome"> <button class="btn" style="border:solid 0px; background:transparent;font-weight:1000;font-size:3em"
+                                                        >Germany</button></a>                           
+                </div>
+                <div class = "top" style="background-image: url('assets/images/box.png');">
+                    <img src="assets/images/box.png" class="img-responsive" style="width:53%;opacity: 0;">
+                </div>
+	            <div *ngIf="router.url == '/nahome' ">
+                    <p style="background: transparent;font-weight:1000;font-size:3em;">
+                        <font face="bemio">Participatory Research with Transformative Justice Activists</font>
+                    </p>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div *ngIf="router.url != '/home' && router.url != '/'">
+        <router-outlet></router-outlet>
+    </div>
+</main>

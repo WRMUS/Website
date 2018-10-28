@@ -1,0 +1,9 @@
+<div *ngFor="let menuSection of menu">
+  <div class="header">{{ menuSection.sectionHeader }}</div>
+  <div *ngFor="let section of menuSection.menuSections">
+    <a simplePageScroll href="{{routerBase + '#' + section.header}}" class="section-link">{{ section.header }}</a>
+    <div *ngFor="let subSection of section.subs">
+      <a simplePageScroll href="{{routerBase + '#' + subSection}}" class="sub-section-link">{{ subSection }}</a>
+    </div>
+  </div>
+</div>

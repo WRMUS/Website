@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 100 125"
+   version="1.1"
+   x="0px"
+   y="0px"
+   id="svg38"
+   sodipodi:docname="led.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata44">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs42" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview40"
+     showgrid="false"
+     inkscape:zoom="1.888"
+     inkscape:cx="50"
+     inkscape:cy="62.5"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg38" />
+  <title
+     id="title2">100x100</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     sketch:type="MSPage"
+     id="g32"
+     transform="matrix(1.3179224,0,0,1.3696161,-15.635709,-5.758008)"
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+    <g
+       sketch:type="MSLayerGroup"
+       transform="translate(12.5,4.114322)"
+       id="g30"
+       style="fill:#000000">
+      <path
+         d="M 24.20201,2.8205088 21.417871,0.03655779 12.117494,9.302544 2.8154209,0 0.02873744,2.786495 9.3287374,12.086683 0.03627513,21.360207 2.8142902,24.137751 12.09733,14.854805 l 9.291615,9.291897 2.815609,-2.757475 -9.287751,-9.288128 9.285207,-9.2805902"
+         sketch:type="MSShapeGroup"
+         id="path6"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 14.407915,25.157035 H 9.9469221 c 0.1555589,3.109297 0.6876259,5.978423 1.5817839,8.615672 l 4.217808,-1.441583 C 15.00603,30.146702 14.556596,27.701005 14.407915,25.157035"
+         sketch:type="MSShapeGroup"
+         id="path8"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 33.987343,80.191394 -3.334391,2.952607 c 1.874906,2.117054 4.254837,3.943719 7.074404,5.429115 l 2.075785,-3.940327 c -2.34196,-1.23392 -4.298933,-2.728266 -5.815798,-4.441395"
+         sketch:type="MSShapeGroup"
+         id="path10"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 74.635741,62.763976 c -0.582192,-2.887688 -1.66206,-5.67032 -3.209453,-8.270728 l -3.827073,2.277701 c 1.289604,2.167085 2.188191,4.479554 2.670791,6.873052 l 4.365735,-0.880025"
+         sketch:type="MSShapeGroup"
+         id="path12"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 31.092588,47.958543 h 9.42e-4 c 2.486401,0 4.929931,-0.348053 6.780811,-0.634579 L 37.192839,42.9 c -1.798304,0.278329 -3.929114,0.53593 -6.099309,0.53593 h -7.54e-4 c -0.412688,0 -0.820571,0.0058 -1.211966,-0.01451 -0.107883,-0.0059 -0.215012,-0.0029 -0.321671,-0.01027 l -0.304899,4.446012 c 0.129931,0.0088 0.26071,0.03769 0.392525,0.04457 0.469127,0.02497 0.955685,0.05682 1.445823,0.05682"
+         sketch:type="MSShapeGroup"
+         id="path14"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 18.4712,37.652167 -3.560333,2.675503 c 1.91363,2.546608 4.310238,4.487845 7.123115,5.770006 l 1.847205,-4.05245 c -2.128078,-0.9701 -3.948335,-2.448053 -5.409987,-4.393059"
+         sketch:type="MSShapeGroup"
+         id="path16"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 50.842556,45.992054 c 0.358135,0.03053 0.725315,0.07359 1.090892,0.128423 l 0.660302,-4.404271 c -0.459139,-0.06906 -0.921765,-0.123335 -1.373932,-0.161778 -0.716929,-0.06087 -1.466269,-0.09186 -2.227575,-0.09186 -1.554837,0 -3.193625,0.122016 -5.156533,0.384328 l 0.589824,4.414353 c 1.762688,-0.235553 3.213788,-0.345226 4.566709,-0.345226 0.635804,0 1.258134,0.02563 1.850313,0.07604"
+         sketch:type="MSShapeGroup"
+         id="path18"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 63.526507,82.219881 c -1.569252,1.230716 -3.243938,2.258762 -4.978077,3.054836 l 1.858323,4.047362 c 2.050628,-0.941551 4.025219,-2.152293 5.868467,-3.598021 0.51652,-0.405151 1.019378,-0.832915 1.494629,-1.27142 l -3.01988,-3.273241 c -0.388286,0.358134 -0.799938,0.70826 -1.223462,1.040484"
+         sketch:type="MSShapeGroup"
+         id="path20"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 70.569441,69.619221 c -0.255528,2.455496 -0.977356,4.775691 -2.145603,6.895949 l 3.900942,2.148995 c 1.457129,-2.644881 2.356847,-5.532946 2.674278,-8.58392 l -4.429617,-0.461024"
+         sketch:type="MSShapeGroup"
+         id="path22"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 49.742431,87.258448 c -1.431313,-9.4e-5 -2.864793,-0.158385 -4.260113,-0.471105 l -0.973116,4.346137 c 1.714165,0.383951 3.474875,0.578612 5.233135,0.578706 1.227795,0 2.472738,-0.09535 3.700157,-0.283323 L 52.768153,87.02657 c -1.004868,0.153863 -2.022927,0.231878 -3.025722,0.231878"
+         sketch:type="MSShapeGroup"
+         id="path24"
+         inkscape:connector-curvature="0" />
+      <path
+         d="M 66.896137,48.797676 C 64.797079,46.8212 62.263191,45.112971 59.568279,43.857569 l -1.880653,4.037092 c 2.269598,1.057255 4.397958,2.49064 6.15537,4.145446 l 3.053141,-3.242431"
+         sketch:type="MSShapeGroup"
+         id="path26"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 28.729899,68.945163 c 0,-0.119001 0.0053,-0.163756 0.01508,-0.352198 h -4.46137 c -0.0043,0.188442 -0.0073,0.239227 -0.0073,0.352198 0,2.740986 1.314008,5.936118 2.4163,8.127136 l 3.978487,-2.005873 c -1.23369,-2.451822 -1.941197,-4.685616 -1.941197,-6.121263"
+         sketch:type="MSShapeGroup"
+         id="path28"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

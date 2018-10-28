@@ -1,0 +1,53 @@
+
+        <div class="sidebar-style">
+            <div *ngIf="router.url.match('/movement/tj.*')">
+                <a class="list-group-item" routerLink="/movement/tj/a" >    
+                    <svg-icon src="/assets/images/nouns/definition.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':50,'padding.px':1,'margin.px':3}">
+                    </svg-icon> 
+                    Definitions</a> 
+                <a class="list-group-item" routerLink="/movement/tj/b" >    
+                                        <svg-icon src="/assets/images/nouns/genelogy.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':50,'width.px':25,'padding.px':1,'margin.px':12}">
+                    </svg-icon> 
+                    Genealogies </a>
+                <a class="list-group-item" routerLink="/movement/tj/c" >    
+                    <svg-icon src="/assets/images/nouns/future.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':50,'width.px':50,'padding.px':1,'margin.px':3}">
+                    </svg-icon> 
+                    Futures </a>
+            </div>
+            
+            <div *ngIf="router.url.match('/movement/principles.*')">
+                <a class="list-group-item" routerLink="/movement/principles/a" >    
+                    <svg-icon src="/assets/images/nouns/ethos.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>  
+                    Ethos</a> 
+                <a class="list-group-item" routerLink="/movement/principles/b" >    
+                    <svg-icon src="/assets/images/nouns/pcv.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>  
+                    People Causing Violence </a>
+                <a class="list-group-item" routerLink="/movement/principles/c" >    
+                    <svg-icon src="/assets/images/nouns/tough.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>  
+                    Concept of Responsibility </a>
+                <a class="list-group-item" routerLink="/movement/principles/d" >
+                    <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>                                        
+                    People Experiencing Violence </a>
+                <a class="list-group-item" routerLink="/movement/principles/e" >
+                    <svg-icon src="/assets/images/nouns/rtv.svg" [stretch]="true"
+                        [svgStyle]="{'height.px':25,'width.px':25,'padding.px':1,'margin.px':3}">
+                    </svg-icon>  
+                    Response to Violence </a>
+            </div>
+            
+        </div>
+
+       <div >
+            <a style="color: white;border: none;pointer-events: none;" class="list-group-item" >What challenges have you faced?</a>
+        </div>

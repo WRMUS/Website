@@ -1,0 +1,81 @@
+.header {
+  font-style: italic;
+  font-size: 3em;
+  margin: 0 0 5% 0;
+}
+
+.detail-container {
+  margin: 0 2.5% 3% 2.5%;
+}
+
+.homepage-content, .question-content {
+  /*margin: 0 1.25%;*/
+}
+
+.question-content > .title {
+  font-size: 2em;
+  margin: 1% 0;
+}
+
+.question-content > .question {
+  font-size: 1.1em;
+  line-height: 2.5em;
+  margin: 2.5%;
+}
+
+.quote-box {
+  width: 25%;
+  height: 16vw;
+  margin: 2.5%;
+  border: 1px solid #888;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.quote-box:hover {
+  opacity: 0.8;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.initial, .tagline {
+  height: 16vw;
+}
+
+.initial {
+  line-height: 16vw;
+  font-size: 5.5em;
+  font-style: italic;
+  text-align: center;
+
+}
+
+.tagline {
+  padding: 2em;
+  font-size: 1.5em;
+  text-align: center;
+  display: none;
+}
+
+.quote-box:hover > .initial {
+  display: none;
+}
+
+.quote-box:hover .tagline {
+  display: block;
+}
+
+.close {
+  padding-right: 1em;
+}
+
+app-detail-menu {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.rollover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,168 @@
+<main>
+<!---  <div class="row">
+       <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 justify-content-end d-flex">
+            <div style="position:fixed;">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active">Project</li>
+                                <li class="breadcrumb-item"*ngIf="router.url.match('/about$')">
+                                    Research
+                                </li>
+                                <li class="breadcrumb-item"*ngIf="router.url.match('/about/a')">
+                                    Website
+                                </li>
+                            </ol>
+                <router-outlet name="sidemenu"></router-outlet>  
+            </div>
+        </div>
+--->      
+        <div class="mx-auto col-xs-11 col-sm-11 col-md-11 col-lg-11">
+            <div class="jumbotron">
+                <div>
+                    <h1>Project</h1>
+<!---                     <div style="float:right">
+                   <p (click)="showBio(0, content)" style="cursor:pointer; color: #709a98">-from Melanie Brazzell</p> 
+                    </div> 
+--->
+                </div>
+            </div>
+            <div class="row">
+<!---
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            </div>
+--->                
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div *ngIf="router.url.match('/about$')"> 
+                <div class="question-content">
+                    <div class="title title-font title-font-bg">
+                        About the research
+<!---                        <svg-icon src="/assets/images/nouns/about.svg" [stretch]="true"
+                            [svgStyle]="{'height.px':100,'padding.px':1,'margin.px':3}">">
+                        </svg-icon>
+--->                                                
+                    </div> 
+                    <div id="Beginnings" class="title">Process</div>
+                    <div class="question">
+                        The “What <i>really</i> makes us safe?” research project began as an informal exchange between organizers working on community accountability and transformative justice responses to sexual violence. As the <a (click)="showBio(0, content)" style="cursor:pointer;color: #709a98" > initiator</a> of the project, I want to discuss how it evolved. 
+                        
+                        Our fledgling <a href="https://www.transformativejustice.eu/en/" target='_blank'>transformative justice collective in Berlin, Germany</a> was influenced by transformative justice thought and organizing in the U.S. but geographically far from the ‘mothership’. Dialoguing with those who had created and propelled this work became a mode of both giving and taking account of one another. 
+                    </div>
+                  </div>
+                  <div class="question-content">
+                    <div id="Participatory Action Research" class="title">Participatory Action Research</div>
+                    <div class="question">
+                      That informal exchange expanded into a participatory research project in 2013 as the foundations of my Master’s thesis. The research explored the theoretical underpinnings of CA-TJ, like what does it mean to be <span style="font-style: italic;">accountable</span> after all? And who or what is <span style="font-style: italic;">a community?</span>
+                      <br><br>
+                      <a href="http://www.incite-national.org/page/participatory-action-research" target='_blank'>Participatory action research</a> is an approach that understands all participants in a research process to be co-creators of the project’s goals, methods, and outcomes. In my interviews, our dialogues offered an opportunity to collectively think through questions emerging out of our respective practices. Interview partners shared organizational materials, connected me with other activists, and even read parts of my thesis.
+                      However, this project was not fully participatory from start to finish. Participants were scattered across the U.S. and Canada, so we could not meet at one table and political work put limits on time. The research took the shape of a net weaving from one node of organizing to another, as a set of questions and ideas developed in one conversation was carried into the next. This site allows me to put all those conversations side by side.
+                    </div>
+                  </div>
+                  <div class="question-content">
+                    <div id="Who was involved?" class="title">Who was involved?</div>
+                    <div class="question">
+                      All in all, 16 activist-thinkers gave interviews. You can read their full biographies <a routerLink="/detail/Game Changers">here</a>. I was the primary interviewer, and several early interviews were done by comrades from the Transformative Justice Kollektiv Berlin.
+                    </div>
+                  </div>
+                  <div class="question-content">
+                    <div id="What were the results?" class="title">What were the results?</div>
+                    <div class="question">
+                    Many interviewees described the need to archive and document transformative justice work. As a result, this site was built in order to amplify oral histories from the movement and share knowledge with other practitioners. The interviews left gaps in some places, which I filled with quotes from other activist-thinkers and organizations not directly involved in the project, in the hopes of giving a fuller picture of the movement.
+                    <br><br>
+                    In addition, academic-oriented papers resulting from this project can be found <a href="https://ucsb.academia.edu/MelanieBrazzell" target='_blank'> on my academia.edu site</a>.
+                      <br>
+                      <br>
+                      <span style="float: right;">- Melanie Brazzell</span>
+                    </div>
+                  </div>
+            </div>
+            <div *ngIf="router.url.match('/about/a$')"> 
+                <div class="question-content">
+                    <div class="title title-font title-font-bg">
+                        About the website
+<!---                        <svg-icon src="/assets/images/nouns/website.svg" [stretch]="true"
+                            [svgStyle]="{'height.px':100,'padding.px':1,'margin.px':3}">">
+                        </svg-icon>
+--->                                                
+                    </div> 
+                    <div class="title">Vertical, not horizontal approach</div>
+                    <div class="question">
+                         Many accounts of CA-TJ work currently out there offer narratives or models for a single community-based process, following narrative arcs of ups and downs and the interactions between various players as they move through a process.
+                         This website approaches CA-TJ work differently: by cutting it vertically rather than horizontally. Rather than looking at full stories, the website gathers several voices and hears what they each have to say about the same general question: What is a community after all? How do we get people to change? Where is the movement headed?
+                    </div>
+                  </div>
+                  <div class="question-content">
+                    <div id="Participatory Action Research" class="title">How to navigate the site</div>
+                    <div class="question">
+                        To access these questions, you can navigate through various 'chapters':
+                        <br>
+                        <ul>
+                            <li>
+                                <a routerLink="/people/a" target="_blank">‘Collaborators’</a> offers biographies of the activists interviewed, as well as their personal  and organizational stories. 
+                            </li>
+                            <br/>
+                            <li>
+                                The chapter <a routerLink="/movement/tj" target="_blank">‘Movement’</a> puts the movement in its larger historical and social context, including a section on the <a routerLink="/movement/principles" target="_blank">Principles</a> behind the work. 
+                            </li>
+                               <br/>
+                            <li>
+                                <a routerLink="/stories/support" target="_blank">‘Stories’</a> focuses on the interviewees’ praxis: <a routerLink="/stories/support/c" target="_blank">Support</a> for survivors, <a routerLink="/stories/accountability" target="_blank">Accountability</a> for those who cause harm, and engagement with the broader <a routerLink="/stories/community" target="_blank">Community</a>.                  
+                            </li>
+                            <br/>            
+                        </ul>                    
+                    </div>
+                  </div>
+                
+                <div class="question-content">
+                    <div id="Participatory Action Research" class="title">Attributions</div>
+                    <div class="question">
+                        Creative Commons license for Icons from the<a href="https://thenounproject.com/" target='_blank'> Noun Project</a>. Attributions: radiate by Colleen Wilson, finder by Aaron K. Kim,  Branding by Becris, chrysalis by parkjisun,  life  cycle  by  Jae  Aquino,  Writing  by  Takao  Umehara,  tactics  by  Aldric  Rodríguez,  path  by  Nick  Kinling,  Kite  Fight  by  Chameleon  Design,  Blueprint  by  sahua  d,  mind  by  Gregor  Cresnar,  link  by  Stella  Cohen,  connection  by  Petai  Jantrapoon,  Lighthouse  by  Alex  Furgiuele,  assistance  by  Tomas  Knopp,  Boat  by  Dinosoft  Labs,  Challenges  by  Becris,  Sewing  Box  by  Jaap  Knevel,  Flag  by  Roman  J.  Sokolov,  link  by  Shastry,  25%  /  50%  /  75%  Filled  Water  by  Holvonix  LLC,  Share  by  mikicon,  public  opinion  and  Revolution  by  Symbolon,  Neglected  yard  by  Peter  van  Driel,  Maze  by Lilit Kalachyan.
+                        <br>                                           
+                        <br>
+                        <br>
+                    </div>
+                  </div>
+                
+                
+                
+            </div>            
+        <router-outlet></router-outlet> 
+        </div> 
+        </div>
+        </div>  
+   
+</main>
+
+<ng-template #rollover let-c="close">
+  <div class="modal-header">
+    <h4 class="modal-title title-font">{{ selectedRollover.title }}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p [innerHTML]="selectedRollover.quote"></p>
+  </div>
+</ng-template>
+
+<ng-template #content let-c="close">
+  <div class="modal-header">
+    <h4 class="modal-title title-font">
+      <!-- <div class="person-photo-container" *ngIf='selectedQuote.photo || selectedQuote.photo2' [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'>
+        <img src="/assets/images/persons/{{selectedQuote.photo}}" alt="{{ getPerson(selectedQuote.personId)?.name }}" class='person-photo' *ngIf='selectedQuote.photo'>
+        <img src="/assets/images/persons/{{selectedQuote.photo2}}" alt="{{ getPerson(selectedQuote.personId)?.name }}" class='person-photo' *ngIf='selectedQuote.photo2'>
+      </div> -->
+      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank' *ngIf='getPerson(selectedQuote.personId).link'> {{ getPerson(selectedQuote.personId)?.name }}</a>
+      <span *ngIf='!getPerson(selectedQuote.personId).link'> {{ getPerson(selectedQuote.personId)?.name }}</span>
+      <!-- <span>: {{selectedQuote.tagline}}</span> -->
+    </h4>
+
+    <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="person-photo-container" *ngIf='selectedQuote.photo || selectedQuote.photo2' [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'>
+      <img src="/assets/images/persons/{{selectedQuote.photo}}" alt="{{ getPerson(selectedQuote.personId)?.name }}" class='person-photo' *ngIf='selectedQuote.photo'>
+    </div>
+    <p [innerHTML]="selectedQuote.quote"></p>
+  </div>
+</ng-template>
