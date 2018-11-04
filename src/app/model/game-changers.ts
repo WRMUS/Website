@@ -197,12 +197,8 @@ export const GAME_CHANGERS_SECTION_3 = [
     title: 'Organizational wisdom',
     nav: 'Organizations',
     question: 'This project draws together the organizational wisdom of the many anti-violence, queer, and community-based organizations the interviewees have been involved in. To add perspective and context in some places, I use quotes from published materials (not personal interviews) from scholar-activists affiliated with other organizations. All in all, the website presents quotes from folks who are or have been involved in the following:'
-    + '<br/><br/><br/>' 
-    + '<img src="/assets/images/map.svg" width="100%" usemap="#image-map">'
-    
-    + '<br/>' + '& internationally… <a href="http://www.bridgesinstitute.org/">Bridges Institute</a>'
-    + '<br/>' + 'I also spoke to two individuals who have been involved in various forms of accountability work in international settings, including Canada and Australia.'
-    + '<br>' + '<em class="pseudo-title">Describe dynamics and learning processes in your organization</em>',
+    + '<br/><br/><br/>' ,
+
     quotes: [
       {
         tagline: 'Supporting each other',

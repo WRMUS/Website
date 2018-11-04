@@ -136,6 +136,14 @@ li{
   }
 }
 
+
+@media (min-width: 78px) {
+    .navbar-margin{
+        padding-bottom:15%;
+    }
+}
+
+
 @media (max-width: 1230px) { 
     .logo-name { 
         display: none; 
