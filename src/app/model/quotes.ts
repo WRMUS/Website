@@ -131,7 +131,7 @@ export const GAME_CHANGERS_QUOTES = [
         quotes : [
               {
                 tagline: 'Saved by relationships',
-                quote: '<strong>Violence and oppression break community ties and breed fear and distrust. At its core, the work of creating safety is to build meaningful, accountable relationships within our neighborhoods and communities<strong>. Within the S.O.S. Collective, we made it a point to do outreach in the immediate area after incidents of violence. While it often felt terrifying to talk about the work of preventing and ending violence against LGBTQ people of color, we built strong allies and had life-changing conversations. Time and time again I\'ve known peoplee who were saved by the relationships they built. […]'
+                quote: '<strong>Violence and oppression break community ties and breed fear and distrust</strong>. At its core, the work of creating safety is to build meaningful, accountable relationships within our neighborhoods and communities<strong>. Within the S.O.S. Collective, we made it a point to do outreach in the immediate area after incidents of violence</strong>. While it often felt terrifying to talk about the work of preventing and ending violence against LGBTQ people of color, we built strong allies and had life-changing conversations. Time and time again I\'ve known peoplee who were saved by the relationships they built. […]'
                 + '<br><br>' + '-Ejeris Dixon'
                 + '<\/br>' + '<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation>\"Building Community Safety: Steps Towards Liberatory Transformation\"</a> in Truthout, Aug. 15, 2015.'
               },

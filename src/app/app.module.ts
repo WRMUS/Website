@@ -8,10 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { routerConfig } from "../router.config";
 import { RouterModule } from "@angular/router";
 import { AboutComponent } from './about/about.component';
-import { CoursesComponent } from './courses/courses.component';
-import { CourseCardsComponent } from './course-cards/course-cards.component';
-import { SideMenuComponent } from './categories-menu/categories-menu.component';
-import { CoursesCategoryComponent } from './course-category/course-category.component';
+
+
+
 import { NalandingComponent } from './nalanding/nalanding.component';
 import { DelandingComponent } from './delanding/delanding.component';
 
@@ -42,11 +41,7 @@ import { MatToolbarModule, MatCardModule, MatGridListModule } from '@angular/mat
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
-    CoursesComponent,
-    CourseCardsComponent,
-    SideMenuComponent,
-    CoursesCategoryComponent,
+    AboutComponent,    
     NalandingComponent,
     AboutSideMenuComponent,
     AboutDetailComponent,

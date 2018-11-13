@@ -1,0 +1,166 @@
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.detail-container {
+  margin: 0 2.5% 3% 2.5%;
+}
+
+.tile:hover {
+  opacity: 0.5;
+  border: 0px solid ;
+  cursor: pointer;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__description:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.close {
+  padding-right: 1em;
+}
+
+app-detail-menu {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.rollover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header {
+  color: #709a98;
+  font-size: 4.5em;
+  margin: 10px 0 12px 0;
+}
+
+/deep/ .person-photo{
+  max-width: 250px;
+  display: block;
+}
+/deep/ p .person-photo{
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+.detail-container {
+  margin: 0 10vw 3% 2.5%;
+}
+
+
+.indented{
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+
+.about-title *{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.img-container{
+  text-align: center;
+  position: relative;
+}
+.img-wrapper{
+  display: inline-block;
+}
+
+.img-wrapper p{
+  text-align: right;
+}
+
+/deep/.fl{
+  display: block;
+  text-align: right;
+}
+/deep/ .pseudo-title{
+  font-size: 42px;
+  font-style: italic;
+  line-height: 1.2em;
+  text-shadow: none;
+  color: #709a98;
+  margin: 1% 0;
+  margin-top: 1em;
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.initial, .tagline {
+  height: 15vw;
+}
+
+.initial {
+  line-height: 15vw;
+  font-size: 3.35em;
+  font-style: italic;
+  text-align: center;
+}
+
+app-detail-menu {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.rollover {
+  color: #014C8C;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rollover:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #014C8C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.unitalic {
+  font-style: normal !important;
+}
+
+.person-photo-container{
+  margin-right: 10px;
+  float: left;
+}
+
+.person-photo-container_double{
+  display: inline-block;
+  min-width: 250px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color: #709a98;
+  height: 1px;
+}

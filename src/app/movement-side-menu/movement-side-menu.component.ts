@@ -4,8 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movement-side-menu',
-  templateUrl: './movement-side-menu.component.html',
-  styleUrls: ['./movement-side-menu.component.css']
+  templateUrl: './movement-side-menu.component.html'
 })
 export class MovementSideMenuComponent implements OnInit {
 

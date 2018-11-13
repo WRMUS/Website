@@ -21,10 +21,6 @@ import { MovementDetailComponent }  from "./app/movement-detail/movement-detail.
 import { PeopleDetailComponent }    from "./app/people-detail/people-detail.component";
 import { StoriesDetailComponent }   from "./app/stories-detail/stories-detail.component";
 
-import { CoursesComponent }         from "./app/courses/courses.component";
-import { CourseCardsComponent }     from "./app/course-cards/course-cards.component";
-import { CoursesCategoryComponent } from "./app/course-category/course-category.component";
-import { SideMenuComponent }        from "./app/categories-menu/categories-menu.component";
 
 export const routerConfig: Routes = [
     {
@@ -189,32 +185,7 @@ export const routerConfig: Routes = [
             }
         ]
 
-    },
-    {
-        path: 'courses',
-        component: CoursesComponent,
-        children: [
-            {
-                path: '',
-                component: CourseCardsComponent
-            },
-            {
-              path: ':id',
-              component: CoursesCategoryComponent
-            },
-            {
-                path: '',
-                outlet: 'sidemenu',
-                component: SideMenuComponent
-            },
-            {
-                path: ':id',
-                outlet: 'sidemenu',
-                component: SideMenuComponent
-            }
-        ]
-    },
-    
+    },     
     {
         path: '**',
         redirectTo: '/home',

@@ -84,15 +84,7 @@ app-detail-menu {
   font-size: 4.5em;
   margin: 10px 0 12px 0;
 }
-/deep/ .person-photo{
-  max-width: 250px;
-  display: block;
-}
-/deep/ p .person-photo{
-  display: inline-block;
-  float: left;
-  margin-right: 10px;
-}
+
 .detail-container {
   margin: 0 10vw 3% 2.5%;
 }
@@ -311,15 +303,7 @@ a:hover {
   font-style: normal !important;
 }
 
-.person-photo-container{
-  margin-right: 10px;
-  float: left;
-}
 
-.person-photo-container_double{
-  display: inline-block;
-  min-width: 250px;
-}
 
 .quote-box:hover > .initial {
   display: none;

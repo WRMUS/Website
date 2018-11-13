@@ -18,7 +18,13 @@ import { GAME_CHANGERS_QUOTES } from '../model/quotes';
 @Component({
   selector: 'app-bio-detail',
   templateUrl: './bio-detail.component.html',
+  styleUrls: ['../photo.css',
+              '../question.css',
+             ]
+  
+  /*
   styleUrls: ['./bio-detail.component.css']
+  */
 })
 
 export class BioDetailComponent implements OnInit {

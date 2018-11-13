@@ -20,8 +20,7 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-about-detail',
-  templateUrl: './about-detail.component.html',
-  styleUrls: ['./about-detail.component.css']
+  templateUrl: './about-detail.component.html'
 })
 export class AboutDetailComponent implements OnInit {
 

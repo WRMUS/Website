@@ -1,0 +1,88 @@
+.chart{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.chart__col-title,
+.chart__cell{
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+.chart__col-title{
+  background-color: #709a98;
+  color: #fff;
+  width: 20%;
+}
+.chart__cell{
+  line-height: 1.4em;
+}
+
+.chart__row:first-of-type .chart__cell:first-of-type{
+    background-color: #F5F5F5;
+}
+.chart__row:first-of-type .chart__cell:nth-of-type(2),
+.chart__row:first-of-type .chart__cell:nth-last-of-type(3){
+  background-color: #e0d8fd;
+}
+
+.chart__row:first-of-type .chart__cell:last-of-type,
+.chart__row:first-of-type .chart__cell:nth-last-of-type(2){
+  background-color: #b1aacc;
+}
+
+
+.chart__row:nth-of-type(2) .chart__cell:first-of-type{
+    background-color: #F5F5F5;
+}
+.chart__row:nth-of-type(2) .chart__cell:nth-of-type(2),
+.chart__row:nth-of-type(2) .chart__cell:nth-of-type(3){
+  background-color: #dce0c4;
+}
+.chart__row:nth-of-type(2) .chart__cell:last-of-type,
+.chart__row:nth-of-type(2) .chart__cell:nth-last-of-type(2){
+  background-color: #cdcda9;
+}
+
+.chart__row:nth-of-type(3) .chart__cell:first-of-type{
+    background-color: #F5F5F5;
+}
+.chart__row:nth-of-type(3) .chart__cell:nth-of-type(2),
+.chart__row:nth-of-type(3) .chart__cell:nth-of-type(3){
+  background-color: #6ddfff;
+}
+.chart__row:nth-of-type(3) .chart__cell:last-of-type,
+.chart__row:nth-of-type(3) .chart__cell:nth-last-of-type(2){
+  background-color: #02c8ff;
+}
+
+.chart__row:nth-of-type(4) .chart__cell:first-of-type{
+    background-color: #F5F5F5;
+}
+
+.chart__row:nth-of-type(4) .chart__cell:nth-of-type(2),
+.chart__row:nth-of-type(4) .chart__cell:nth-of-type(3){
+  background-color: #c8fde4;
+}
+.chart__row:nth-of-type(4) .chart__cell:last-of-type,
+.chart__row:nth-of-type(4) .chart__cell:nth-last-of-type(2){
+  background-color: #aaccbc;
+}
+
+
+.chart__row:nth-of-type(5) .chart__cell:first-of-type{
+    background-color: #F5F5F5;
+}
+.chart__row:nth-of-type(5) .chart__cell:nth-of-type(2),
+.chart__row:nth-of-type(5) .chart__cell:nth-of-type(3){
+  background-color: #ffe5e5;
+}
+.chart__row:nth-of-type(5) .chart__cell:last-of-type,
+.chart__row:nth-of-type(5) .chart__cell:nth-last-of-type(2){
+  background-color: #cea9a9;
+}
+
+.chart-container{
+  max-width: 100%;
+  overflow-x: auto;
+}

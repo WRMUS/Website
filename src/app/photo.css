@@ -1,0 +1,19 @@
+.person-photo-container{
+  margin-right: 10px;
+  float: left;
+}
+
+.person-photo-container_double{
+  display: inline-block;
+  min-width: 250px;
+}
+
+/deep/ .person-photo{
+  max-width: 250px;
+  display: block;
+}
+/deep/ p .person-photo{
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
