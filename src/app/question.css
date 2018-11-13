@@ -1,0 +1,47 @@
+.homepage-content, .question-content {
+  /*margin: 0 1.25%;*/
+}
+
+.question-content > .title {
+  font-size: 2em;
+  margin: 1% 0;
+}
+
+.question-content > .question {
+  font-size: 1.1em;
+  line-height: 2.5em;
+  margin: 8%;
+}
+
+.homepage-content, .question-content {
+  /*margin: 0 1.25%;*/
+}
+
+.question-decor{
+  color: #e8b314;
+  font-style: normal;
+}
+
+.question-content > .question {
+  font-size: 1.1em;
+  line-height: 2em;
+  margin: 2.5%;
+}
+
+.question-content > .title-font-bg{
+  font-size: 2.6em;
+}
+
+.question-content > .about-title {
+  font-size: 2em;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 1% 0;
+}
+
+.question-content > .title {
+  font-size: 2em;
+  font-style: italic;
+  text-shadow: none;
+  color: #709a98;
+  margin: 1% 0;
+}

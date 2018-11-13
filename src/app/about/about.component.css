@@ -201,38 +201,7 @@ app-detail-menu {
 .question-content > .title-font-bg{
   font-size: 2.6em;
 }
-.accardion .title,
-.accardion-v2 .title-font{
-  color: #fff;
-  color: #fff;
-  text-align: center;
-  background-color: #709a98;
-  /*text-transform: lowercase;*/
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 1.8em;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-.accardion .title::first-letter,
-.accardion-v2 .title-font::first-letter{
-  text-transform: uppercase;
-}
 
-.accardion .question,
-.accardion-v2 .question,
-.accardion-v2+.question-quote-container{
-  display: none;
-}
-.accardion-about .question{
-  margin: 2.5%;
-  font-size: 1.1em;
-  line-height: 2em;
-}
-
-.accardion-about{
-  margin-bottom: 20px;
-}
 
 /*.question-content > .title-font-bg+*{
   display: none;
@@ -365,16 +334,6 @@ a:hover {
   align-items: center;
 }
 
-.inside-quote-box {
-  display: block;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  -ms-align-items: center;
-  align-items: center;
-}
 
 @media only screen and (max-width: 1800px){
   .question-quote-container .quote-box{
@@ -417,7 +376,6 @@ a:hover {
     line-height: 20vw;
   }
 }
-
 @media only screen and (max-width: 1100px){
   .question-quote-container{
     margin-left: 2.5%;
@@ -447,7 +405,6 @@ a:hover {
     font-size: 1.4em;
   }
 }
-
 @media only screen and (max-width: 1000px){
   .question-quote-container{
     margin-left: 2.5%;
@@ -477,7 +434,6 @@ a:hover {
     font-size: 1.4em;
   }
 }
-
 @media only screen and (max-width: 900px){
   .question-quote-container{
     margin-left: 2.5%;
@@ -507,8 +463,6 @@ a:hover {
     font-size: 1.4em;
   }
 }
-
-
 @media only screen and (max-width: 800px){
   
   .question-quote-container .quote-box{
@@ -524,7 +478,6 @@ a:hover {
     line-height: 40vw;
   }
 }
-
 @media only screen and (max-width: 600px){
   
   .question-quote-container .quote-box{
@@ -548,68 +501,4 @@ hr {
   width: 100%;               
   background-color: #709a98;
   height: 1px;
-}
-
-.chart{
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-}
-.chart__col-title,
-.chart__cell{
-  text-align: center;
-  border: 1px solid black;
-  padding: 5px;
-}
-.chart__col-title{
-  background-color: #709a98;
-  color: #fff;
-  width: 25%;
-}
-.chart__cell{
-  line-height: 1.4em;
-}
-.chart__row:first-of-type .chart__cell:first-of-type,
-.chart__row:first-of-type .chart__cell:nth-of-type(2){
-  background-color: #e0d8fd;
-}
-.chart__row:first-of-type .chart__cell:last-of-type,
-.chart__row:first-of-type .chart__cell:nth-last-of-type(2){
-  background-color: #b1aacc;
-}
-.chart__row:nth-of-type(2) .chart__cell:first-of-type,
-.chart__row:nth-of-type(2) .chart__cell:nth-of-type(2){
-  background-color: #dce0c4;
-}
-.chart__row:nth-of-type(2) .chart__cell:last-of-type,
-.chart__row:nth-of-type(2) .chart__cell:nth-last-of-type(2){
-  background-color: #cdcda9;
-}
-.chart__row:nth-of-type(3) .chart__cell:first-of-type,
-.chart__row:nth-of-type(3) .chart__cell:nth-of-type(2){
-  background-color: #6ddfff;
-}
-.chart__row:nth-of-type(3) .chart__cell:last-of-type,
-.chart__row:nth-of-type(3) .chart__cell:nth-last-of-type(2){
-  background-color: #02c8ff;
-}
-.chart__row:nth-of-type(4) .chart__cell:first-of-type,
-.chart__row:nth-of-type(4) .chart__cell:nth-of-type(2){
-  background-color: #c8fde4;
-}
-.chart__row:nth-of-type(4) .chart__cell:last-of-type,
-.chart__row:nth-of-type(4) .chart__cell:nth-last-of-type(2){
-  background-color: #aaccbc;
-}
-.chart__row:nth-of-type(5) .chart__cell:first-of-type,
-.chart__row:nth-of-type(5) .chart__cell:nth-of-type(2){
-  background-color: #ffe5e5;
-}
-.chart__row:nth-of-type(5) .chart__cell:last-of-type,
-.chart__row:nth-of-type(5) .chart__cell:nth-last-of-type(2){
-  background-color: #cea9a9;
-}
-.chart-container{
-  max-width: 100%;
-  overflow-x: auto;
 }

@@ -1,0 +1,281 @@
+@media only screen and (max-width: 1800px){
+  .question-quote-container .quote-box{
+    width: 38%;
+    margin: 3%;
+  }
+  .detail-container{
+    margin: 0 2.5% 3% 2.5%;
+  }
+  .question-quote-container .new-quote-box .quote-box{
+    width: 100%;
+  }
+  .quote-box,
+  .tagline{
+    height: 30vw;
+    font-size: 1.5vw;
+  }
+  .initial{
+    height: 20vw;
+    line-height: 20vw;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .question-quote-container .quote-box{
+    width: 38%;
+    margin: 1%;
+  }
+  .detail-container{
+    margin: 0 2.5% 3% 2.5%;
+  }
+  .question-quote-container .new-quote-box .quote-box{
+    width: 100%;
+  }
+  .quote-box,
+  .tagline{
+    height: 20vw;
+    padding: 0em;
+  }
+  .initial{
+    height: 10vw;
+    line-height: 20vw;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .question-quote-container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  .question-quote-container .quote-box{
+    width: 38%;
+    margin: 1%;
+  }
+  .quote-box,
+  .tagline{
+    height: 20vw;
+    font-size: 1.3vw;
+  }
+  .initial{
+    height: 20vw;
+    line-height: 20vw;
+  }
+  .header{
+    font-size: 3em;
+  }
+  .question-content>.title{
+    font-size: 1.6em;
+    line-height: 1.2em;
+  }
+  .accardion>.title{
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .question-quote-container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  .question-quote-container .quote-box{
+    width: 48%;
+    margin: 1%;
+  }
+    
+  .quote-box,
+  .tagline{
+    height: 23vw;
+    font-size: 1.5vw;
+  }
+    
+  .initial{
+    height: 20vw;
+    line-height: 20vw;
+  }
+    
+  .header{
+    font-size: 3em;
+  }
+    
+  .question-content>.title{
+    font-size: 1.6em;
+    line-height: 1.2em;
+  }
+    
+  .accardion>.title{
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 950px){
+  .question-quote-container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  .question-quote-container .quote-box{
+    width: 48%;
+    margin: 1%;
+  }
+    
+  .quote-box,
+  .tagline{
+    height: 20vw;
+    font-size: 1.5vw;
+  }
+    
+  .initial{
+    height: 20vw;
+    line-height: 20vw;
+  }
+    
+  .header{
+    font-size: 3em;
+  }
+    
+  .question-content>.title{
+    font-size: 1.6em;
+    line-height: 1.2em;
+  }
+    
+  .accardion>.title{
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .question-quote-container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  
+  .question-quote-container .quote-box{
+    width: 68%;
+    margin: 1%;
+  }
+  .quote-box,
+  .tagline{
+    height: 28vw;
+    font-size: 2vw;
+  }
+  .initial{
+    height: 30vw;
+    line-height: 30vw;
+  }
+  .header{
+    font-size: 3em;
+  }
+  .question-content>.title{
+    font-size: 1.6em;
+    line-height: 1.2em;
+  }
+  .accardion>.title{
+    font-size: 1.4em;
+  }
+}
+
+
+@media only screen and (max-width: 800px){
+  
+  .question-quote-container .quote-box{
+    width: 68%;
+    margin: 0%;
+  }
+  .quote-box,
+  .tagline{
+    height: 29vw;
+  }
+  .initial{
+    height: 30vw;
+    line-height: 30vw;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  
+  .question-quote-container .quote-box{
+    width: 78%;
+    margin: 0%;
+  }
+  .quote-box,
+  .tagline{
+    height: 27vw;
+    font-size: 1.8vw;
+  }        
+    
+  .initial{
+    height: 30vw;
+    line-height: 30vw;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  
+  .question-quote-container .quote-box{
+    width: 88%;
+    margin: 0%;
+  }
+  .quote-box,
+  .tagline{
+    height: 32vw;
+    font-size: 1.8vw;
+  }        
+    
+  .initial{
+    height: 30vw;
+    line-height: 30vw;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  
+  .question-quote-container .quote-box{
+    width: 90%;
+    margin: 0%;
+  }
+  .quote-box,
+  .tagline{
+    height: 31vw;
+    font-size: 2.0vw;
+  }
+  .initial{
+    height: 45vw;
+    line-height: 45vw;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  
+  .question-quote-container .quote-box{
+    width: 85%;
+    margin: 0%;
+  }
+  .quote-box,
+  .tagline{
+    height: 30vw;
+    font-size: 2vw;
+  }
+  .initial{
+    height: 45vw;
+    line-height: 45vw;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  
+  .question-quote-container .quote-box{
+    width: 55%;
+    margin: 0%;
+  }
+  .quote-box,
+  .tagline{
+    height: 40vw;
+    font-size: 2vw;
+  }
+  .initial{
+    height: 45vw;
+    line-height: 45vw;
+  }
+}

@@ -12,8 +12,23 @@ import { RolloverService } from '../services/rollover.service';
 
 @Component({
   selector: 'app-movement-detail',
-  templateUrl: './movement-detail.component.html',
+  templateUrl: './movement-detail.component.html',    
+  
+  /*
   styleUrls: ['./movement-detail.component.css']
+  */
+  
+  styleUrls: [
+                
+                '../hvrbox.css', 
+                '../media-box.css',
+                '../modal-box.css', 
+                '../question.css',
+                '../quote-box.css',
+                '../accardion.css',
+             ]
+  
+  
 })
 
 export class MovementDetailComponent implements OnInit {

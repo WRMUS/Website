@@ -5,8 +5,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movement',
-  templateUrl: './movement.component.html',
-  styleUrls: ['./movement.component.css']
+  templateUrl: './movement.component.html'
+ /* styleUrls: ['./movement.component.css']*/
 })
 export class MovementComponent implements OnInit {
 

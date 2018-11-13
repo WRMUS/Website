@@ -1,0 +1,31 @@
+.modal-header{
+  color: black;
+  padding: 1em 2em;
+}
+
+.modal-title.title-font{
+  text-shadow: none;
+  display: flex;
+  align-items: flex-start;
+}
+.modal-title.title-font a{
+  color: black;
+  text-decoration: underline;
+}
+
+.modal-body > p {
+  font-size: 1.3em;
+  line-height: 1.8em;
+
+}
+
+.modal-body{
+  color: black;
+  padding: 1em 2em;
+}
+
+.modal-title {
+  padding-left: 1em;
+  font-size: 2.2em;
+}
+

@@ -1,0 +1,32 @@
+.accardion .title,
+.accardion-v2 .title-font{
+  color: #fff;
+  color: #fff;
+  text-align: center;
+  background-color: #709a98;
+  /*text-transform: lowercase;*/
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.8em;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.accardion .title::first-letter,
+.accardion-v2 .title-font::first-letter{
+  text-transform: uppercase;
+}
+
+.accardion .question,
+.accardion-v2 .question,
+.accardion-v2+.question-quote-container{
+  display: none;
+}
+.accardion-about .question{
+  margin: 2.5%;
+  font-size: 1.1em;
+  line-height: 2em;
+}
+
+.accardion-about{
+  margin-bottom: 20px;
+}

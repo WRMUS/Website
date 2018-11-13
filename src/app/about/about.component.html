@@ -1,20 +1,5 @@
 <main>
-<!---  <div class="row">
-       <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 justify-content-end d-flex">
-            <div style="position:fixed;">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item active">Project</li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/about$')">
-                                    Research
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/about/a')">
-                                    Website
-                                </li>
-                            </ol>
-                <router-outlet name="sidemenu"></router-outlet>  
-            </div>
-        </div>
---->      
+ 
         <div class="mx-auto col-xs-11 col-sm-11 col-md-11 col-lg-11">
             <div class="jumbotron">
                 <div>
@@ -34,11 +19,7 @@
             <div *ngIf="router.url.match('/about$')"> 
                 <div class="question-content">
                     <div class="title title-font title-font-bg">
-                        About the research
-<!---                        <svg-icon src="/assets/images/nouns/about.svg" [stretch]="true"
-                            [svgStyle]="{'height.px':100,'padding.px':1,'margin.px':3}">">
-                        </svg-icon>
---->                                                
+                        About the research                                            
                     </div> 
                     <div id="Beginnings" class="title">Process</div>
                     <div class="question">
@@ -59,7 +40,7 @@
                   <div class="question-content">
                     <div id="Who was involved?" class="title">Who was involved?</div>
                     <div class="question">
-                      All in all, 16 activist-thinkers gave interviews. You can read their full biographies <a routerLink="/detail/Game Changers">here</a>. I was the primary interviewer, and several early interviews were done by comrades from the Transformative Justice Kollektiv Berlin.
+                      All in all, 16 activist-thinkers gave interviews. You can read their full biographies <a routerLink="/people/a">here</a>. I was the primary interviewer, and several early interviews were done by comrades from the Transformative Justice Kollektiv Berlin.
                     </div>
                   </div>
                   <div class="question-content">
@@ -77,11 +58,7 @@
             <div *ngIf="router.url.match('/about/a$')"> 
                 <div class="question-content">
                     <div class="title title-font title-font-bg">
-                        About the website
-<!---                        <svg-icon src="/assets/images/nouns/website.svg" [stretch]="true"
-                            [svgStyle]="{'height.px':100,'padding.px':1,'margin.px':3}">">
-                        </svg-icon>
---->                                                
+                        About the website                                           
                     </div> 
                     <div class="title">Vertical, not horizontal approach</div>
                     <div class="question">
@@ -120,9 +97,6 @@
                         <br>
                     </div>
                   </div>
-                
-                
-                
             </div>            
         <router-outlet></router-outlet> 
         </div> 
@@ -146,13 +120,8 @@
 <ng-template #content let-c="close">
   <div class="modal-header">
     <h4 class="modal-title title-font">
-      <!-- <div class="person-photo-container" *ngIf='selectedQuote.photo || selectedQuote.photo2' [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'>
-        <img src="/assets/images/persons/{{selectedQuote.photo}}" alt="{{ getPerson(selectedQuote.personId)?.name }}" class='person-photo' *ngIf='selectedQuote.photo'>
-        <img src="/assets/images/persons/{{selectedQuote.photo2}}" alt="{{ getPerson(selectedQuote.personId)?.name }}" class='person-photo' *ngIf='selectedQuote.photo2'>
-      </div> -->
       <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank' *ngIf='getPerson(selectedQuote.personId).link'> {{ getPerson(selectedQuote.personId)?.name }}</a>
       <span *ngIf='!getPerson(selectedQuote.personId).link'> {{ getPerson(selectedQuote.personId)?.name }}</span>
-      <!-- <span>: {{selectedQuote.tagline}}</span> -->
     </h4>
 
     <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">

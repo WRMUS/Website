@@ -172,24 +172,7 @@
               <p [innerHTML]="question.question"></p>
             </div>
           </div>
-          <div class="question-quote-container" style="padding-left:4%">
-<!---              
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openBioQuoteWindow(quote.personId)">                
-                    <mat-grid-tile>                        
-                        <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px" class="tile">
-                            <img style="width:100%;max-height:100%; overflow:hidden"  src="assets/images/persons/original/{{getPerson(quote.personId)?.image}}"/>                 
-                        </div>
-                        <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                            <div style="border-bottom:2px solid #709a98;font-size:1.3em;font-style:italic;font-weight:bold; "> 
-                                {{getPerson(quote.personId)?.name}}                       
-                            </div>                                
-                        </div>                        
-                    </mat-grid-tile>               
-                </div>
-            </mat-grid-list>
---->              
+          <div class="question-quote-container" style="padding-left:4%">              
               <section class="photos">
                   <div *ngFor="let quote of question.quotes"                 
                         (click)="openBioQuoteWindow(quote.personId)">                         
@@ -202,14 +185,6 @@
                                 </div>
                             </div>
                         </div>
-                      <!--- 
-                      <div class="container1">
-                        <img src="assets/images/persons/original/{{getPerson(quote.personId)?.image}}" alt="Avatar" class="image" style="width:100%">
-                        <div class="middle">
-                            <div class="text">John Doe</div>
-                        </div>
-                     </div>
-                     ---> 
                   </div>                            
               </section>              
     </div>            

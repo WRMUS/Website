@@ -19,7 +19,16 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  /*
+  *  styleUrls: ['./about.component.css']
+  */
+  styleUrls: [
+                '../hvrbox.css', 
+                '../modal-box.css', 
+                '../media-box.css', 
+                '../quote-box.css',
+                '../question.css'
+            ]
 })
 
 export class AboutComponent implements OnInit {

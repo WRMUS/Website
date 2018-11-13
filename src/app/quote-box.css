@@ -1,0 +1,47 @@
+.quote-box {
+  width: 25%;
+  height: 16vw;
+  margin: 2.5%;
+  border: 0px solid #888;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.quote-box:hover {
+  opacity: 0.8;
+  border: 0px solid ;
+  cursor: pointer;
+}
+
+.quote-box{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.quote-box .title-font{
+   text-shadow: 0px 0px 2px black;
+}
+
+.quote-box{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.quote-box:hover .tagline {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.inside-quote-box {
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}

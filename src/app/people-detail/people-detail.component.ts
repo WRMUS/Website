@@ -17,7 +17,14 @@ import { RolloverService } from '../services/rollover.service';
 @Component({
   selector: 'app-people-detail',
   templateUrl: './people-detail.component.html',
-  styleUrls: ['./people-detail.component.css']
+  styleUrls: [               
+                '../hvrbox.css',                
+                '../media-box.css', 
+                '../modal-box.css',                 
+                '../question.css',
+                '../quote-box.css',
+                '../bio-images.css'
+            ]
 })
 
 export class PeopleDetailComponent implements OnInit {
