@@ -1,6 +1,6 @@
 <main>
  
-    <div class = "navbar-margin" style="padding-bottom:7%" align="center" *ngIf="router.url != '/home' && router.url != '/'">
+    <div class = "navbar-bottom-space" *ngIf="router.url != '/home' && router.url != '/'">
 <!---        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> --->
             <nav class="navbar fixed-top navbar-expand-lg bg-light"> 
         <!---    <div class="container">    --->
@@ -123,22 +123,21 @@
      <!---       </div>  --->
         </nav>
     </div>
-    <div class = "try" align="center">
+    <div align="center">
         <div *ngIf="router.url == '/home' || router.url == '/' || router.url == '/nahome'">
             <div>
                   
                 <div *ngIf="router.url == '/home' || router.url == '/' ">            
-                        <a routerLink="nahome"> <button class="btn" style="border:solid 0px; background:transparent;font-weight:1000;font-size:3em">North America</button></a>
+                        <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
                         <span style="padding-left:50%"></span>
-                        <a routerLink="dehome"> <button class="btn" style="border:solid 0px; background:transparent;font-weight:1000;font-size:3em"
-                                                        >Germany</button></a>                           
+                        <a routerLink="dehome"> <button class="btn btn-homepage">Germany</button></a>                           
                 </div>
-                <div class = "top" style="background-image: url('assets/images/box.png');">
-                    <img src="assets/images/box.png" class="img-responsive" style="width:53%;opacity: 0;">
+                <div class = "backgroung-homepage" style="background-image: url('assets/images/box.png');">
+                    <img src="assets/images/box.png" class="img-responsive">
                 </div>
 	            <div *ngIf="router.url == '/nahome' ">
-                    <p style="background: transparent;font-weight:1000;font-size:3em;">
-                        <font face="bemio">Participatory Research with Transformative Justice Activists</font>
+                    <p class="title-paragraph">
+                        <font face="bemio"> Participatory Research with Transformative Justice Activists </font>
                     </p>
                 </div>
             </div>

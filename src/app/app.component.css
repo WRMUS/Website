@@ -1,9 +1,27 @@
+.img-responsive{
+   width:53%;
+   opacity: 0; 
+}
+
+.title-paragraph{
+    background: transparent;
+    font-weight:1000;
+    font-size:3em;
+}
+
+.btn-homepage{
+    border:solid 0px; 
+    background:transparent;
+    font-weight:1000;
+    font-size:3em;    
+}
+
 .top {
     width: 100%;
     height: 90%;
-    background-size:     cover;                      /* <------ */
+    background-size:     cover;                     
     background-repeat:   no-repeat;
-    background-position: center center;              /* optional, center the image */
+    background-position: center center;             
 }
 
 #ul_top_hypers li {
@@ -129,21 +147,16 @@ li{
 
 @media (min-width: 768px) {
   .navbar-nav > li > a {
-    /* (80px - line-height of 27px) / 2 = 26.5px */
     padding-top: 26.5px;
     padding-bottom: 26.5px;
     line-height: 27px;
   }
 }
-
-
 @media (min-width: 78px) {
     .navbar-margin{
         padding-bottom:15%;
     }
 }
-
-
 @media (max-width: 1230px) { 
     .logo-name { 
         display: none; 

@@ -4,9 +4,16 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './app.component.html',  
+  styleUrls: [ './navbar.css',
+               './navbar-media.css',
+               './homepage.css' 
+             ],   
+  encapsulation: ViewEncapsulation.None 
+  
+/*
   styleUrls: ['./app.component.css'],
-   encapsulation: ViewEncapsulation.None 
+*/
 })
 
 export class AppComponent {

@@ -1,0 +1,25 @@
+.img-responsive{
+   width:53%;
+   opacity: 0; 
+}
+
+.btn-homepage{
+    border:solid 0px; 
+    background:transparent;
+    font-weight:1000;
+    font-size:3em;    
+}
+
+.backgroung-homepage {
+    width: 100%;
+    height: 90%;
+    background-size:     cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;             
+}
+
+.title-paragraph{
+    background: transparent;
+    font-weight:1000;
+    font-size:  3em;
+}
