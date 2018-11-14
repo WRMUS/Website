@@ -107,6 +107,9 @@
   .accardion>.title{
     font-size: 1.4em;
   }
+   .hvrbox .hvrbox-text {      
+    font-size: 13px;
+   }
 }
 
 @media only screen and (max-width: 950px){
@@ -143,6 +146,9 @@
   .accardion>.title{
     font-size: 1.4em;
   }
+  .hvrbox .hvrbox-text {      
+    font-size: 13px;
+   }
 }
 
 @media only screen and (max-width: 900px){
@@ -174,6 +180,9 @@
   .accardion>.title{
     font-size: 1.4em;
   }
+  .hvrbox .hvrbox-text {      
+    font-size: 13px;
+  }
 }
 
 
@@ -191,6 +200,10 @@
     height: 30vw;
     line-height: 30vw;
   }
+    
+  .hvrbox .hvrbox-text {      
+    font-size: 13px;
+   }
 }
 
 @media only screen and (max-width: 750px){
@@ -278,4 +291,5 @@
     height: 45vw;
     line-height: 45vw;
   }
+    
 }
