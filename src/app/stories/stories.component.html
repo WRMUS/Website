@@ -1,24 +1,4 @@
-<main>
-<!---        <div class="row">
-
-                <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 justify-content-end d-flex">
-                        <div style="position:fixed;">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item active">Stories</li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/stories/accountability')">
-                                    Accountability
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/stories/support')">
-                                    Support
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/stories/community')">
-                                    Community
-                                </li>
-                            </ol>
-                            <router-outlet name="sidemenu"></router-outlet>  
-                        </div>
-                </div>
---->            
+<main>           
                 <div class="mx-auto col-xs-11 col-sm-11 col-md-11 col-lg-11">
                     <div class="jumbotron">
                         <h1 *ngIf="router.url.match('/stories/support')">
@@ -55,14 +35,6 @@
                         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                             <div *ngIf="router.url.match('/stories/support$')">
                                 <div class="question-content">
-<!---
-                                    <div class="title title-font title-font-bg">
-                                        Support
-                                        <svg-icon src="/assets/images/nouns/support.svg" [stretch]="true"
-                                        [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}"></svg-icon>
-
-                                    </div>
---->
                                     <div class="question">
                                         <p>
                                             Transformative  justice  imagines  a  community-based  response  to  sexual  and  partner  violence  that  supports  survivor  wellness  and  empowerment.  Rather  than  treating  people  as  victims  in  need  of  external  protection  via  walls  and  weapons,  collective  support  empowers  survivors  to  exercise  their  agency. 
@@ -72,14 +44,6 @@
                             </div>
                             <div *ngIf="router.url.match('/stories/accountability$')">
                                 <div class="question-content">
-<!---
-                                    <div class="title title-font title-font-bg">
-                                        Accountability
-                                        <svg-icon src="/assets/images/nouns/accountability.svg" [stretch]="true"
-                                        [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}"></svg-icon>
-
-                                    </div>                            
---->
                                     <div class="question">
                                         <p>
                                             Transformative  justice  imagines  a  community-based  response  to  sexual  and  partner  violence  that  humanizes,  rather  than  criminalizes,  people  who  cause  harm.  When  possible,  transformative  justice  can  engage  them  in  a  process  to  take  accountability  for  their  actions  –to  repair  existing  harm  and  transform  underlying  conditions  and  behaviors  to  prevent  future  harm.  What  can  those  processes  look  like? 
@@ -89,14 +53,7 @@
                             </div>
                             <div *ngIf="router.url.match('/stories/community$')">
                                 <div class="question-content">
-<!---
-                                    <div class="title title-font title-font-bg">
-                                        Community
-                                        <svg-icon src="/assets/images/nouns/community.svg" [stretch]="true"
-                                        [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}"></svg-icon>
-
-                                    </div>
---->                                    <div class="question">
+                                   <div class="question">
                                         <p>
                                             Transformative  justice  imagines  a  response  to  sexual  and  partner  violence  that  is  community  centered  and  controlled.  What  are  different  ways  to  engage  communities,  rather  than  the  state  or  non-profits,  to  respond  to  violence?
                                         </p>
@@ -104,7 +61,6 @@
                                 </div>
                             </div>                      
                         <router-outlet></router-outlet>
-<!---                    <router-outlet name="test"></router-outlet> --->
                     </div>
                 </div>  
          </div>

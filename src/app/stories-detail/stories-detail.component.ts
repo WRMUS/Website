@@ -17,7 +17,15 @@ import { RolloverService } from '../services/rollover.service';
 @Component({
   selector: 'app-stories-detail',
   templateUrl: './stories-detail.component.html',
-  styleUrls: ['./stories-detail.component.css']
+   styleUrls: [               
+                '../hvrbox.css',                
+                '../media-box.css', 
+                '../modal-box.css',                 
+                '../question.css',
+                '../quote-box.css',
+                '../accardion.css',
+                '../bio-images.css'
+            ]
 })
 export class StoriesDetailComponent implements OnInit {
   

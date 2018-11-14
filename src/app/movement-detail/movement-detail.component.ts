@@ -25,7 +25,9 @@ import { RolloverService } from '../services/rollover.service';
                 '../modal-box.css', 
                 '../question.css',
                 '../quote-box.css',
-                '../accardion.css'
+                '../accardion.css',
+                '../image-frame.css',
+                '../rollover.css'
              ]
   
   

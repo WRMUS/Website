@@ -1,0 +1,23 @@
+
+.rollover {
+  color: #014C8C;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rollover:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #014C8C;
+  text-decoration: none;
+}
+
+/*
+.rollover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+*/

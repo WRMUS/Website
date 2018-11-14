@@ -3,8 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-people',
-  templateUrl: './people.component.html',
-  styleUrls: ['./people.component.css']
+  templateUrl: './people.component.html'
 })
 export class PeopleComponent implements OnInit {
 

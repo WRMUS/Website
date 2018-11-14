@@ -20,6 +20,7 @@ import { GAME_CHANGERS_QUOTES } from '../model/quotes';
   templateUrl: './bio-detail.component.html',
   styleUrls: ['../photo.css',
               '../question.css',
+              '../media-box.css'
              ]
   
   /*

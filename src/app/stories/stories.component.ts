@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-stories',
   templateUrl: './stories.component.html',
-styleUrls: [    '../hvrbox.css',                
+  styleUrls: [  '../hvrbox.css',                
                 '../modal-box.css',                 
                 '../question.css',
                 '../quote-box.css'

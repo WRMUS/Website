@@ -1,0 +1,12 @@
+
+.img-container{
+  text-align: center;
+  position: relative;
+}
+.img-wrapper{
+  display: inline-block;
+}
+
+.img-wrapper p{
+  text-align: right;
+}

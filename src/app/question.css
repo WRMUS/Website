@@ -7,6 +7,10 @@
   margin: 1% 0;
 }
 
+.unitalic {
+  font-style: normal !important;
+}
+
 .question-content > .question {
   font-size: 1.1em;
   line-height: 2.5em;
@@ -28,10 +32,6 @@
   margin: 2.5%;
 }
 
-.question-content > .title-font-bg{
-  font-size: 2.6em;
-}
-
 .question-content > .about-title {
   font-size: 2em;
   font-family: 'Ubuntu', sans-serif;
@@ -44,4 +44,17 @@
   text-shadow: none;
   color: #709a98;
   margin: 1% 0;
+}
+
+.question-content > .title-font-bg{
+  font-size: 2.8em;
+}
+
+.right {    
+    float: right;    
+}
+
+.bio-flex-box{
+  display: -webkit-flex; /* Safari */
+  flex-direction: column;
 }

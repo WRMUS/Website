@@ -4,8 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-stories-side-menu',
-  templateUrl: './stories-side-menu.component.html',
-  styleUrls: ['./stories-side-menu.component.css']
+  templateUrl: './stories-side-menu.component.html'
 })
 export class StoriesSideMenuComponent implements OnInit {
 

@@ -5,9 +5,11 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',  
-  styleUrls: [ './navbar.css',
-               './navbar-media.css',
-               './homepage.css' 
+  styleUrls: [
+               './homepage.css',
+               './breadcrumb.css',
+               './navbar.css',
+               './navbar-media.css'
              ],   
   encapsulation: ViewEncapsulation.None 
   
