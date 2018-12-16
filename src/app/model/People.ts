@@ -18,6 +18,16 @@ export const PEOPLE: Person[] = [
     contrastColor: '#b1aacc',
     fontColor: 'white'
     ,image:'tn_apg-headshot_ori.jpg'
+    },  
+    
+    {
+    id: 99,
+    name: 'Andrea Marcos',
+    shortName: 'APG',
+    color: '#DDDAE9',
+    contrastColor: '#b1aacc',
+    fontColor: 'white',
+    image:'marcos.jpeg'
     },
   {
     id: 2,
@@ -138,7 +148,7 @@ export const PEOPLE: Person[] = [
     shortName: 'N',
     color: '#E6E9D9',
     contrastColor: '#c6cda9',
-    fontColor: 'white',image:'tn_box.jpg'
+    fontColor: 'white',image:'tn_purple.png'
   },
   {
     id: 16,

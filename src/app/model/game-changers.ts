@@ -3,10 +3,7 @@ export const GAME_CHANGERS_SECTION_1 = [
   {
     title: 'Biographies',
     nav: 'Bios',
-    question: 'The following activist-thinkers involved in community accountability & transformative justice work were interviewed for the "What <em>really</em> makes us safe?" project. Click on their bios below. <br> In some places, additional activist-thinkers and organizations who were not directly involved in the project are quoted on this website, in the hopes of giving a fuller picture of the movement.'
-    
-    
-    
+    question: 'The following activist-thinkers involved in community accountability & transformative justice work were interviewed for the "What <em>really</em> makes us safe?" project. Click on their bios below. <br>  <br> In some places, additional activist-thinkers and organizations who were not directly involved in the project are quoted on this website, in the hopes of giving a fuller picture of the movement.'
     ,
     endingText: `Many interviewees have some background in anti-violence work within non-profits and/or self-organized groups. They also hold a range of other roles as community organizers, consultants, academics, and writers. Project participants identified with various communities, particularly queer communities and communities of color, though the project also included a fair number of white anti-racist allies. Most interviewees are from the U.S., with the East and West Coast strongly represented, and two who have worked in Canada, England, and Australia. Most interviews were carried out by Melanie, and several were conducted by comrades from the Transformative Justice Kollektiv Berlin.`,
     quotes: [
@@ -15,7 +12,7 @@ export const GAME_CHANGERS_SECTION_1 = [
         quote: 'is a queer black troublemaker, a black feminist love evangelist, a prayer poet priestess and has a PhD in English, African and African-American Studies, and Women and Gender Studies from Duke University. <a href="http://alexispauline.com/">Alexis</a> has been living in Durham, NC for more than a decade and has been transformed and enriched by holistic organizing to end gendered violence and to replace it with sustaining transformative love. Locally she is a founding member of <a href="https://iambecauseweare.wordpress.com/">UBUNTU</a>, a women of color and survivor-led coalition to end sexual violence.',
         personId: 1,
         photo: 'apg-headshot.jpg'
-      },
+      },            
       {
         tagline: 'Alix Johnson',
         quote: 'is a core member of the <a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a>, working toward building transformative justice responses to child sexual abuse. She also works as a graduate student researcher and instructor at the University of California, Santa Cruz.',
@@ -33,6 +30,12 @@ export const GAME_CHANGERS_SECTION_1 = [
         quote: 'is an adult punk rocker and aspiring long-term soberdog. He loves eating pizza, working to dismantle systematic structures of oppression, and carefree afternoon naps. He is the creator of the blog, fanzine, and book <a href="http://www.colinhagendorf.com/book/">Slice Harvester: A Memoir In Pizza</a>, based on his experience reviewing a plain slice from every pizza parlor in Manhattan. He worked with <a href="https://supportny.org/">Support New York</a> for ten years and currently lives in Austin, Texas with his girlfriend, his cats, and her dog.',
         personId: 2,
         photo: 'wide.jpg'
+      },
+      {
+        tagline: 'Andrea Marcos',
+        quote: 'Andrea Marcos is a printmaker, nerd, tender-hearted trouble-maker, queer, ariesyoungestchild, dedicated to collective liberation and radical imagination',
+        personId: 99,
+        photo: 'marcos.jpeg'
       },
       {
         tagline: 'Ejeris Dixon',
@@ -81,7 +84,7 @@ export const GAME_CHANGERS_SECTION_1 = [
         tagline: 'Norma',
         quote: 'is an activist, organizer, grandmother, and queer cis Filipina. She is a lecturer at the University of Washington School of Social Work and a mental health therapist in private practice. Norma also consults with organizations and groups on collective healing and integration of social justice and racial equity practices and principles towards movement building and progressive change.',
         personId: 15,
-        photo: 'final.jpeg'
+        photo: 'purple.png'
       },
       {
         tagline: 'Qui Alexander & Jenna Peters-Golden',

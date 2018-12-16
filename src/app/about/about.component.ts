@@ -25,7 +25,8 @@ import { Router } from '@angular/router';
                 '../modal-box.css', 
                 '../media-box.css', 
                 '../quote-box.css',
-                '../question.css'
+                '../question.css',
+                './about.component.css'
             ]
 })
 
