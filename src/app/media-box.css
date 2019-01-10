@@ -151,45 +151,13 @@
    }
 }
 
+
+
+
 @media only screen and (max-width: 900px){
-  .question-quote-container{
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-  }
   
   .question-quote-container .quote-box{
-    width: 68%;
-    margin: 1%;
-  }
-  .quote-box,
-  .tagline{
-    height: 28vw;
-    font-size: 2vw;
-  }
-  .initial{
-    height: 30vw;
-    line-height: 30vw;
-  }
-  .header{
-    font-size: 3em;
-  }
-  .question-content>.title{
-    font-size: 1.6em;
-    line-height: 1.2em;
-  }
-  .accardion>.title{
-    font-size: 1.4em;
-  }
-  .hvrbox .hvrbox-text {      
-    font-size: 13px;
-  }
-}
-
-
-@media only screen and (max-width: 800px){
-  
-  .question-quote-container .quote-box{
-    width: 68%;
+    width: 78%;
     margin: 0%;
   }
   .quote-box,
@@ -274,6 +242,7 @@
     height: 45vw;
     line-height: 45vw;
   }
+
 }
 
 @media only screen and (max-width: 550px){
@@ -291,5 +260,27 @@
     height: 45vw;
     line-height: 45vw;
   }
-    
+    .question-content > .title-font-bg{
+  font-size: 1.8em;
+}
+}
+
+@media only screen and (max-width: 400px){
+  
+  .question-quote-container .quote-box{
+    width: 55%;
+    margin: 0%;
+  }
+  .quote-box,
+  .tagline{
+    height: 40vw;
+    font-size: 2vw;
+  }
+  .initial{
+    height: 45vw;
+    line-height: 45vw;
+  }
+    .question-content > .title-font-bg{
+  font-size: 1.8em;
+}
 }

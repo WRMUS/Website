@@ -19,9 +19,10 @@ import { RolloverService } from '../services/rollover.service';
   templateUrl: './people-detail.component.html',
   styleUrls: [               
                 '../hvrbox.css',                
-                '../media-box.css', 
+                
                 '../modal-box.css',                 
                 '../question.css',
+                '../media-box.css', 
                 '../quote-box.css',
                 '../bio-images.css'
             ]

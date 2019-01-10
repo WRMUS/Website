@@ -18,10 +18,10 @@ import { RolloverService } from '../services/rollover.service';
   selector: 'app-stories-detail',
   templateUrl: './stories-detail.component.html',
    styleUrls: [               
-                '../hvrbox.css',                
-                '../media-box.css', 
+                '../hvrbox.css',                                
                 '../modal-box.css',                 
                 '../question.css',
+                '../media-box.css', 
                 '../quote-box.css',
                 '../accardion.css',
                 '../bio-images.css'

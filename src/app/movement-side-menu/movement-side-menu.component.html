@@ -1,36 +1,55 @@
 
         <div class="sidebar-style">
             <div *ngIf="router.url.match('/movement/tj.*')">
-
-                <a class="list-group-item" routerLink="/movement/tj/a" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/a" >                                                    
                     <div class="row" style="align-items: center">
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 vcenter">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
                             <svg-icon src="/assets/images/nouns/definition.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':50}">
+                                      [svgStyle]="{'height.px':50,'width.px':50}">
                             </svg-icon>
                         </div>
-                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-8 vcenter">
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
                             Definitions
                         </div>
                     </div>
-                </a>                
-                <a class="list-group-item" routerLink="/movement/tj/b" >                                                    
+                </a>   
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/tj/a" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                            <svg-icon src="/assets/images/nouns/definition.svg" [stretch]="false"
+                                      [svgStyle]="{'height.px':50,'width.px':50}">
+                            </svg-icon>
+                            Definitions
+                        </div>                        
+                    </div>
+                </a>  
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/b" >                                                    
                     <div class="row" style="align-items: center">
                         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
                             <svg-icon src="/assets/images/nouns/genelogy.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':50}">
+                                      [svgStyle]="{'height.px':50,'width.px':50}">
                             </svg-icon>
                         </div>
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
                             Genealogies
                         </div>
                     </div>
-                </a>   
-                <a class="list-group-item" routerLink="/movement/tj/c" >                                                    
+                </a> 
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/tj/b" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                            <svg-icon src="/assets/images/nouns/genelogy.svg" [stretch]="false"
+                                      [svgStyle]="{'height.px':50,'width.px':50}">
+                            </svg-icon>
+                            Genealogies
+                        </div>                        
+                    </div>
+                </a> 
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/c" >                                                    
                     <div class="row" style="align-items: center">
                         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
                             <svg-icon src="/assets/images/nouns/future.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':50}">
+                                      [svgStyle]="{'height.px':50,'width.px':50}">
                             </svg-icon>
                         </div>
                         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
@@ -38,10 +57,20 @@
                         </div>
                     </div>
                 </a>                 
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/tj/c" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                            <svg-icon src="/assets/images/nouns/future.svg" [stretch]="false"
+                                      [svgStyle]="{'height.px':50,'width.px':50}">
+                            </svg-icon>
+                            Futures
+                        </div>
+                    </div>
+                </a> 
             </div>
             
             <div *ngIf="router.url.match('/movement/principles.*')">                            
-                <a class="list-group-item" routerLink="/movement/principles/a" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a" >             
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/ethos.svg" [stretch]="false"
@@ -53,7 +82,7 @@
                         </div>
                     </div>
                 </a>                
-                <a class="list-group-item" routerLink="/movement/principles/b" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b" >                   
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/pcv.svg" [stretch]="false"
@@ -65,10 +94,10 @@
                         </div>
                     </div>
                 </a>                
-                <a class="list-group-item" routerLink="/movement/principles/c" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c" >                           
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/tough.svg" [stretch]="false"
+                            <svg-icon src="/assets/images/nouns/tough_2.svg" [stretch]="false"
                                       [svgStyle]="{'width.px':25}">
                             </svg-icon>
                         </div>
@@ -77,7 +106,7 @@
                         </div>
                     </div>
                 </a>                                                                                        
-                <a class="list-group-item" routerLink="/movement/principles/d" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d" >                   
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="false"
@@ -89,7 +118,7 @@
                         </div>
                     </div>
                 </a>
-                <a class="list-group-item" routerLink="/movement/principles/e" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e" >                                             
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/rtv.svg" [stretch]="false"
@@ -100,11 +129,63 @@
                             Response to Violence
                         </div>
                     </div>
+                </a>
+                
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/a" >                                           
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/ethos.svg" [stretch]="false"
+                                      [svgStyle]="{'width.px':25}">
+                            </svg-icon>                        
+                            Ethos 
+                        </div>
+                    </div>
+                </a>                
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/b" >                                                
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/pcv.svg" [stretch]="false"
+                                      [svgStyle]="{'width.px':25}">
+                            </svg-icon>                        
+                            People Causing Violence 
+                        </div>
+                    </div>
+                </a>                
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/c" >          
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/tough_2.svg" [stretch]="false"
+                                      [svgStyle]="{'width.px':25}">
+                            </svg-icon>                        
+                            Concept of Responsibility
+                        </div>
+                    </div>
+                </a>                                                                                        
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/d" >                                            
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="false"
+                                      [svgStyle]="{'width.px':25}">
+                            </svg-icon>                        
+                            People Experiencing Violence
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/e" > 
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/rtv.svg" [stretch]="false"
+                                      [svgStyle]="{'width.px':25}">
+                            </svg-icon>                        
+                            Response to Violence
+                        </div>
+                    </div>
                 </a>                
             </div>
             
         </div>
 
-       <div >
-            <a style="color: white;border: none;pointer-events: none;" class="list-group-item" >What challenges have you faced?</a>
+       <div>
+            <a style="color: white;pointer-events:none;border-bottom:none;border-left:none;border-right:none" class="list-group-item" >
+                What challenges have you faced?</a>
         </div>

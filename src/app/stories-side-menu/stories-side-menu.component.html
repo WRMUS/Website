@@ -8,7 +8,7 @@
 --->
    <div class="sidebar-style">
             <div *ngIf="router.url.match('/stories/support.*')">
-                <a class="list-group-item" routerLink="/stories/support/a" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/a" >                                                    
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="false"
@@ -21,7 +21,7 @@
                     </div>
                 </a> 
 
-                <a class="list-group-item" routerLink="/stories/support/b" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/b" >                                                    
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/facilitate.svg" [stretch]="false"
@@ -34,7 +34,7 @@
                     </div>
                 </a> 
                 
-                <a class="list-group-item" routerLink="/stories/support/c" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/c" >                                                    
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/supportchallenges1.svg" [stretch]="false"
@@ -46,14 +46,46 @@
                         </div>
                     </div>
                 </a> 
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/support/a" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="false"
+                                      [svgStyle]="{'width.px':25}">
+                            </svg-icon>
+                            Support Survivors
+                        </div>
+                    </div>
+                </a> 
+
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/support/b" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/facilitate.svg" [stretch]="false"
+                                      [svgStyle]="{'width.px':25}">
+                            </svg-icon>                         
+                            Facilitate a Process
+                        </div>
+                    </div>
+                </a> 
+                
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/support/c" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/supportchallenges1.svg" [stretch]="false"
+                                      [svgStyle]="{'width.px':25}">
+                            </svg-icon>                        
+                            Challenges
+                        </div>
+                    </div>
+                </a> 
 
             </div>
             <div *ngIf="router.url.match('/stories/accountability.*')">
-                <a class="list-group-item" routerLink="/stories/accountability/a" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/a" >                                                    
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/beginning.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
                             </svg-icon>
                         </div>
                         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
@@ -62,11 +94,11 @@
                     </div>
                 </a> 
                 
-                <a class="list-group-item" routerLink="/stories/accountability/b" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/b" >                                                    
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/process.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
                             </svg-icon>
                         </div>
                         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
@@ -74,11 +106,11 @@
                         </div>
                     </div>
                 </a>
-                <a class="list-group-item" routerLink="/stories/accountability/c" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/c" >                                                    
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/end.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
                             </svg-icon>
                         </div>
                         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
@@ -86,14 +118,45 @@
                         </div>
                     </div>
                 </a>                
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/accountability/a" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/beginning.svg" [stretch]="false"
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
+                            </svg-icon>
+                            The Beginning
+                        </div>
+                    </div>
+                </a> 
+                
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/accountability/b" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/process.svg" [stretch]="false"
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
+                            </svg-icon>
+                            The Process
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/accountability/c" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/end.svg" [stretch]="false"
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
+                            </svg-icon>
+                            The End
+                        </div>
+                    </div>
+                </a>                
             </div>
             <div *ngIf="router.url.match('/stories/community.*')">
                 
-                <a class="list-group-item" routerLink="/stories/community/a" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/a" > 
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/communitydefinitions.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
                             </svg-icon>
                         </div>
                         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
@@ -101,11 +164,11 @@
                         </div>
                     </div>
                 </a> 
-                <a class="list-group-item" routerLink="/stories/community/b" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/b" >
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/involvement.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
                             </svg-icon>
                         </div>
                         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
@@ -114,11 +177,11 @@
                     </div>
                 </a>                 
 
-                <a class="list-group-item" routerLink="/stories/community/c" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/c" >      
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/communitychallenges.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
                             </svg-icon>
                         </div>
                         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
@@ -127,14 +190,56 @@
                     </div>
                 </a>
                 
-                <a class="list-group-item" routerLink="/stories/community/d" >                                                    
+                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/d" >     
                     <div class="row" style="align-items: center">
                         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
                             <svg-icon src="/assets/images/nouns/state.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
+                                      [svgStyle]="{'width.px':25,'width.px':25}">
                             </svg-icon>
                         </div>
                         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
+                            State & Beyond 
+                        </div>
+                    </div>
+                </a>
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/community/a" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/communitydefinitions.svg" [stretch]="false"
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
+                            </svg-icon>
+                            Definitions
+                        </div>
+                    </div>
+                </a> 
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/community/b" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/involvement.svg" [stretch]="false"
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
+                            </svg-icon>
+                            Community Involvement
+                        </div>
+                    </div>
+                </a>                 
+
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/community/c" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/communitychallenges.svg" [stretch]="false"
+                                      [svgStyle]="{'height.px':25,'width.px':25}">
+                            </svg-icon>
+                            Challenges
+                        </div>
+                    </div>
+                </a>
+                
+                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/community/d" >                                                    
+                    <div class="row" style="align-items: center">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
+                            <svg-icon src="/assets/images/nouns/state.svg" [stretch]="false"
+                                      [svgStyle]="{'width.px':25,'width.px':25}">
+                            </svg-icon>
                             State & Beyond 
                         </div>
                     </div>
@@ -143,7 +248,8 @@
         </div>
 
        <div >
-            <a style="color: white;border: none;pointer-events: none;" class="list-group-item" >What challenges have you faced?</a>
+            <a style="color: white;pointer-events:none;border-bottom:none;border-left:none;border-right:none" class="list-group-item" >
+                What challenges have you faced?</a>
         </div>
 
 

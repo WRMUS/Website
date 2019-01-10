@@ -21,9 +21,10 @@ import { RolloverService } from '../services/rollover.service';
   styleUrls: [
                 
                 '../hvrbox.css', 
-                '../media-box.css',
+                
                 '../modal-box.css', 
                 '../question.css',
+                '../media-box.css',
                 '../quote-box.css',
                 '../accardion.css',
                 '../image-frame.css',

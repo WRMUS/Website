@@ -1,78 +1,33 @@
-<main>
-<!---         <div class="row">
-               <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3 justify-content-center d-flex">
-                        <div style="position:fixed;">
-
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item active">Collaborators</li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/people/a')">
-                                    Bio
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/people/b')">
-                                    Stories
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/people/c')">
-                                    Organizations
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/people/d')">
-                                    Challenges
-                                </li>
-                            </ol>
-                            <router-outlet name="sidemenu"></router-outlet>
-                          
-                        </div>
-                </div>
---->  
-            <div style="display:flex;justify-content:center">
-                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+<main> 
+        <div style="display:flex;justify-content:center">
+            <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="jumbotron">
                         <h1>Project Collaborators</h1>
                     </div>                
-                    <div class="row">
-<!---
-                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                            <!---
-                            <ol class="breadcrumb">                                
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/people/a')">
-                                    Bios
-                                </li> 
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/bio')">
-                                    Biography
-                                </li>                                 
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/people/b')">
-                                    Histories
-                                </li>                                 
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/people/c')">
-                                    Organisations
-                                </li> 
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/people/d')">
-                                    Challenges
-                                </li>                                 
-                            </ol>
-                            
-                            <router-outlet name="sidemenu"></router-outlet>
-                        </div>
---->                        
-                        
-                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">   
-                    <div *ngIf="router.url.match('/people$')">
-                        <div class="question-content">
-                            <div class="title title-font title-font-bg">
-                                Collaborators
-                                <svg-icon src="/assets/images/nouns/definition.svg" [stretch]="true"
-                                [svgStyle]="{'height.px':100,'padding.px':1,'margin.px':3}">"></svg-icon>
-                                
+                </div>
+                <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                     <div class="row">
+                         <div class="mx-auto col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                            <div *ngIf="router.url.match('/people$')">
+                                <div class="question-content">
+                                    <div class="title title-font title-font-bg">
+                                        Collaborators
+                                            <svg-icon src="/assets/images/nouns/definition.svg" [stretch]="true"
+                                                [svgStyle]="{'height.px':100,'padding.px':1,'margin.px':3}">"></svg-icon>
+                                    </div>
+                                    <div class="question">
+                                        <p>
+                                            I  interviewed  activist-thinkers  involved  in  community  accountability  &  transformative  justice  work  for  the  “What  really  makes  us  safe?”  Project.  These  are  their  stories.  
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="question">
-                                <p>
-                                    I  interviewed  activist-thinkers  involved  in  community  accountability  &  transformative  justice  work  for  the  “What  really  makes  us  safe?”  Project.  These  are  their  stories.  
-                                </p>
-                            </div>
+                            <router-outlet></router-outlet>                   
                         </div>
                     </div>
-                    <router-outlet></router-outlet> 
-                  
-                </div>  
-        </div></div></div>    
+                </div>
+            </div>
+        </div>    
 </main>
 

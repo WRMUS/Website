@@ -58,6 +58,13 @@
   margin: 1% 0;
 }
 
+.question-quote-container-innermost{
+    border-bottom:2px solid #709a98;
+    font-size:1.2em;
+    font-style:italic;
+    font-weight:bold;
+}
+
 .right {    
     float: right;    
 }

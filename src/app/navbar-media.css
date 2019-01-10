@@ -10,8 +10,36 @@
         padding-bottom:15%;
     }
 }
-@media (max-width: 1230px) { 
+@media (max-width: 530px) { 
     .logo-name { 
+        display: none; 
+    } 
+}
+
+@media (max-width: 1250px) { 
+    .desktop-version{    
+        display: none; 
+    } 
+    .social-media{
+        display: none
+    }
+}
+
+@media (min-width: 1250px) { 
+    .mobile-version{    
+        display: none; 
+    } 
+}
+
+
+@media (max-width: 600px) { 
+    .desktop-version-sidemenu{    
+        display: none; 
+    } 
+}
+
+@media (min-width: 600px) { 
+    .mobile-version-sidemenu{    
         display: none; 
     } 
 }

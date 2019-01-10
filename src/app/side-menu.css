@@ -1,0 +1,11 @@
+.side-menu-invisible
+{
+    text-decoration-color: white;
+    pointer-events:none;
+    border-bottom:none;
+    border-left:none;
+    border-right:none;
+    
+    
+    
+}
