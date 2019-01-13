@@ -123,14 +123,13 @@
         <nav class="navbar fixed-top navbar-expand-lg bg-light mobile-version">                
                 <logo style="margin-right:2%; width: 25%">
                     <a href="#">
-                        <img src="assets/images/logo.png" height="60" class="d-inline-block align-center" alt="">                                         
+                        <img src="assets/images/logo.png" height="50" class="d-inline-block align-center" alt="">                                         
                     </a>
                 </logo>
-                <logo style="margin-right:2%; width: 55%;">                                            
-                        <font face="bemio">
-                            <a href="#" style="color:black">What <i>really</i> makes us safe?
-                            </a>
-                        </font>
+                <logo style="margin-right:2%; width: 55%;font-size: 0.9em">                                                                    
+                            <a href="#" style="color:black;font-family:Bemio;">
+                                What <i>really</i> makes us safe?
+                            </a>                        
                 </logo>
                 
                 <button class="navbar-toggler" 
@@ -153,7 +152,7 @@
                                        aria-haspopup="true" 
                                        aria-expanded="true"
                                        href="#">
-                                        Project
+                                       <font color="black">Project</font>
                                     </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -167,8 +166,9 @@
                                    id="navbarDropdownMenuLink" 
                                    data-toggle="dropdown" 
                                    aria-haspopup="true" 
-                                   aria-expanded="false">
-                                    Movement
+                                   aria-expanded="false"
+                                   href="#">
+                                    <font color="black">Movement</font>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" routerLink="movement/tj">Transformative Justice</a>
@@ -180,8 +180,9 @@
                                    id="navbarDropdownMenuLink" 
                                    data-toggle="dropdown" 
                                    aria-haspopup="true" 
-                                   aria-expanded="false">
-                                    Collaborators
+                                   aria-expanded="false"
+                                   href="#">
+                                    <font color="black">Collaborators</font>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                    
@@ -197,8 +198,9 @@
                                    id="navbarDropdownMenuLink" 
                                    data-toggle="dropdown" 
                                    aria-haspopup="true" 
-                                   aria-expanded="false">
-                                    Stories
+                                   aria-expanded="false"
+                                   href="#">
+                                    <font color="black">Stories</font>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" routerLink="stories/support">Support</a>
@@ -257,8 +259,8 @@
                     <img src="assets/images/box.png" class="img-responsive">
                 </div>
 	            <div *ngIf="router.url == '/nahome' ">
-                    <p class="title-paragraph">
-                        <font face="bemio"> Participatory Research with Transformative Justice Activists </font>
+                    <p class="title-paragraph" style= "font-family: Bemio">
+                        Participatory Research with Transformative Justice Activists
                     </p>
                 </div>             
             </div>
@@ -270,8 +272,8 @@
                     <img src="assets/images/box.png" class="img-responsive">
                 </div>
 	            <div *ngIf="router.url == '/nahome' ">
-                    <p class="title-paragraph">
-                        <font face="bemio"> Participatory Research with Transformative Justice Activists </font>
+                    <p class="title-paragraph-mobile" style= "font-family: Bemio">
+                        Participatory Research with Transformative Justice Activists
                     </p>
                 </div>   
                 <div *ngIf="router.url == '/home' || router.url == '/' ">            
