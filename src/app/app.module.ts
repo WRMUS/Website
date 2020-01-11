@@ -67,7 +67,7 @@ import { MatToolbarModule, MatCardModule, MatGridListModule } from '@angular/mat
     HttpModule,
     HttpClientModule, 
     AngularSvgIconModule,
-    NgbModule.forRoot(),
+    NgbModule,
     RouterModule.forRoot(routerConfig)
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
