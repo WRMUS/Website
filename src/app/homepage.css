@@ -4,12 +4,12 @@
 }
 
 .choose-country a .btn-homepage {
-    font-family: Overpass, sans-serif;
+    font-family: 'Overpass', sans-serif;
     font-size: 24px;
     font-weight: 400;
     color: #e26d5c;
     padding: 0 43px;
-    line-height: normal;
+    line-height: 1.5;
     height: auto;
 }
 
