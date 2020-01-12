@@ -222,7 +222,7 @@
             <div class="desktop-version">
                 <div class="choose-country">
                     <div *ngIf="router.url == '/home' || router.url == '/' ">
-                        <h4>Select a region</h4>
+                        <h4 style="font-family: 'Overpass', sans-serif;">Select a region</h4>
                         <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
                         <a href="http://www.whatreallymakesussafe.com/de/"> <button
                                 class="btn btn-homepage">Germany</button></a>
@@ -251,12 +251,9 @@
                     </div>
                     <div *ngIf="router.url == '/home' || router.url == '/' ">
                         <h4>Select a region</h4>
-                        <div>
-                            <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
-                        </div>
-                        <div>
-                            <a routerLink="dehome"> <button class="btn btn-homepage">Germany</button></a>
-                        </div>
+                        <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
+                        <a href="http://www.whatreallymakesussafe.com/de/"> <button
+                                class="btn btn-homepage">Germany</button></a>
                     </div>
                 </div>
             </div>
