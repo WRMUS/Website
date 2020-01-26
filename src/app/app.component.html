@@ -22,20 +22,15 @@
                             <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/about.*'))}}"
                                 id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="true">
-                                Project
+                                About
                             </a>
-
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" routerLink="about">Research</a>
-                                <a class="dropdown-item" routerLink="about/a">Website</a>
-                            </div>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/movement.*'))}}"
                                 id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                Movement
+                                The Movement
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" routerLink="movement/tj">Transformative Justice</a>
@@ -61,7 +56,7 @@
                             <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/stories.*'))}}"
                                 id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                Stories
+                                Interviews
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" routerLink="stories/support">Support</a>
@@ -130,20 +125,15 @@
                             <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/about.*'))}}"
                                 id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="true" href="#">
-                                <font color="black">Project</font>
+                                <font color="black">About</font>
                             </a>
-
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" routerLink="about">Research</a>
-                                <a class="dropdown-item" routerLink="about/a">Website</a>
-                            </div>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/movement.*'))}}"
                                 id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false" href="#">
-                                <font color="black">Movement</font>
+                                <font color="black">The Movement</font>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" routerLink="movement/tj">Transformative Justice</a>
@@ -169,7 +159,7 @@
                             <a class="nav-link dropdown-toggle {{getActiveClass( router.url.match('/stories.*'))}}"
                                 id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false" href="#">
-                                <font color="black">Stories</font>
+                                <font color="black">Interviews</font>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" routerLink="stories/support">Support</a>
@@ -215,8 +205,8 @@
         </nav>
     </div>
 
-    <div *ngIf="router.url == '/home' || router.url == '/' || router.url == '/nahome'">
-        <div class="desktop-version" id="desktop-version">
+    <div *ngIf="router.url == '/home' || router.url == '/' ">
+        <div class="desktop-version">
             <div class="choose-country">
                 <div *ngIf="router.url == '/home' || router.url == '/' ">
                     <h4 style="font-family: 'Overpass', sans-serif;">Select a region</h4>
@@ -224,6 +214,37 @@
                     <a href="http://www.whatreallymakesussafe.com/de/"> <button
                             class="btn btn-homepage">Germany</button></a>
                 </div>
+                <div class="content-wrapper">
+                    <div class="home-content">
+                        <h2>What <i>Really</i> Makes Us Safe?</h2>
+                        <p>Transnational Transformative Justice Project</p>
+                    </div>
+                    <div class="kit-image">
+                        <img src="assets/images/kit.png">
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="content-wrapper">
+                        <span class="copy">©</span>
+                        2019 WRMUS
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-version">
+        <div *ngIf="router.url == '/home' ">
+            <div class="choose-country">
+                <p class="title-paragraph-mobile" style="font-family: Bemio">
+                    Participatory Research with Transformative Justice Activists
+                </p>
+            </div>
+            <div *ngIf="router.url == '/home' || router.url == '/' ">
+                <h4>Select a region</h4>
+                <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
+                <a href="http://www.whatreallymakesussafe.com/de/"> <button
+                        class="btn btn-homepage">Germany</button></a>
             </div>
             <div class="content-wrapper">
                 <div class="home-content">
@@ -239,37 +260,6 @@
                     <span class="copy">©</span>
                     2019 WRMUS
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mobile-version" id="mobile-version">
-        <div class="choose-country">
-            <div *ngIf="router.url == '/nahome' ">
-                <p class="title-paragraph-mobile" style="font-family: Bemio">
-                    Participatory Research with Transformative Justice Activists
-                </p>
-            </div>
-            <div *ngIf="router.url == '/home' || router.url == '/' ">
-                <h4>Select a region</h4>
-                <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
-                <a href="http://www.whatreallymakesussafe.com/de/"> <button
-                        class="btn btn-homepage">Germany</button></a>
-            </div>
-        </div>
-        <div class="content-wrapper">
-            <div class="home-content">
-                <h2>What <i>Really</i> Makes Us Safe?</h2>
-                <p>Transnational Transformative Justice Project</p>
-            </div>
-            <div class="kit-image">
-                <img src="assets/images/kit.png">
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="content-wrapper">
-                <span class="copy">©</span>
-                2019 WRMUS
             </div>
         </div>
     </div>

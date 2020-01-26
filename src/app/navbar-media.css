@@ -43,3 +43,9 @@
         display: none; 
     } 
 }
+
+@media (min-width: 992px) {
+.navbar.navbar-expand-lg .navbar-collapse {
+    display: inline-block!important;
+}
+}
