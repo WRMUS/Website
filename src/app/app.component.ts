@@ -6,8 +6,8 @@ import { Router } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: [
-    './homepage-media.css',
     './homepage.css',
+    './homepage-media.css',
     './breadcrumb.css',
     './navbar.css',
     './navbar-media.css'

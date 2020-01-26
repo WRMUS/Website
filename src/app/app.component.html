@@ -1,5 +1,4 @@
 <main>
-
     <div class="navbar-bottom-space" *ngIf="router.url != '/home' && router.url != '/'">
         <nav class="navbar fixed-top navbar-expand-lg bg-light desktop-version">
             <logo style="margin-right:2%;">
@@ -216,50 +215,65 @@
         </nav>
     </div>
 
-    <div align="center">
-        <div *ngIf="router.url == '/home' || router.url == '/' || router.url == '/nahome'">
-
-            <div class="desktop-version">
-                <div class="choose-country">
-                    <div *ngIf="router.url == '/home' || router.url == '/' ">
-                        <h4 style="font-family: 'Overpass', sans-serif;">Select a region</h4>
-                        <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
-                        <a href="http://www.whatreallymakesussafe.com/de/"> <button
-                                class="btn btn-homepage">Germany</button></a>
-                    </div>
-                    <!-- <div class = "backgroung-homepage" style="background-image: url('assets/images/kit.png');">
-                    <img src="assets/images/kit.png" class="img-responsive">
-                </div> -->
-                    <div *ngIf="router.url == '/nahome' ">
-                        <p class="title-paragraph" style="font-family: Bemio">
-                            Participatory Research with Transformative Justice Activists
-                        </p>
-                    </div>
+    <div *ngIf="router.url == '/home' || router.url == '/' || router.url == '/nahome'">
+        <div class="desktop-version" id="desktop-version">
+            <div class="choose-country">
+                <div *ngIf="router.url == '/home' || router.url == '/' ">
+                    <h4 style="font-family: 'Overpass', sans-serif;">Select a region</h4>
+                    <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
+                    <a href="http://www.whatreallymakesussafe.com/de/"> <button
+                            class="btn btn-homepage">Germany</button></a>
                 </div>
             </div>
-
-
-            <div class="mobile-version">
-                <div class="choose-country">
-                    <!-- <div class = "backgroung-homepage" style="background-image: url('assets/images/kit.png');">
-                    <img src="assets/images/kit.png" class="img-responsive">
-                </div> -->
-                    <div *ngIf="router.url == '/nahome' ">
-                        <p class="title-paragraph-mobile" style="font-family: Bemio">
-                            Participatory Research with Transformative Justice Activists
-                        </p>
-                    </div>
-                    <div *ngIf="router.url == '/home' || router.url == '/' ">
-                        <h4>Select a region</h4>
-                        <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
-                        <a href="http://www.whatreallymakesussafe.com/de/"> <button
-                                class="btn btn-homepage">Germany</button></a>
-                    </div>
+            <div class="content-wrapper">
+                <div class="home-content">
+                    <h2>What <i>Really</i> Makes Us Safe?</h2>
+                    <p>Transnational Transformative Justice Project</p>
+                </div>
+                <div class="kit-image">
+                    <img src="assets/images/kit.png">
                 </div>
             </div>
-
+            <div class="copyright">
+                <div class="content-wrapper">
+                    <span class="copy">©</span>
+                    2019 WRMUS
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="mobile-version" id="mobile-version">
+        <div class="choose-country">
+            <div *ngIf="router.url == '/nahome' ">
+                <p class="title-paragraph-mobile" style="font-family: Bemio">
+                    Participatory Research with Transformative Justice Activists
+                </p>
+            </div>
+            <div *ngIf="router.url == '/home' || router.url == '/' ">
+                <h4>Select a region</h4>
+                <a routerLink="nahome"> <button class="btn btn-homepage"> North America </button></a>
+                <a href="http://www.whatreallymakesussafe.com/de/"> <button
+                        class="btn btn-homepage">Germany</button></a>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="home-content">
+                <h2>What <i>Really</i> Makes Us Safe?</h2>
+                <p>Transnational Transformative Justice Project</p>
+            </div>
+            <div class="kit-image">
+                <img src="assets/images/kit.png">
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="content-wrapper">
+                <span class="copy">©</span>
+                2019 WRMUS
+            </div>
+        </div>
+    </div>
+
     <div *ngIf="router.url != '/home' && router.url != '/'">
         <router-outlet></router-outlet>
     </div>
@@ -283,5 +297,4 @@
             <i class="fa fa-youtube"></i>
         </a>
     </div>
-
 </main>

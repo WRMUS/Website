@@ -2,8 +2,6 @@
  text-decoration: none    
 }
 
-
-
 .fa.fa-navicon {
   color:white;
   justify-content: center;
@@ -177,8 +175,4 @@ li{
     .logo-name { 
         display: none; 
     } 
-
-    .choose-country a .btn-homepage, .choose-country h4 {
-      font-size: 18px;
-    }
 }
