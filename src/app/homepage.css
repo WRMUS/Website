@@ -1,6 +1,24 @@
-.img-responsive{
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    font-family: 'PT serif', serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.img-responsive {
    width:53%;
    opacity: 0; 
+}
+
+.copyright {
+    text-align: center;
 }
 
 .choose-country a .btn-homepage {
@@ -20,7 +38,15 @@
     font-size:3em;    
 }
 
+.desktop-version {
+    position: fixed;
+    bottom: 0em;
+    overflow: auto;
+}
+
 .choose-country h4 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 24px;
     color: #35887f;
     font-weight: 400;
     margin-bottom: 2px;
@@ -34,12 +60,35 @@
     box-shadow: 0 -9px 20px #35887f;
 }
 
-.backgroung-homepage {
+.home-content {
+    position: relative;
+    padding-top: 80px;
+} 
+
+.home-content h2 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 46px;
+    display: inline-block;
+    color: #35887f;
+    border-bottom: 4pt solid #bde4a8;
+}
+
+.home-content p {
+    font-size: 28px;
+    color: #124e78;
+}
+
+.kit-image img {
     width: 100%;
-    height: 90%;
-    background-size:     cover;                     
-    background-repeat:   no-repeat;
-    background-position: center center;             
+    height: auto;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1210px;
+    padding: 0 20px;
+    margin: 0 auto;
+    float: none;
 }
 
 .title-paragraph{
