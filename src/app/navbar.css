@@ -1,10 +1,53 @@
+.navbar logo a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px;
+}
+
+.dropdown {
+  padding-right: 1em;
+}
+
+.navbar a#navbarDropdownMenuLink {
+  padding-right: 1.5em;
+  font-size: 24px;
+  color: #35887f;
+  cursor: pointer;
+}
+
+.navbar-toggle {
+  padding-right: 2.5em;
+}
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.d-inline-block {
+  display: inline-block!important;
+}
+
 .navbar {    
   min-height: 160px;
-  font-size:  1.5em;  
-  border-color:transparent;
-  background-image:none;
-  box-shadow:none;
-  border-bottom:2px solid #000;
+    font-size: 1.5em;
+    background: #fff;
+    border-bottom: 2px solid #35887f;
+    box-shadow: 0 -9px 20px #35887f;
+    padding: 0 5%;
 }
 
 .navbar-end {    
@@ -18,9 +61,23 @@
 
 .navbar-brand {
   padding: 0 15px;
-  height: 80px;
-  line-height: 80px;
+    height: auto;
+    line-height: 1.25;
+    font-size: 22px;
+    position: relative;
+    top: 4px;
 }
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
 .navbar-brand-end {
    padding: 0 5px;
   height: 80px;
@@ -34,17 +91,15 @@
 }
 
 .navbar-toggler {
-  
+  color: black;
 }
 
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,102,203);
 }
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='5' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
 
 .navbar-bottom-space{
+  font-family: 'Overpass', sans-serif;
     padding-bottom: 160px;
 }
 
@@ -57,6 +112,13 @@ li{
   margin-left:0;
   margin-right:1%;
   color: black
+}
+
+.navbar a#navbarDropdownMenuLink {
+  padding: 0;
+  font-size: 24px;
+  color: #35887f;
+  cursor: pointer;
 }
 
 .dropdown-menu::before, 
