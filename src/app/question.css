@@ -2,10 +2,10 @@
   /*margin: 0 1.25%;*/
 }
 
-.question-content > .title {
+/* .question-content > .title {
   font-size: 2em;
   margin: 1% 0;
-}
+} */
 
 .unitalic {
   font-style: normal !important;
@@ -29,21 +29,22 @@
 .question-content > .question {
   font-size: 1.1em;
   line-height: 2em;
-  margin: 2.5%;
+  margin: 0%;
 }
 
-.question-content > .about-title {
+/* .question-content > .about-title {
   font-size: 2em;
   font-family: 'Ubuntu', sans-serif;
   margin: 1% 0;
-}
+} */
 
 .question-content > .title {
   font-size: 2em;
   font-style: italic;
+  font-weight: 900;
   text-shadow: none;
   color: #709a98;
-  margin: 1% 0;
+  margin: 0% 0;
 }
 
 .question-content > .title-font-bg{
