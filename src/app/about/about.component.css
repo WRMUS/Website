@@ -17,7 +17,8 @@ li {
     margin-bottom: 21px;
 }
 
-.question-content #Beginnings {
+.question-content #Beginnings, .question-content #PAR, .question-content #Who,
+ .question-content #What, .question-content #About, .question-content #Attributions {
     font-size: 30px;
     font-style: normal;
     color: #35887f;
@@ -31,7 +32,7 @@ li {
 .question-content .question {
     margin-bottom: 25px;
     color: #124e78;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .question-content a {
@@ -39,14 +40,41 @@ li {
 }
 
 .question-content p {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 25px;
     line-height: 1.5;
     font-family: 'Overpass', sans-serif;
 }
 
-.question-content .container {
-    flex-direction: column;
+.question-content .about-box {
+    border: #35887f;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.question-content .attributions-box {
+    background-color: #e8f9f2;
+}
+
+.about-box p {
+    font-family: 'PT serif', serif;
+    font-size: 20px;
+}
+
+.attributions-box p {
+    font-size: 20px;
+}
+
+.attributions-header p {
+    color: #124E78;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.attributions-content p {
+    font-family: 'PT serif', serif;
+    font-size: 20px;
 }
 
   
