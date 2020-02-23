@@ -5,17 +5,35 @@
                     <div class="row">            
                         <div class="mx-auto col-xs-12 col-sm-12 col-md-10 col-lg-10">
                             <div *ngIf="router.url.match('/about$')"> 
+                              <div class="container">
+                              
                                 <div class="question-content">
                                     <div class="title title-font title-font-bg" style="display: block;">
                                         About The "What <i>Really</i> Makes Us Safe?" Project                                           
                                     </div> 
-                                    <div id="Beginnings" class="title" style="font-weight: 900;">Research Process</div>
+                                    <div id="Beginnings" class="title" style="font-weight: 700;">Research Process</div>
+                                    <div class="row">
+                                      <div class="col-lg-6 order-lg-2">
+                                        <img src="assets/images/research-process.png" style="width: 100%;">
+                                      </div>
+                                      <div class="col-lg-6 order-lg-1">
                                     <div class="question">
-                                        The “What <i>really</i> makes us safe?” research project began as an informal exchange between organizers working on community accountability and transformative justice responses to sexual violence. As the <a (click)="showBio(0, content)" style="cursor:pointer;color: #709a98" > initiator</a> of the project, I want to discuss how it evolved. 
+                                        The “What <i>Really</i> Makes Us Safe?” Project began as an informal exchange between transformative justice practitioners responding to sexual and partner violence. Over the years, it grew into an interview project that became academic research, the results of which are presented here on this website as a movement resource and archive. As <a (click)="showBio(0, content)" style="cursor:pointer;" > initiator</a> of the project, I also brought back its lessons to my home context in Berlin, Germany, resulting in <a href="http://whatreallymakesussafe.com/en">public events and a toolkit</a>. 
 
-                                        Our fledgling <a href="https://www.transformativejustice.eu/en/" target='_blank'>transformative justice collective in Berlin, Germany</a> was influenced by transformative justice thought and organizing in the U.S. but geographically far from the ‘mothership’. Dialoguing with those who had created and propelled this work became a mode of both giving and taking account of one another. 
+                                        <!-- Our fledgling <a href="https://www.transformativejustice.eu/en/" target='_blank'>transformative justice collective in Berlin, Germany</a> was influenced by transformative justice thought and organizing in the U.S. but geographically far from the ‘mothership’. Dialoguing with those who had created and propelled this work became a mode of both giving and taking account of one another.  -->
                                     </div>
-                                  </div>
+                                      <p>
+                                        I want to narrate a bit of the project’s evolution. Our fledgling <a href="https://www.transformativejustice.eu/en/" target='_blank'>transformative justice collective </a> in Berlin was inspired by organizing in the U.S. but geographically far from the mothership. We often turned to U.S.-based activists for guidance, sharing our surprises and struggles. Dialoguing with those who had helped create this movement became a way to both give and take account of one another.
+                                      </p>
+                                      <p>
+                                        That informal exchange expanded into a participatory research project in 2013 as the foundations of my Master’s thesis. The research explored the theoretical underpinnings of community accountability and transformative justice, like: What does it mean to be accountable, actually? And who, or what, is a community?
+                                      </p>
+                                    </div>
+                              </div>
+                              </div>
+                                </div>
+                            </div>
+                                
                                   <div class="question-content">
                                     <div id="Participatory Action Research" class="title">Participatory Action Research</div>
                                     <div class="question">
@@ -88,7 +106,7 @@
                             <router-outlet></router-outlet> 
                         </div>             
                     </div>               
-            </div>
+            
         </div>
     </div>
 </main>
