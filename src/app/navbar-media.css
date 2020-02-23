@@ -16,13 +16,20 @@
     } 
 }
 
+@media (max-width: 1250px) { 
+    .desktop-version{    
+        display: none; 
+    } 
+    .social-media{
+        display: none
+    }
+}
 
-
-/* @media (min-width: 1251px) { 
+@media (min-width: 1251px) { 
     .mobile-version{    
         display: none; 
     } 
-} */
+}
 
 
 @media (max-width: 600px) { 
@@ -54,7 +61,6 @@
 .navbar .nav-menu {
     white-space: nowrap;
     display: inline-block;
-    overflow: hidden;
     padding-left: 2em;
     margin-right: 8%;
     vertical-align: middle;

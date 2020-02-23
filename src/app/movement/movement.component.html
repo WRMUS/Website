@@ -1,36 +1,13 @@
 <main>
     <div style="display:flex;justify-content:center">
         <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
                 <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="jumbotron">
-                        <h1 *ngIf="router.url.match('/movement/tj')">
-                            Movement for Community Accountability & Transformative Justice
-                        </h1> 
-                        <h1 *ngIf="router.url.match('/movement/principles')">
-                            Movement for Community Accountability & Transformative Justice
-                        </h1> 
-                    </div>
-                </div>
-                <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="row">
-                        <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
-                            <ol class="breadcrumb">                                
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/movement/tj')">
-                                    Transformative Justice
-                                    <svg-icon src="/assets/images/nouns/tj.svg" [stretch]="true"
-                                                [svgStyle]="{'height.px':50,'width.px':50,'padding.px':1,'margin.px':3}">"></svg-icon>
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/movement/principles')">
-                                    Principles
-                                 <svg-icon src="/assets/images/nouns/principles.svg" [stretch]="true"
-                                                [svgStyle]="{'height.px':50,'width.px':50,'padding.px':1,'margin.px':3}"></svg-icon>
-                                </li>
-                            </ol>
+                    <div class="row" style="padding-top: 75px;">    
                             <router-outlet name="sidemenu"></router-outlet>
-                        </div>
+                        
                     <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
                                 <div *ngIf="router.url.match('/movement/tj$')">
-                                    <div class="question-content">
 <!---                                        
                                         <div class="title title-font title-font-bg">
                                             Transformative Justice
@@ -39,12 +16,11 @@
 
                                         </div> 
                                         --->
-                                        <div class="question">
-                                            <p>
-                                                “Transformative  justice”  and  “community  accountability”–  what  do  these  words  mean?  What  are  their  social  movement  roots  and  what  visions  of  the  future  do  they  point  towards? 
-                                            </p>
-                                        </div>
-                                    </div>                        
+                                        <div class="tj-content" style="padding-top: 70px;">
+
+                                              Transformative justice imagines <b>a community-based response to sexual and partner violence</b> that humanizes, rather than criminalizes, people who cause harm. When possible, transformative justice can engage them in a process to take accountability for their actions –to repair existing harm and transform underlying conditions and behaviors to prevent future harm. What can those processes look like? 
+
+                                        </div>                    
                                 </div>
                             <div *ngIf="router.url.match('/movement/principles$')">
                                 <div class="question-blocks">

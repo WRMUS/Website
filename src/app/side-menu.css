@@ -5,7 +5,46 @@
     border-bottom:none;
     border-left:none;
     border-right:none;
-    
-    
-    
+
 }
+
+.sidebar-style .list-group-item .icon-image {
+    vertical-align: middle;
+
+    max-width: 63px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    left: 35px;
+}
+
+.sidebar-style .list-group-item .icon-image img {
+    max-width: 50%;
+}
+
+.question-content .title {
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: none;
+    color: #e26d5c;
+    margin-bottom: 21px;
+  }
+
+  .side-title {
+      font-size: 20px;
+      color: black;
+  }
+
+  .sidebar-style {
+      margin-right: 36.525px;
+  }
+
+ .active {
+    background-color: #bde48e !important;
+    color: black;   
+    opacity: 100;
+}
+  

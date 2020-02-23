@@ -1,5 +1,16 @@
+li {
+  display: list-item;
+}
+
 .breadcrumb{
  font-size: 20px;
+}
+
+.tj-content {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-family: 'Overpass', sans-serif !important;
 }
 
 .header {

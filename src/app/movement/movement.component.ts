@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
   
   styleUrls: ['../question.css',
               '../chart.css',
-              '../video-frame.css'
+              '../video-frame.css',
+              './movement.component.css'
              ]
   
    /* styleUrls: ['./movement.component.css']*/
