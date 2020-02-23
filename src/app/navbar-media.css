@@ -16,14 +16,7 @@
     } 
 }
 
-@media (max-width: 1250px) { 
-    .desktop-version{    
-        display: none; 
-    } 
-    .social-media{
-        display: none
-    }
-}
+
 
 /* @media (min-width: 1251px) { 
     .mobile-version{    

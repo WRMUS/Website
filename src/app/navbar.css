@@ -118,6 +118,14 @@ li{
   cursor: pointer;
 }
 
+.navbar a#navbarDropdownMenuLink > .open {
+  color: red;
+}
+
+.navbar-nav .dropdown-toggle::after {
+  color: red;
+}
+
 .dropdown-menu::before, 
 .dropdown-menu::after {
     border: none !important;
@@ -138,9 +146,7 @@ li{
 }
 
 .active{
-    opacity: 0.5;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;     
+    opacity: 0.5;   
 }
 
 .dropdown-toggle::after {
@@ -151,5 +157,4 @@ li{
 .dropdown
 {
  text-align: center;   
-    
 }
