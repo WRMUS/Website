@@ -145,6 +145,33 @@ p {
          url('/assets/fonts/overpass-v4-latin-italic.svg#Overpass') format('svg'); /* Legacy iOS */
   }
 
+  /* PT Serif-regular - latin */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/pt-serif-regular.eot'); /* IE9 Compat Modes */
+    src: local('PT Serif Regular'), local('PT-Serif-Regular'),
+         url('/assets/fonts/pt-serif-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/fonts/pt-serif-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/fonts/pt-serif-regular.woff') format('woff'), /* Modern Browsers */
+         url('/assets/fonts/pt-serif-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/assets/fonts/pt-serif-regular.svg#PT-Serif') format('svg'); /* Legacy iOS */
+  }
+  /* overpass-italic - latin */
+  @font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/assets/fonts/pt-serif-italic.eot'); /* IE9 Compat Modes */
+    src: local('Overpass Italic'), local('Overpass-Italic'),
+         url('/assets/fonts/pt-serif-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/fonts/pt-serif-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/fonts/pt-serif-italic.woff') format('woff'), /* Modern Browsers */
+         url('/assets/fonts/pt-serif-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/assets/fonts/pt-serif-italic.svg#PT-Serif') format('svg'); /* Legacy iOS */
+  }
+
   /* overpass-extra-bold - latin */
   /* @font-face { */
     /* font-family: 'Overpass'; */

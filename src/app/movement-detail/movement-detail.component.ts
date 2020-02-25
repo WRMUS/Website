@@ -28,7 +28,8 @@ import { RolloverService } from '../services/rollover.service';
                 '../quote-box.css',
                 '../accardion.css',
                 '../image-frame.css',
-                '../rollover.css'
+                '../rollover.css',
+                './movement-detail.component.css'
              ]
   
   
