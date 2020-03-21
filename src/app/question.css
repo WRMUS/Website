@@ -42,10 +42,8 @@
 }
 
 .question-quote-container-innermost{
-    border-bottom:2px solid #709a98;
-    font-size:1.2em;
-    font-style:italic;
-    font-weight:bold;
+    font-size:20px;
+    padding-right: 12px;
 }
 
 .right {    

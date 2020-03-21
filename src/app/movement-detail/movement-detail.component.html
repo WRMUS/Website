@@ -56,18 +56,13 @@
       </div>
     </div>
 <div class="question-content" id="Def" *ngIf="router.url == '/movement/tj/b'">     
-          <div class="title title-font title-font-bg">            
-              Genealogies
-<!---              <svg-icon src="/assets/images/nouns/genelogy.svg" [stretch]="true"
-                                [svgStyle]="{'height.px':100,'width.px':70,'padding.px':1,'margin.px':3}">"></svg-icon>
---->              
-          </div>
-      <div class="question">
-         <a>
+      <div class="question" style="padding-bottom: 24px;">
+        <div class="quote-content">
+         <div class="quotation">
              “So before all of our meetings as the BATJC [Bay Area Transformative Justice Collective] we do a collective grounding […] and light candles. So we light one candle for the people who came before us, and one candle for the people who are with us now, and one candle for the next generation or the people who are yet to come.” 
-          </a>
+         </div>
           <a class="right"> -Alix Johnson </a>
-        
+        </div>
         <br> 
         <br>
         <br>
@@ -81,7 +76,7 @@
               <div class="title title-font unitalic">
                 From Prison Abolition to Community Accountability
               </div>
-              <div class="question">
+              <div class="question" style="padding: 50px;">
                 One key strand of the community accountability & transformative justice genealogy is the prison abolition movement. In the late 1990s, after decades of drastic increases in incarceration, particularly of Black and Latinx people, activists turned from prison reform to more visionary approaches. Drawing on the legacy of abolitionists who fought to end slavery, groups like <a href="http://criticalresistance.org/" target="_blank">Critical Resistance</a> called for an abolition of prisons. By <span class="rollover" (click)="openRollover(rollover, 75)">humanizing incarcerated persons</span> and refusing to see them as disposable, abolitionists argued that <span class="rollover" (click)="openRollover(rollover, 76)">people who cause harm need more networks of support</span> rather than being torn away from their communities. Their analysis of the <a href="http://criticalresistance.org/about/not-so-common-language/" target="_blank">prison industrial complex</a> explained how prisons and carceral logics had infiltrated our institutions and everyday lives.
                 <br>
                 <br>
@@ -95,7 +90,7 @@
       <div class="title title-font unitalic">
         From Non-Profits to Community Organizing
       </div>
-      <div class="question">
+      <div class="question" style="padding: 50px;">
         Critiques from within the anti-violence movement were another major strand that contributed to community accountability-transformative justice visions. Since the 1970s, the women’s movement has increasingly been institutionalized within what INCITE! has called a <a href="http://www.incite-national.org/page/beyond-non-profit-industrial-complex" target="_blank">non-profit industrial complex</a>, where <span class="rollover" (click)="openRollover(rollover, 79)">funding</span> from both private and State sources has influenced organizations’ political agendas. Particularly women of color and other marginalized folks have criticized non-profits for <span class="rollover" (click)="openRollover(rollover, 81)">channeling energy for radical social change into social services</span>. Such services for survivors of sexual or partner violence can often only offer <span class="rollover" (click)="openRollover(rollover, 82)">limited, individualized, and carceral options</span> like therapy or restraining orders. While these options were <span class="rollover" (click)="openRollover(rollover, 83)">unsatisfying even to some of the privilege women who could access them, for many marginalized women they were irrelevant</span>, leading to negative outcomes for themselves or others in their communities, like arrest, deportation, commitment to psychiatric facilities, or increased surveillance in their neighborhood.
         <br>
         <br>
@@ -109,7 +104,7 @@
             <div class="title title-font unitalic">
                 From Restorative to Transformative Justice
             </div>
-            <div class="question">
+            <div class="question" style="padding: 50px;">
                 Abolitionists and anti-violence activists sought alternatives to carceral ways of dealing with violence in the justice practices of indigenous communities in North America and Australasia, as well as African philosophies of ubuntu that emphasize interconnection as the basis for justice practices.  These have been popularized in non-indigenous communities as restorative justice. Through methods of mediation and community circles, everyone closely connected to a harm is seen as a stakeholder who participates together in repairing harm and formulating solutions.
                 <br>
                 <br>
@@ -122,11 +117,7 @@
 </div>
 
  <div *ngIf="router.url == '/movement/tj/c'" >
-    <div class="question-content" id="Futures">
-      <div class="title title-font title-font-bg">
-        Futures         
-      </div>
-    </div>
+  <div style="padding-top: 100px;">
     <div *ngFor="let question of futureSection" >
          <div class="question-content accardion-v2">
             <div class="title title-font">
@@ -136,13 +127,13 @@
                 <p [innerHTML]="question.question"></p>
             </div>
          </div>             
-         <div class="question-quote-container" style="padding-left:4%">
-                <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="10px" (window:resize)="onResize($event)">
+         <div class="question-quote-container" style="padding:4%; border: .5px solid black;">
+                <mat-grid-list [cols]="nbCols" [rowHeight]="115" gutterSize="10px" (window:resize)="onResize($event)">
                     <div *ngFor="let quote of question.quotes"                 
                      (click)="openQuoteModal(content, quote)">                
                         <mat-grid-tile>                        
                                 <div style="display:flex;width:40%;justify-content:flex-start;padding-right:10px">
-                                    <div class="hvrbox">
+                                    <div class="hvrbox" style="height: 100%;">
                                         <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
                                         <div class="hvrbox-layer_top">
                                             <div class="hvrbox-text">
@@ -155,12 +146,14 @@
                                     <div class="question-quote-container-innermost" >
                                         {{ quote.tagline }}                      
                                     </div>
-                                </div>                        
+                                </div>     
+                                <img src="assets/images/expand.png" style="padding-right: 12px;">                   
                         </mat-grid-tile>               
                 </div>
             </mat-grid-list>
          </div>
-    </div>          
+    </div>  
+  </div>        
 </div>
 
 <div *ngIf="router.url == '/movement/principles/a'">

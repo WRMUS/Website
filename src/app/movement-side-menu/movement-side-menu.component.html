@@ -1,4 +1,6 @@
+
 <div class="container" style="padding:0px">
+    <div *ngIf="router.url == '/movement/tj'">
     <div class="row">
         <div class="col-12">
             <div class="question-content">
@@ -8,6 +10,19 @@
             </div>
         </div>
     </div>
+</div>
+
+<div *ngIf="router.url == '/movement/principles'">
+    <div class="row">
+        <div class="col-12">
+            <div class="question-content">
+                <div class="title title-font title-font-bg" style="display: block;">
+                    Principles
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="sidebar-style">
         <div *ngIf="router.url == '/movement/tj'">
