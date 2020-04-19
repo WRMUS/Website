@@ -1,31 +1,31 @@
-
 <div class="container" style="padding:0px">
-    <div *ngIf="router.url == '/movement/tj'">
-    <div class="row">
-        <div class="col-12">
-            <div class="question-content">
-                <div class="title title-font title-font-bg" style="display: block;">
-                    Transformative Justice
+    <div *ngIf="router.url.includes('movement/tj')">
+        <div class="row">
+            <div class="col-12">
+                <div class="question-content">
+                    <div class="title title-font title-font-bg" style="display: block;">
+                        Transformative Justice
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div *ngIf="router.url == '/movement/principles'">
-    <div class="row">
-        <div class="col-12">
-            <div class="question-content">
-                <div class="title title-font title-font-bg" style="display: block;">
-                    Principles
+    <div *ngIf="router.url.includes('/movement/principles')">
+        <div class="row">
+            <div class="col-12">
+                <div class="question-content">
+                    <div class="title title-font title-font-bg" style="display: block;">
+                        Principles
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <div class="sidebar-style">
         <div *ngIf="router.url == '/movement/tj'">
+            
             <div class="row">
                 <div class="col-12">
                     <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/tj">
@@ -45,7 +45,6 @@
                     <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/a">
                         <div class="row" style="align-items: center">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                                 <div class="icon-image">
                                     <img src="assets/images/tj-definition.png">
                                 </div>
@@ -60,7 +59,6 @@
                     <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/b">
                         <div class="row" style="align-items: center">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                                 <div class="icon-image">
                                     <img src="assets/images/tj-origins.png">
                                 </div>
@@ -75,7 +73,6 @@
                     <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/c">
                         <div class="row" style="align-items: center">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                                 <div class="icon-image">
                                     <img src="assets/images/tj-futures.png">
                                 </div>
@@ -110,7 +107,6 @@
                     <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/tj/a">
                         <div class="row" style="align-items: center">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                                 <div class="icon-image">
                                     <img src="assets/images/tj-definition.png">
                                 </div>
@@ -125,7 +121,6 @@
                     <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/b">
                         <div class="row" style="align-items: center">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                                 <div class="icon-image">
                                     <img src="assets/images/tj-origins.png">
                                 </div>
@@ -140,7 +135,6 @@
                     <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/c">
                         <div class="row" style="align-items: center">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                                 <div class="icon-image">
                                     <img src="assets/images/tj-futures.png">
                                 </div>
@@ -175,7 +169,6 @@
                     <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/a">
                         <div class="row" style="align-items: center">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                                 <div class="icon-image">
                                     <img src="assets/images/tj-definition.png">
                                 </div>
@@ -190,7 +183,6 @@
                     <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/tj/b">
                         <div class="row" style="align-items: center">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                                 <div class="icon-image">
                                     <img src="assets/images/tj-origins.png">
                                 </div>
@@ -205,7 +197,6 @@
                     <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/c">
                         <div class="row" style="align-items: center">
                             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                                 <div class="icon-image">
                                     <img src="assets/images/tj-futures.png">
                                 </div>
@@ -238,7 +229,6 @@
             <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/a">
                 <div class="row" style="align-items: center">
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                         <div class="icon-image">
                             <img src="assets/images/tj-definition.png">
                         </div>
@@ -253,7 +243,6 @@
             <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/tj/b">
                 <div class="row" style="align-items: center">
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                         <div class="icon-image">
                             <img src="assets/images/tj-origins.png">
                         </div>
@@ -268,7 +257,6 @@
             <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/tj/c">
                 <div class="row" style="align-items: center">
                     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
-
                         <div class="icon-image">
                             <img src="assets/images/tj-futures.png">
                         </div>
@@ -282,113 +270,550 @@
             </a>
         </div>
 
-        <div *ngIf="router.url.match('/movement/principles.*')">
-            <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/ethos.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                    </div>
-                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                        Ethos
-                    </div>
+        <div *ngIf="router.url == '/movement/principles'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/pcv.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                    </div>
-                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                        People Causing Violence
-                    </div>
-                </div>
-            </a>
-            <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/tough_2.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                    </div>
-                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                        Concept of Responsibility
-                    </div>
-                </div>
-            </a>
-            <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                    </div>
-                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                        People Experiencing Violence
-                    </div>
-                </div>
-            </a>
-            <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/rtv.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                    </div>
-                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                        Response to Violence
-                    </div>
-                </div>
-            </a>
-
-            <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/a">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/ethos.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                        Ethos
-                    </div>
-                </div>
-            </a>
-            <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/b">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/pcv.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                        People Causing Violence
-                    </div>
-                </div>
-            </a>
-            <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/c">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/tough_2.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                        Concept of Responsibility
-                    </div>
-                </div>
-            </a>
-            <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/d">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                        People Experiencing Violence
-                    </div>
-                </div>
-            </a>
-            <a class="list-group-item mobile-version-sidemenu" routerLink="/movement/principles/e">
-                <div class="row" style="align-items: center">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                        <svg-icon src="/assets/images/nouns/rtv.svg" [stretch]="false" [svgStyle]="{'width.px':25}">
-                        </svg-icon>
-                        Response to Violence
-                    </div>
-                </div>
-            </a>
+            </div>
         </div>
-
+        <div *ngIf="router.url.match('/movement/principles/a')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url.match('/movement/principles/b')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url.match('/movement/principles/c')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url.match('/movement/principles/d')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url.match('/movement/principles/e')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-    <!-- <div>
+<!-- <div>
         <a style="color: white;pointer-events:none;border-bottom:none;border-left:none;border-right:none"
             class="list-group-item">
             What challenges have you faced?</a>
