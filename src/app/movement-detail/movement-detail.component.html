@@ -219,11 +219,8 @@
         <div class="title title-font">
           {{ question.title }}
         </div>
-        <div class="question">
-          <p [innerHTML]="question.question"></p>
-        </div>
       </div>
-      <div class="question-quote-container" style="padding:4%; border: .5px solid black;">
+      <div class="question-quote-container" style="padding:4%; border: .5px solid black; margin-bottom: 12px; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
         <mat-grid-list [cols]="nbCols" [rowHeight]="115" gutterSize="10px" (window:resize)="onResize($event)">
           <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
             <mat-grid-tile>
@@ -254,22 +251,16 @@
 </div>
 
 <div *ngIf="router.url == '/movement/principles/a'">
-  <div class="question-content" id="IndividualCollective">
+  <div class="question-content" id="IndividualCollective" style="padding-top: 100px;">
     <div class="title title-font title-font-bg">
       Ethos
-      <!---            <svg-icon src="/assets/images/nouns/ethos.svg" [stretch]="true" 
-                      [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
-            </svg-icon>
---->
-    </div>
-    <div class="question">
     </div>
   </div>
   <div class="question-content accardion" id="Carceral Approach: Individual Response">
     <div class="title title-font unitalic ">
       carceral : individual response
     </div>
-    <div class="question">
+    <div class="question" style="padding: 50px">
       Sexual violence is often pathologized in mainstream society as an individual problem caused by a few <span
         class="rollover" (click)="openRollover(rollover, 1)">‘ bad apples’</span>. The larger structures of oppression
       that teach <span class="rollover" (click)="openRollover(rollover, 2)">violence as an instrument for asserting
@@ -290,7 +281,7 @@
     <div class="title title-font unitalic">
       transformative : collective response
     </div>
-    <div class="question">
+    <div class="question" style="padding: 50px;">
       Transformative approaches see individual acts of violence <span class="rollover"
         (click)="openRollover(rollover, 5)">as rooted in and reflections of structures of oppression</span> we all
       participate in: <span class="rollover" (click)="openRollover(rollover, 8)">“it’ s all of us, and some of us [...]
@@ -313,22 +304,16 @@
 </div>
 
 <div class="question-content" id="Definitions" *ngIf="router.url == '/movement/principles/b'">
-  <div class="question-content" id="CriminalHuman">
+  <div class="question-content" id="CriminalHuman" style="padding-top: 100px;">
     <div class="title title-font title-font-bg">
       People Causing Violence
-      <!---                      <svg-icon src="/assets/images/nouns/pcv.svg" [stretch]="true"
-                                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
-              </svg-icon>
---->
-    </div>
-    <div class="question">
     </div>
   </div>
   <div class="question-content accardion" id="Carceral Approach: Criminalization">
     <div class="title title-font unitalic">
       carceral : criminalization
     </div>
-    <div class="question">
+    <div class="question" style="padding: 50px;">
       When sexual violence is seen as the immoral actions of a few evil monsters, the common response is to cast those
       who cause harm out of society. But this view leaves us in a bind when violence happens among our friends and
       family, as we are left with the choice to either <span class="rollover"
@@ -357,7 +342,7 @@
     <div class="title title-font unitalic">
       transformative : humanization
     </div>
-    <div class="question">
+    <div class="question" style="padding: 50px;">
       In the face of these moral economies of good & bad guy, victim & perpetrator, a transformative approach offers a
       different principle that unites us and makes us human: <span class="rollover"
         (click)="openRollover(rollover, 20)">everyone both experiences and causes harm</span> (both interpersonal
@@ -400,23 +385,16 @@
 </div>
 
 <div class="question-content" id="Definitions" *ngIf="router.url == '/movement/principles/c'">
-  <div class="question-content" id="BlameAccountability">
+  <div class="question-content" id="BlameAccountability" style="padding-top: 100px;">
     <div class="title title-font title-font-bg">
       Concept of Responsibility
-      <!---              
-          <svg-icon src="/assets/images/nouns/tough.svg" [stretch]="true"
-                                [svgStyle]="{'height.px':100,'padding.px':1,'margin.px':3}">
-              </svg-icon>
-          --->
-    </div>
-    <div class="question">
     </div>
   </div>
   <div class="question-content accardion" id="Carceral Approach: Blame & Punishment">
     <div class="title title-font unitalic">
       carceral : blame and punishment
     </div>
-    <div class="question">
+    <div class="question" style="padding: 50px;">
       Because sexual violence is seen as an individual, moral issue, responsibility is framed as guilt or blame. The
       model of responsibility on which the prison industrial complex and other carceral institutions of society are
       built is what philosopher Iris Marion Young calls a “liability model” of responsibility, in which I am responsible
@@ -449,7 +427,7 @@
     <div class="title title-font unitalic">
       transformative : accountability
     </div>
-    <div class="question">
+    <div class="question" style="padding: 50px;">
       In contrast, a community accountability model starts with a radically different concept of the subject: socially
       constructed both within relationships of intimacy and recognition and through relationships of power and
       oppression. Drawing on indigenous, disability, feminist, and postcolonial theories, it sees individuals as shaped
@@ -490,22 +468,16 @@
 </div>
 
 <div class="question-content" id="Definitions" *ngIf="router.url == '/movement/principles/d'">
-  <div class="question-content" id="SecuritySafety">
+  <div class="question-content" id="SecuritySafety" style="padding-top: 100px;">
     <div class="title title-font title-font-bg">
       People Experiencing Violence
-      <!---              <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="true"
-                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
-              </svg-icon>
---->
-    </div>
-    <div class="question">
     </div>
   </div>
   <div class="question-content accardion" id="Carceral Approach: Security">
     <div class="title title-font unitalic">
       carceral : security
     </div>
-    <div class="question">
+    <div class="question" style="padding: 50px;">
       The previous section explains why a carceral logic of blame and punishment can’ t end violence because it neither
       encourages individuals causing harm to change their behavior nor does it address the underlying conditions that
       promote violence. But that carceral logic doesn’ t even benefit those it claims to protect: survivors.
@@ -538,7 +510,7 @@
     <div class="title title-font unitalic">
       transformative : safety
     </div>
-    <div class="question">
+    <div class="question" style="padding: 50px;">
       But what if survivors, and their surrounding communities, are seen as <span class="rollover"
         (click)="openRollover(rollover, 51)">powerful and full of resources</span>, rather than as ‘victims’ ? Rather
       than outsourcing protection, <span class="rollover" (click)="openRollover(rollover, 52)">safety is
@@ -564,22 +536,16 @@
 </div>
 
 <div class="question-content" id="Definitions" *ngIf="router.url == '/movement/principles/e'">
-  <div class="question-content" id="DisposalConnection">
+  <div class="question-content" id="DisposalConnection" style="padding-top: 100px;">
     <div class="title title-font title-font-bg">
       Response to Violence
-      <!---                        <svg-icon src="/assets/images/nouns/rtv.svg" [stretch]="true"
-                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
-              </svg-icon>
---->
-    </div>
-    <div class="question">
     </div>
   </div>
   <div class="question-content accardion" id="Carceral Approach: Containment & Disposal">
     <div class="title title-font unitalic">
       carceral : containment and disposal
     </div>
-    <div class="question">
+    <div class="question" style="padding: 50px;">
       The strong moral division between perpetrators and survivors is often manifested physically and geographically in
       State responses to violence, where the solution to violence is isolating perpetrators and survivors from one
       another, as well as from their communities. This happens in carceral spaces like prisons, medical & mental health

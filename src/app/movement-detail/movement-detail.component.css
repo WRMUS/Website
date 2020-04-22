@@ -291,8 +291,14 @@ app-detail-menu {
 }
 
 .question-content > .question {
-  font-family: 'PT serif', serif;
+  font-family: 'Overpass', serif;
   font-size: 20px;
+  padding:4%; 
+  border: .5px solid black; 
+  margin-bottom: 12px; 
+  margin-top: -12px; 
+  margin-left: 0px; 
+  margin-right: 0px;
 }
 
 .question-content .question p {
