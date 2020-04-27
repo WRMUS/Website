@@ -27,7 +27,7 @@ export const PEOPLE: Person[] = [
     color: '#DDDAE9',
     contrastColor: '#b1aacc',
     fontColor: 'white',
-    image:'marcos.jpeg'
+    image:'marcos.jpg'
     },
   {
     id: 2,
@@ -148,7 +148,7 @@ export const PEOPLE: Person[] = [
     shortName: 'N',
     color: '#E6E9D9',
     contrastColor: '#c6cda9',
-    fontColor: 'white',image:'tn_purple.png'
+    fontColor: 'white',image:'N.png'
   },
   {
     id: 16,
@@ -165,7 +165,7 @@ export const PEOPLE: Person[] = [
     shortName: 'V',
     color: '#E5DAE9',
     contrastColor: '#c3aacc',
-    fontColor: 'white',image:'tn_cute.jpg'
+    fontColor: 'white',image:'vee.png'
   },
   {
     id: 18,

@@ -29,8 +29,19 @@
 } */
 
 
-.question-content > .title-font-bg{
-  font-size: 2.8em;
+.question-content > .title-font-bg {
+  font-family: 'Overpass', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: normal;
+  color: #e26d5c;
+  margin-bottom: 21px;
+}
+
+.question-content > .question {
+  font-size: 1.1em;
+    line-height: 2em;
+    margin: 0;
 }
 
 .question-content > .title-font-name{

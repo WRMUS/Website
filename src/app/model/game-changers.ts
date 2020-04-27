@@ -1,7 +1,7 @@
 export const GAME_CHANGERS_SECTION = [];
 export const GAME_CHANGERS_SECTION_1 = [
   {
-    title: 'Biographies',
+    title: 'Bios',
     nav: 'Bios',
     question: 'The following activist-thinkers involved in community accountability & transformative justice work were interviewed for the "What <em>really</em> makes us safe?" project. Click on their bios below. <br>  <br> In some places, additional activist-thinkers and organizations who were not directly involved in the project are quoted on this website, in the hopes of giving a fuller picture of the movement.'
     ,
@@ -32,18 +32,11 @@ export const GAME_CHANGERS_SECTION_1 = [
         photo: 'wide.jpg'
       },
       {
-        tagline: 'Andrea Marcos',
-        quote: 'Andrea Marcos is a printmaker, nerd, tender-hearted trouble-maker, queer, ariesyoungestchild, dedicated to collective liberation and radical imagination',
-        personId: 99,
-        photo: 'marcos.jpeg'
-      },
-      {
         tagline: 'Ejeris Dixon',
         quote: 'is an organizer and advocate with over 15 years of experience working in racial justice, LGBTQ, anti-violence, and economic justice movements. She is the Founding Director of <a href="http://www.visionchangewin.com/">Vision Change Win Consulting</a>, where she partners with organizations to build their capacity and deepen the impact of their organizing strategies. She is also the former founding program coordinator of the <a href="http://alp.org/safe-outside-system-sos-collective">Safe OUTside the System Collective</a> at the Audre Lorde Project where she worked on creating community based strategies to address hate and police violence.',
         photo: 'ejeris.JPG',
         personId: 7
       },
-      
       {
         tagline: 'Kiyomi Fujikawa',
         quote: 'is a Seattle-based, trans feminine, mixed-race organizer and cultural worker. She has been involved with the anti-violence movement since 2001 in Asian Pacific Islander, Queer and Trans, punk and diy communities. She was formerly  the Queer Network Program Coordinator at <a href="https://www.apichaya.org/">API Chaya</a>.',
@@ -84,7 +77,7 @@ export const GAME_CHANGERS_SECTION_1 = [
         tagline: 'Norma',
         quote: 'is an activist, organizer, grandmother, and queer cis Filipina. She is a lecturer at the University of Washington School of Social Work and a mental health therapist in private practice. Norma also consults with organizations and groups on collective healing and integration of social justice and racial equity practices and principles towards movement building and progressive change.',
         personId: 15,
-        photo: 'purple.png'
+        photo: 'n.png'
       },
       {
         tagline: 'Qui Alexander & Jenna Peters-Golden',
@@ -106,7 +99,13 @@ export const GAME_CHANGERS_SECTION_1 = [
         tagline: 'Veronica',
         quote: 'is an anarchist and anti-prison organizer.',
         personId: 17,
-        photo: 'cute.jpg'
+        photo: 'vee.png'
+      },
+      {
+        tagline: 'Andrea Marcos',
+        quote: 'Andrea Marcos is a printmaker, nerd, tender-hearted trouble-maker, queer, ariesyoungestchild, dedicated to collective liberation and radical imagination',
+        personId: 99,
+        photo: 'marcos.jpg'
       }
     ]
   }];
