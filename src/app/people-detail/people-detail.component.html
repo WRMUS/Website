@@ -195,27 +195,26 @@
 
 <div *ngIf="router.url == '/people/b'">
   <div *ngFor="let question of gameChangerSection_2">
-    <div class="question-content">
+    <div class="question-content" style="padding-top: 75px;">
+      <div class="title title-font title-font-bg" style="color: #e26d5c; font-weight: 900; padding-bottom: 21px;">
       <div class="title title-font title-font-bg">
         {{ question.title }}
-        <svg-icon src="/assets/images/nouns/led.svg" [stretch]="true"
-          [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
-        </svg-icon>
+      </div>
       </div>
       <div class="question">
         <p [innerHTML]="question.question"></p>
       </div>
     </div>
-    <div class="question-quote-container" style="padding-left:4%">
-      <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
+    <div class="question-quote-container" style="padding:4%; border: .5px solid black; margin-bottom: 12px; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+      <mat-grid-list [cols]="nbCols" [rowHeight]="115" gutterSize="10px" (window:resize)="onResize($event)">
         <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
-          <mat-grid-tile>
+          <mat-grid-tile style="border: .5px solid black;">
             <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px" class="tile">
-              <div class="hvrbox">
-                <img style="width:100%;max-height:100%; overflow:hidden"
+              <div class="hvrbox-clear">
+                <img style="width:114px;height:114px; overflow:hidden"
                   src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}"
                   class="tile hvrbox-layer_bottom">
-                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
                   <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
                 </div>
               </div>
