@@ -46,6 +46,40 @@
 	position: relative;
 }
 
+.hvrbox-clear .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 5px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox-clear:hover .hvrbox-layer_top,
+.hvrbox-clear.active .hvrbox-layer_top {
+	opacity: .90;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+}
+.hvrbox-clear .hvrbox-text {      
+    white-space: normal;
+	text-align: center;
+	font-size: 15px;
+	display: block;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+}
+
 .hvrbox .hvrbox-text img.expand {
 width: auto!important;
 float: right;
