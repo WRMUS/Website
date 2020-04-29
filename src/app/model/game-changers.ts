@@ -198,7 +198,7 @@ export const GAME_CHANGERS_SECTION_3 = [
   {
     title: 'Organizational wisdom',
     nav: 'Organizations',
-    question: 'This project draws together the organizational wisdom of the many anti-violence, queer, and community-based organizations the interviewees have been involved in. To add perspective and context in some places, I use quotes from published materials (not personal interviews) from scholar-activists affiliated with other organizations. All in all, the website presents quotes from folks who are or have been involved in the following:'
+    question: 'This project draws together the organizational wisdom of my interviewees and other transformative justice practitioners. To add perspective and context, in some places I use quotes from published materials (not personal interviews) from scholar-activists not directly affiliated with this project. All in all, the site quotes people who have been involved in the following groups:'
     + '<br/><br/><br/>' ,
 
     quotes: [

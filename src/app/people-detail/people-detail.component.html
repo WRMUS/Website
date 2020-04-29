@@ -158,80 +158,83 @@
 </div>
 --->
 
-<div *ngIf="router.url == '/people/a'" >
-        <div *ngFor="let question of gameChangerSection_1" >
-          <div class="question-content" style="padding-top: 70px">
-            <div class="title title-font title-font-bg" style="color: #e26d5c; font-weight: 900; padding-bottom: 21px;">
-                {{ question.title }}                                       
+<div *ngIf="router.url == '/people/a'">
+  <div *ngFor="let question of gameChangerSection_1">
+    <div class="question-content" style="padding-top: 75px">
+      <div class="title title-font title-font-bg" style="color: #e26d5c; font-weight: 900; padding-bottom: 21px;">
+        {{ question.title }}
+      </div>
+    </div>
+    <div class="photo-border" style="border: 1px solid #35887f">
+      <div class="question-quote-container" style="padding: 40px;">
+        <div>The following people contributed to the "What <em>Really</em> Makes Us Safe?" Project. They are also
+          involved in various ways in community accountability, transformative justive, and anti-violence work.</div>
+        <br />
+        <section class="photos">
+          <div *ngFor="let quote of question.quotes" (click)="openBioQuoteWindow(quote.personId)">
+            <div class="hvrbox">
+              <img style="word-break: keep-all"
+                src="assets/images/persons/original/{{getPerson(quote.personId)?.image}}" />
+              <div class="hvrbox-layer_top">
+                <div class="hvrbox-text">
+                  {{ getPerson(quote.personId)?.name}}
+                  <img class="expand" src="assets/images/expand-white.png">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="photo-border" style="border: 1px solid #35887f">
-          <div class="question-quote-container" style="padding: 40px;"> 
-            <div>The following people contributed to the "What <em>Really</em> Makes Us Safe?" Project. They are also involved in various ways in community accountability, transformative justive, and anti-violence work.</div>
-            <br />  
-            <section class="photos">
-                  <div *ngFor="let quote of question.quotes"                 
-                        (click)="openBioQuoteWindow(quote.personId)">                         
-                        <div class="hvrbox" >
-                            <img style="word-break: keep-all"    
-                                 src="assets/images/persons/original/{{getPerson(quote.personId)?.image}}"/>   
-                            <div class="hvrbox-layer_top">
-                                <div class="hvrbox-text" >
-                                    {{ getPerson(quote.personId)?.name}} 
-                                    <img class="expand" src="assets/images/expand-white.png">
-                                </div>
-                            </div>
-                        </div>
-                  </div>                            
-              </section>      
-              <br />
-              <div>In some places on this site, I quote additional activist-thinkers and organizations who were not a part of the project, so as to capture a fuller picture of this movement.</div>        
-    </div>      
-    </div>      
-  </div>    
+        </section>
+        <br />
+        <div>In some places on this site, I quote additional activist-thinkers and organizations who were not a part of
+          the project, so as to capture a fuller picture of this movement.</div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
-<div *ngIf="router.url == '/people/b'" >
-    <div *ngFor="let question of gameChangerSection_2" >
-          <div class="question-content">
-            <div class="title title-font title-font-bg">
-                {{ question.title }}
-                <svg-icon src="/assets/images/nouns/led.svg" [stretch]="true"
-                                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
-                </svg-icon>                
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
-<div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px" class="tile">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                    </div>
-                                </div>
-<!---                                
+<div *ngIf="router.url == '/people/b'">
+  <div *ngFor="let question of gameChangerSection_2">
+    <div class="question-content">
+      <div class="title title-font title-font-bg">
+        {{ question.title }}
+        <svg-icon src="/assets/images/nouns/led.svg" [stretch]="true"
+          [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
+        </svg-icon>
+      </div>
+      <div class="question">
+        <p [innerHTML]="question.question"></p>
+      </div>
+    </div>
+    <div class="question-quote-container" style="padding-left:4%">
+      <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
+        <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+          <mat-grid-tile>
+            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px" class="tile">
+              <div class="hvrbox">
+                <img style="width:100%;max-height:100%; overflow:hidden"
+                  src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}"
+                  class="tile hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
+                </div>
+              </div>
+              <!---                                
 <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
---->                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >
-                                    {{ quote.tagline }}                      
-                                </div>
-                            </div>                        
-                    </mat-grid-tile>               
+--->
             </div>
-        </mat-grid-list>
-</div>
-        
-          <!--- <mat-grid-list [cols]="nbCols" rowHeight="2:1" (window:resize)="onResize($event)" > --->
- <!---          <mat-grid-list [cols]="nbCols" rowHeight="2:1" (window:resize)="onResize($event)">
+            <div style="display:flex; width:60%; justify-content:flex-center;">
+              <div class="question-quote-container-innermost">
+                {{ quote.tagline }}
+              </div>
+            </div>
+          </mat-grid-tile>
+        </div>
+      </mat-grid-list>
+    </div>
+
+    <!--- <mat-grid-list [cols]="nbCols" rowHeight="2:1" (window:resize)="onResize($event)" > --->
+    <!---          <mat-grid-list [cols]="nbCols" rowHeight="2:1" (window:resize)="onResize($event)">
             <div *ngFor="let quote of question.quotes"                  
                   (click)="openQuoteModal(content, quote)">
                 <mat-grid-tile>
@@ -260,188 +263,115 @@
               
             </div>
           </mat-grid-list>
- --->        
-    </div>    
-</div>
-    
-<div *ngIf="router.url == '/people/c'" >
-          <div *ngFor="let question of gameChangerSection_3" >
-          <div class="question-content">
-            <div class="title title-font title-font-bg">
-                {{ question.title }}
-            </div>
-            <div class="question">                 
-                <p [innerHTML]="question.question">
-                </p>
-                <object data="/assets/images/map-new.svg" type="image/svg+xml"></object>
-<!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 808" preserveAspectRatio="xMinYMin meet" > -->
-	<!-- <image width="1200" height="808" xlink:href="/assets/images/map-new.svg"></image> -->
-<!-- <a xlink:href="https://www.nwnetwork.org/" target="_blank">
-          <polygon points="76 90,158 95,160 58,76 56" opacity="0"></polygon>
-    </a>        
-<a target="_blank" xlink:alt="For crying out loud" xlink:title="Fr crying out loud" xlink:href="https://forcryingoutloud206.wordpress.com/about/">
-          <polygon points="193 101,288 123,308 84,205 66" opacity="0"></polygon>
-    </a>
-<a target="_blank" alt="API Chaya" title="API Chaya" xlink:href="https://forcryingoutloud206.wordpress.com/about/">
-          <polygon points="76 152,153 154,141 96,69 109" opacity="0"></polygon>
-   </a>
-<a target="_blank" alt="Communities against rape" title="Communities against rape" xlink:href="http://cara-seattle.blogspot.com/">
-          <polygon points="191 124,262 160,270 136,201 102" opacity="0"></polygon>
-   </a>
-                
-<a target="_blank" alt="Asian women shelter" title="Asian women shelter"  xlink:href="http://www.sfaws.org/">
-        <polygon points="16 230,104 236,105 185,29 172" opacity="0"></polygon>
-   </a>
-<a target="_blank"  alt="Bay area transformative justice" title="Bay area transformative justice" xlink:href="https://batjc.wordpress.com/" >
-          <polygon points="104 248,254 262,265 205,105 194" opacity="0"></polygon>
-   </a>
-<a target="_blank" alt="Creative interventions" title="Creative interventions" xlink:href="http://www.creative-interventions.org/">
-          <polygon points="116 305,257 297,252 252,115 251" opacity="0"></polygon>
-   </a>
-<a target="_blank" alt="Generation Five" title="Generation Five" xlink:href="http://www.generationfive.org/" >
-         <polygon points="129 334,284 346,292 318,139 301" opacity="0"></polygon>
-   </a>
-<a target="_blank" alt="Communities united against violence" title="Communities united against violence" xlink:href="http://www.cuav.org/" >
-          <polygon points="21 359,97 352,95 327,30 332" opacity="0"></polygon>
-   </a>
-        
-<a target="_blank" alt="INCITE" title="INCITE" xlink:href=" https://incite-national.org/ ">
-          <polygon points="452 385,546 389,549 442,459 446" opacity="0"></polygon>
-   </a>
-<a target="_blank" alt="Survived + Punished" title="Survived + Punished" xlink:href="https://survivedandpunished.org/">
-          <polygon points="565 336,694 325,690 411,556 427" opacity="0"></polygon>
-   </a>    
-        
-<a target="_blank"  alt="Broadway Youth Center" title="Broadway Youth Center"  xlink:href="https://howardbrown.org/byc/">
-          <polygon points="609 203,726 202,723 266,609 264" opacity="0"></polygon>
-   </a>
-<a target="_blank" alt="Collective Action Network" title="Collective Action Network" xlink:href="http://womenandgirlscan.org/?i=1">
-          <polygon points="734 232,864 228,864 268,732 275" opacity="0"></polygon>
-   </a> 
-        
-<a target="_blank" alt="Philly Stands up" title="Philly Stands up" xlink:xhref="https://phillystandsup.wordpress.com/" >
-         <polygon points="815 280,913 284,914 330,817 318" opacity="0"></polygon>
-   </a> 
-        
-<a target="_blank" alt="UBUNTU" title="UBUNTU" xlink:href="https://iambecauseweare.wordpress.com/" >
-          <polygon points="918 374,1008 367,1012 417,932 414" opacity="0"></polygon>
-   </a> 
-        
-<a target="_blank" alt="Anti-violence project" title="Anti-violence project" href="https://avp.org/">
-          <polygon points="848 134,972 122,980 176,867 187" opacity="0"></polygon>
-   </a> 
-<a target="_blank" alt="Harm free Zone" title="Harm free Zone" href="http://criticalresistance.org/wp-content/uploads/2014/05/HFZ-NY.pdf">
-           <polygon points="987 140,1076 132,1078 188,989 193" opacity="0"></polygon>
-   </a> 
-<a target="_blank" alt="Challenge male supremace" title="Challenge male supremace" href="http://challengingmalesupremacy.org/">
-          <polygon points="907 242,959 218,972 242,922 265" opacity="0"></polygon>
-   </a> 
-<a target="_blank" alt="FIERCE" title="FIERCE" href="http://www.fiercenyc.org/">
-          <polygon points="1009 136,1090 203,1093 227,1011 225" opacity="0"></polygon>
-   </a> 
-<a target="_blank" alt="Support New York" title="Support New York" href="https://supportny.org/">
-           <polygon points="911 273,943 259,975 241,991 273,926 302" opacity="0"></polygon>
-   </a> 
-<a target="_blank" alt="SOS COLLECTIVE" title="SOS COLLECTIVE" href="https://alp.org/safe-outside-system-sos-collective" >
-          <polygon points="1024 266,1139 330,1169 289,1068 229" opacity="0"></polygon>
-   </a>  -->
-             
-        
-<!-- </svg> -->
-                
-                
-    <br/>
-    & internationally… <a href="http://www.bridgesinstitute.org/">Bridges Institute</a>
-    <br/>
-    I also spoke to two individuals who have been involved in various forms of accountability work in international settings, including Canada and Australia.
-    </div>
-</div>
-
-<div class="question-content">
-    <div class="title title-font title-font-bg">
-        Describe dynamics and learning processes in your organization               
-    </div>
-</div>              
-<div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:15px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                    </div>
-                                </div>                     
-                        </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >
-                                    {{ quote.tagline }}                      
-                                </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
-</div>              
-              
-              
-              
-    </div>
+ --->
   </div>
+</div>
 
-<div *ngIf="router.url == '/people/d'" >
-          <div *ngFor="let question of gameChangerSection_4" >
-          <div class="question-content">
-            <div class="title title-font title-font-bg">
-                {{ question.title }}
-                <svg-icon src="/assets/images/nouns/challenges.svg" [stretch]="true"
-                                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
-                </svg-icon>
-                
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>    
+<div *ngIf="router.url == '/people/c'">
+  <div *ngFor="let question of gameChangerSection_3">
+    <div class="question-content" style="padding-top: 75px;">
+      <div class="title title-font title-font-bg">
+        {{ question.title }}
+      </div>
+      <div class="question">
+        <p [innerHTML]="question.question" style="margin-bottom: 0; padding: 0px 40px;">
+        </p>
+        <p class="above-map" style="color: #124e78; font-size: 24px; margin-bottom: 60px;">Click on the flags below to go to the organizations' websites.</p>
+        <object data="/assets/images/map-new.svg" type="image/svg+xml"></object>
+      </div>
+    </div>
 
-        <div class="question-quote-container" style="padding-left:4%">
-                    <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                        <div *ngFor="let quote of question.quotes"                 
-                         (click)="openQuoteModal(content, quote)">                
-                            <mat-grid-tile>                        
-                                    <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                        
-                                        <div class="hvrbox">
-                                            <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                            <div class="hvrbox-layer_top">
-                                                <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                            </div>
-                                        </div>
-                                        
-<!---                                                                       
+    <div class="question-content">
+      <div class="title title-font title-font-bg">
+        <div class="question-header">
+            Describe dynamics and learning processes in your organization
+        </div>
+      </div>
+    </div>
+    <div class="question-quote-container" style="padding:4%; border: .5px solid black; margin-bottom: 12px; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+      <mat-grid-list [cols]="nbCols" [rowHeight]="115" gutterSize="10px" (window:resize)="onResize($event)">
+        <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+          <mat-grid-tile style="border: .5px solid black;">
+            <div style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+              <div class="hvrbox" style="height: 114px; width: 114px;">
+                <img style="width:114px;height:114px; overflow:hidden"
+                  src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                <div class="hvrbox-layer_top" style="width: 114px;">
+                  <div class="hvrbox-text">
+                    {{ getPerson(quote.personId)?.name}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="display:flex; width:60%; justify-content:flex-center;">
+              <div class="question-quote-container-innermost">
+                {{ quote.tagline }}
+              </div>
+            </div>
+            <img src="assets/images/expand.png" style="padding-right: 12px;">
+          </mat-grid-tile>
+        </div>
+      </mat-grid-list>
+    </div>
+
+
+
+  </div>
+</div>
+
+<div *ngIf="router.url == '/people/d'">
+  <div *ngFor="let question of gameChangerSection_4">
+    <div class="question-content">
+      <div class="title title-font title-font-bg">
+        {{ question.title }}
+        <svg-icon src="/assets/images/nouns/challenges.svg" [stretch]="true"
+          [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
+        </svg-icon>
+
+      </div>
+      <div class="question">
+        <p [innerHTML]="question.question"></p>
+      </div>
+    </div>
+
+    <div class="question-quote-container" style="padding-left:4%">
+      <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
+        <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+          <mat-grid-tile>
+            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
+
+              <div class="hvrbox">
+                <img style="width:100%;max-height:100%; overflow:hidden"
+                  src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}"
+                  class="tile hvrbox-layer_bottom">
+                <div class="hvrbox-layer_top">
+                  <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
+                </div>
+              </div>
+
+              <!---                                                                       
 <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
---->                       
-                                
-                                    </div>
-                                    <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                        <div class="question-quote-container-innermost" >
-                                            {{ quote.tagline }}                                         
-                                        </div>
-                                    </div>                        
-                            </mat-grid-tile>               
-                    </div>
-                </mat-grid-list>
-        </div>               
-              
-    </div>
-  </div>
+--->
 
-  <div class="copyright">
-    <div class="content-wrapper">
-        <span class="copy">©</span>
-        2019 WRMUS
+            </div>
+            <div style="display:flex; width:60%; justify-content:flex-center;">
+              <div class="question-quote-container-innermost">
+                {{ quote.tagline }}
+              </div>
+            </div>
+          </mat-grid-tile>
+        </div>
+      </mat-grid-list>
     </div>
+
+  </div>
+</div>
+
+<div class="copyright">
+  <div class="content-wrapper">
+    <span class="copy">©</span>
+    2019 WRMUS
+  </div>
 </div>
 
 <ng-template #rollover let-c="close">
@@ -459,11 +389,12 @@
 <ng-template #content let-c="close">
   <div class="modal-header">
     <h4>
-      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank' *ngIf='getPerson(selectedQuote.personId).link'> 
-          {{ getPerson(selectedQuote.personId)?.name }}
+      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank'
+        *ngIf='getPerson(selectedQuote.personId).link'>
+        {{ getPerson(selectedQuote.personId)?.name }}
       </a>
-      <span *ngIf='!getPerson(selectedQuote.personId).link'> 
-          {{ getPerson(selectedQuote.personId)?.name }} : {{ selectedQuote.tagline }} 
+      <span *ngIf='!getPerson(selectedQuote.personId).link'>
+        {{ getPerson(selectedQuote.personId)?.name }} : {{ selectedQuote.tagline }}
       </span>
     </h4>
     <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
@@ -471,7 +402,8 @@
     </button>
   </div>
   <div class="modal-body">
-    <div class="person-photo-container" [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'> 
+    <div class="person-photo-container"
+      [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'>
     </div>
     <p [innerHTML]="selectedQuote.quote"></p>
   </div>
