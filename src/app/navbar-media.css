@@ -33,8 +33,17 @@
 
 
 @media (max-width: 600px) { 
-    .desktop-version-sidemenu{    
-        display: none; 
+
+    .desktop-version-sidemenu .side-title {    
+        float: left;
+        margin-left: 80px;   
+    } 
+
+    .desktop-version-sidemenu img {    
+        float: left;
+        position: absolute;
+        top: 25%;
+        left: 25%;
     } 
 }
 
