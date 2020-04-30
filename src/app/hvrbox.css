@@ -38,6 +38,13 @@
 	opacity: .75;
 	background: #E26D5C;
 }
+
+.hvrbox-tagline:hover,
+.hvrbox-tagline.active {
+	opacity: .9;
+	background: #E8F9F2;
+}
+
 .hvrbox .hvrbox-text {      
     white-space: normal;
 	text-align: left;

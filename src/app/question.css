@@ -28,6 +28,17 @@
   margin: 1% 0;
 } */
 
+.question-header-grey {
+  font-style: normal !important;
+  color: #35887f !important;
+  font-weight: 700 !important;
+  display: inline-block !important;
+  border-bottom: 6px solid #bde5a8 !important;
+  margin-bottom: 20px !important;
+  padding-bottom: 6px !important;
+  font-size: 28px !important;
+  line-height: 1.2em !important;
+}
 
 .question-content > .title-font-bg {
   font-family: 'Overpass', sans-serif;

@@ -197,9 +197,7 @@
   <div *ngFor="let question of gameChangerSection_2">
     <div class="question-content" style="padding-top: 75px;">
       <div class="title title-font title-font-bg" style="color: #e26d5c; font-weight: 900; padding-bottom: 21px;">
-      <div class="title title-font title-font-bg">
         {{ question.title }}
-      </div>
       </div>
       <div class="question">
         <p [innerHTML]="question.question"></p>
@@ -208,7 +206,7 @@
     <div class="question-quote-container" style="padding:4%; border: .5px solid black; margin-bottom: 12px; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
       <mat-grid-list [cols]="nbCols" [rowHeight]="115" gutterSize="10px" (window:resize)="onResize($event)">
         <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
-          <mat-grid-tile style="border: .5px solid black;">
+          <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
             <div style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
               <div class="hvrbox-clear" style="height: 114px; width: 114px;">
                 <img style="width:114px;height:114px; overflow:hidden"
@@ -281,7 +279,7 @@
 
     <div class="question-content">
       <div class="title title-font title-font-bg">
-        <div class="question-header">
+        <div class="question-header-grey">
             Describe dynamics and learning processes in your organization
         </div>
       </div>
@@ -330,7 +328,7 @@
       </div>
     </div>
 
-    <div class="question-quote-container" style="padding:40px; border: .5px solid black; margin-bottom: 12px; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+    <div class="question-quote-container" style="padding:4%; border: .5px solid black; margin-bottom: 12px; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
       <mat-grid-list [cols]="nbCols" [rowHeight]="115" gutterSize="10px" (window:resize)="onResize($event)">
         <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
           <mat-grid-tile style="border: .5px solid black;">
