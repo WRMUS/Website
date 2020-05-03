@@ -42,7 +42,7 @@
     .desktop-version-sidemenu img {    
         float: left;
         position: absolute;
-        top: 25%;
+        padding-top: 64px;
         left: 25%;
     } 
 }

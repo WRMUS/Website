@@ -38,6 +38,7 @@
   }
 
   .side-title {
+      float: left;
       font-size: 20px;
       color: black;
   }
