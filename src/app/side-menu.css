@@ -21,6 +21,10 @@
     left: 35px;
 }
 
+.sidebar-style .list-group-item {
+    height: 100px;
+}
+
 .sidebar-style .list-group-item .icon-image img {
     width: 26px;
 }
@@ -39,7 +43,7 @@
   }
 
   .sidebar-style {
-      margin-right: 36.525px;
+     width: 100%;
   }
 
  .active {
