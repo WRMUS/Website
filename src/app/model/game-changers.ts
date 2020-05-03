@@ -16,12 +16,12 @@ export const GAME_CHANGERS_SECTION_1 = [
       {
         tagline: 'Alix Johnson',
         quote: 'is a core member of the <a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a>, working toward building transformative justice responses to child sexual abuse. She also works as a graduate student researcher and instructor at the University of California, Santa Cruz.',
-        photo: 'alix.jpg',
+        photo: 'tn_alix_ori.jpg',
         personId: 16
       },
       {
         tagline: 'Anna Vo',
-        quote: 'has done community accountability work, mediation, counseling, education and community work around construction and place-making. This means workshops, inclusive engagement, skill-sharing, building stuff and empowerment. They are also a musician, illustrator and writer and their focus is finding strategies to support and scaffold feminists of colour.',
+        quote: 'has done transformative justice work, mediation, counseling, education and community work around construction and place-making. This means workshops, inclusive engagement, skill-sharing, building stuff and empowerment. They are also a musician, illustrator and writer and their focus is finding strategies to support and scaffold feminists of colour.',
         photo: 'Anna.jpg',
         personId: 20
       },
@@ -51,7 +51,7 @@ export const GAME_CHANGERS_SECTION_1 = [
       },
       {
         tagline: 'Dr. Hediana Utarti',
-        quote: 'Currently its Community Projects Coordinator, Hediana has dedicated almost 17 years to <a href="http://www.sfaws.org/">San Francisco Asian Women\'s Shelter</a>.  Besides serving as the point person for Anti-Trafficking Program and Services, like her co-workers, she also takes crisis line weekly and is involved in AWS Community Building programs. Previously she lived and worked in Honolulu, Hawai\’i where she obtained her Ph. D in political science.  She started her community based anti-violence work in 1995, when she joined Family Peace Center in Honolulu as a Support Group Facilitator for survivors of domestic violence.',
+        quote: 'currently its Community Projects Coordinator, Hediana has dedicated almost 17 years to <a href="http://www.sfaws.org/">San Francisco Asian Women\'s Shelter</a>.  Besides serving as the point person for Anti-Trafficking Program and Services, like her co-workers, she also takes crisis line weekly and is involved in AWS Community Building programs. Previously she lived and worked in Honolulu, Hawai\’i where she obtained her Ph. D in political science.  She started her community based anti-violence work in 1995, when she joined Family Peace Center in Honolulu as a Support Group Facilitator for survivors of domestic violence.',
         photo: 'Hediana.png',
         personId: 19
       },
@@ -63,7 +63,7 @@ export const GAME_CHANGERS_SECTION_1 = [
       },
       {
         tagline: 'Melanie Brazzell',
-        quote: 'Initiated and designed the “What really makes us safe?” research project, serving as primary interviewer, researcher, and creator of this website. She has worked in the field of anti-sexual violence education for over a decade as a white person commited to ending white supremacy. Inspired by the visionary work of the community accountability and transformative justice movement, she co-founded the <a href="https://www.transformativejustice.eu/en/">Transformative Justice Kollektiv</a> in Berlin. Currently, she is exploring participatory action research as a movement building tool as a graduate student in sociology at the university of California, Santa Barbara.',
+        quote: 'created the “What really makes us safe?” project. They have found community and purpose in the anti-violence work movement for the last fifteen years and were inspired by the visionary work of women and queer folks of color who built the transformative justice movement. Melanie co-founded the Berlin Transformative Justice Collective and published the “What really makes us safe?” toolkit, as well as a guide to working with people who’ve caused sexual harm (both in German). Currently, they are a graduate student in sociology at the University of California, Santa Barbara, exploring participatory action research as a movement building tool.',
         personId: 0,
         photo: 'melanie.jpg'
       },
@@ -103,7 +103,7 @@ export const GAME_CHANGERS_SECTION_1 = [
       },
       {
         tagline: 'Andrea Marcos',
-        quote: 'Andrea Marcos is a printmaker, nerd, tender-hearted trouble-maker, queer, ariesyoungestchild, dedicated to collective liberation and radical imagination',
+        quote: 'Andrea Marcos is a printmaker, nerd, tender-hearted trouble-maker, queer, ariesyoungestchild, dedicated to collective liberation and radical imagination.'  + '<br><br><br>' + 'Andrea created the linocut print that serves as the “What really makes us safe?” project ' + '<a href="https://www.whatreallymakesussafe.com/#/home" target="_blank" style="color: #014C8C !important;">' + 'logo' + '</a>' + '. The image reimagines a traditional German sewing kit as a tool box for homemade abolitionist safety.',
         personId: 99,
         photo: 'marcos.jpg'
       }
