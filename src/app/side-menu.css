@@ -23,6 +23,11 @@
 
 .sidebar-style .list-group-item {
     height: 100px;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #020202;
+    border: 1px solid #35887f;
+    border-radius: 0;
 }
 
 .sidebar-style .list-group-item .icon-image img {

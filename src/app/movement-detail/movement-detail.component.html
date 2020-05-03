@@ -1,5 +1,5 @@
 <div class="question-content" id="Definitions" *ngIf="router.url == '/movement/tj/a'">
-  <div class="title title-font title-font-bg" style="padding-top: 70px;">
+  <div class="title title-font title-font-bg" style="padding-top: 155px;">
     What is transformative justice?
   </div>
   <div class="question" style="border: none; padding: 0;">
@@ -78,7 +78,7 @@
   </div>
 </div>
 <div class="question-content" id="Def" *ngIf="router.url == '/movement/tj/b'">
-  <div class="question" style="padding-bottom: 24px; border: none;"> 
+  <div class="question" style="padding-top: 70px; padding-bottom: 24px; border: none;"> 
     <div class="quote-content">
       <div class="quotation">
         “So before all of our meetings as the BATJC [Bay Area Transformative Justice Collective] we do a collective
@@ -215,7 +215,7 @@
 </div>
 
 <div *ngIf="router.url == '/movement/tj/c'">
-  <div style="padding-top: 100px; padding-left: 24px; padding-right: 24px;">
+  <div style="padding-top: 100px;">
     <div *ngFor="let question of futureSection">
       <div class="question-content accardion-v2">
         <div class="title title-font">
@@ -225,21 +225,20 @@
       <div class="question-quote-container" style="padding:4%; border: .5px solid black; margin-bottom: 12px; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
         <mat-grid-list [cols]="nbCols" [rowHeight]="115" gutterSize="10px" (window:resize)="onResize($event)">
           <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
-            <mat-grid-tile>
-              <div style="display:flex;width:40%;justify-content:flex-start;padding-right:10px">
-                <div class="hvrbox" style="height: 100%;">
-                  <img style="width:100%;max-height:100%; overflow:hidden"
-                    src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}"
-                    class="tile hvrbox-layer_bottom">
-                  <div class="hvrbox-layer_top">
+            <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+              <div style="display:flex;width:40%; height: 99%; justify-content:flex-start;padding-right:10px; padding-left: .5px;">
+                <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+                  <img style="width:114px;height:113px; overflow:hidden"
+                    src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                  <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
                     <div class="hvrbox-text">
                       {{ getPerson(quote.personId)?.name}}
                     </div>
                   </div>
                 </div>
               </div>
-              <div style="display:flex; width:60%; justify-content:flex-center;">
-                <div class="question-quote-container-innermost">
+              <div class="hvrbox-tagline-text" style="display:flex; width:60%; justify-content:flex-center;">
+                <div class="question-quote-container-innermost" style="padding-left: 16px;">
                   {{ quote.tagline }}
                 </div>
               </div>
@@ -253,7 +252,7 @@
 </div>
 
 <div *ngIf="router.url == '/movement/principles/a'">
-  <div class="question-content" id="IndividualCollective" style="padding-top: 100px;">
+  <div class="question-content" id="IndividualCollective" style="padding-top: 155px;">
     <div class="title title-font title-font-bg">
       Ethos
     </div>
@@ -306,7 +305,7 @@
 </div>
 
 <div class="question-content" id="Definitions" *ngIf="router.url == '/movement/principles/b'">
-  <div class="question-content" id="CriminalHuman" style="padding-top: 100px;">
+  <div class="question-content" id="CriminalHuman" style="padding-top: 155px;">
     <div class="title title-font title-font-bg">
       People Causing Violence
     </div>
@@ -387,7 +386,7 @@
 </div>
 
 <div class="question-content" id="Definitions" *ngIf="router.url == '/movement/principles/c'">
-  <div class="question-content" id="BlameAccountability" style="padding-top: 100px;">
+  <div class="question-content" id="BlameAccountability" style="padding-top: 155px;">
     <div class="title title-font title-font-bg">
       Concept of Responsibility
     </div>
@@ -470,7 +469,7 @@
 </div>
 
 <div class="question-content" id="Definitions" *ngIf="router.url == '/movement/principles/d'">
-  <div class="question-content" id="SecuritySafety" style="padding-top: 100px;">
+  <div class="question-content" id="SecuritySafety" style="padding-top: 155px;">
     <div class="title title-font title-font-bg">
       People Experiencing Violence
     </div>
@@ -538,7 +537,7 @@
 </div>
 
 <div class="question-content" id="Definitions" *ngIf="router.url == '/movement/principles/e'">
-  <div class="question-content" id="DisposalConnection" style="padding-top: 100px;">
+  <div class="question-content" id="DisposalConnection" style="padding-top: 155px;">
     <div class="title title-font title-font-bg">
       Response to Violence
     </div>
