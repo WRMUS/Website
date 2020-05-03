@@ -190,7 +190,7 @@ export const GAME_CHANGERS_SECTION_1 = [
     + '<br>' + '…in Philadelphia… <a href="https://phillystandsup.wordpress.com/">Philly Stands Up</a>'
     + '<br>' + '… in Durham… <a href="https://iambecauseweare.wordpress.com/">UBUNTU</a>'
     + '<br>' + '…in Seattle… <a href="http://www.nwnetwork.org/">Northwest Network of Bi, Trans, Lesbian, and Gay Survivors of Abuse</a>, <a href="http://cara-seattle.blogspot.com/">Communities Against Rape & Abuse</a>, <a href="https://forcryingoutloud206.wordpress.com/about/">For Crying Out Loud</a>, <a href="https://www.apichaya.org/">Asian Pacific Islander Chaya</a>'
-    + '<br>' + '…in the Bay Area…<a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a>, <a href="http://www.sfaws.org/">San Francisco Asian Women’s Shelter</a>, <a href="http://www.cuav.org/">Communities United Against Violence</a>, <a href="http://www.creative-interventions.org/">Creative Interventions</a>, <a href="http://www.generationfive.org/">GenerationFIVE</a>'
+    + '<br>' + '…in the Bay Area…<a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a>, <a href="http://www.sfaws.org/">San Francisco Asian Women’s Shelter</a>, <a href="http://www.cuav.org/">Communities United Against Violence</a>, <a href="http://www.creative-interventions.org/">Creative Interventions</a>, <a href="http://www.generationfive.org/">generationFIVE</a>'
     
     
   
