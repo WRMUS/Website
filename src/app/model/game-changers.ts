@@ -51,7 +51,7 @@ export const GAME_CHANGERS_SECTION_1 = [
       },
       {
         tagline: 'Dr. Hediana Utarti',
-        quote: 'currently its Community Projects Coordinator, Hediana has dedicated almost 17 years to <a href="http://www.sfaws.org/">San Francisco Asian Women\'s Shelter</a>.  Besides serving as the point person for Anti-Trafficking Program and Services, like her co-workers, she also takes crisis line weekly and is involved in AWS Community Building programs. Previously she lived and worked in Honolulu, Hawai\’i where she obtained her Ph. D in political science.  She started her community based anti-violence work in 1995, when she joined Family Peace Center in Honolulu as a Support Group Facilitator for survivors of domestic violence.',
+        quote: 'Currently its Community Projects Coordinator, Hediana has dedicated almost 17 years to <a href="http://www.sfaws.org/">San Francisco Asian Women\'s Shelter</a>.  Besides serving as the point person for Anti-Trafficking Program and Services, like her co-workers, she also takes crisis line weekly and is involved in AWS Community Building programs. Previously she lived and worked in Honolulu, Hawai\’i where she obtained her Ph. D in political science.  She started her community based anti-violence work in 1995, when she joined Family Peace Center in Honolulu as a Support Group Facilitator for survivors of domestic violence.',
         photo: 'Hediana.png',
         personId: 19
       },
