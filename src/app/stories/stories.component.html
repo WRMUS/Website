@@ -1,74 +1,52 @@
-<main>           
-    <div style="display:flex;justify-content:center">
-        <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">            
+<main>
+    <div class="container">
+        <div style="display:flex;justify-content:center">
+            <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="jumbotron">
-                        <h1 *ngIf="router.url.match('/stories/support')">
-                            Support for People Experiencing Violence
-                        </h1> 
-                        <h1 *ngIf="router.url.match('/stories/accountability')">
-                            Accountability for People Causing Violence
-                        </h1>
-                        <h1 *ngIf="router.url.match('/stories/community')">
-                            Community Engagement Against Violence
-                        </h1>
-                    </div>
-                </div>
-            
-            <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">            
-                <div class="row">
-                        <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
-                            <ol class="breadcrumb">                                
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/stories/support')">
-                                    Support
-                                    <svg-icon src="/assets/images/nouns/support.svg" [stretch]="true"
-                                        [svgStyle]="{'height.px':50,'width.px':50,'padding.px':1,'margin.px':3}"></svg-icon>
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/stories/accountability')">
-                                    Accountability
-                                <svg-icon src="/assets/images/nouns/accountability.svg" [stretch]="true"
-                                        [svgStyle]="{'height.px':50,'width.px':50,'padding.px':1,'margin.px':3}"></svg-icon>
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/stories/community')">Community
-                                <svg-icon src="/assets/images/nouns/community.svg" [stretch]="true"
-                                        [svgStyle]="{'height.px':50,'width.px':50,'padding.px':1,'margin.px':3}"></svg-icon>
-                                </li>
-                            </ol>
-                            
-                            <router-outlet name="sidemenu"></router-outlet>
-                        </div>
-                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <div class="row" style="padding-top: 75px;">
+                        <router-outlet name="sidemenu"></router-outlet>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
                             <div *ngIf="router.url.match('/stories/support$')">
-                                <div class="question-content">
-                                    <div class="question">
-                                        <p>
-                                            Transformative  justice  imagines  a  community-based  response  to  sexual  and  partner  violence  that  supports  survivor  wellness  and  empowerment.  Rather  than  treating  people  as  victims  in  need  of  external  protection  via  walls  and  weapons,  collective  support  empowers  survivors  to  exercise  their  agency. 
-                                        </p>
-                                    </div>
+                                <div class="stories-title" style="padding-top: 70px;">
+                                    Support for People Experiencing Violence
+                                </div>
+                                <div class="stories-content">
+                                    Transformative justice imagines a community-based response to sexual and partner
+                                    violence that supports survivor wellness and self-determination. Rather than
+                                    treating people as victims in need of external protection via walls and weapons,
+                                    collective support empowers survivors to exercise their agency. How can we accompany
+                                    those who experience violence along the path to healing, power, and change?
                                 </div>
                             </div>
                             <div *ngIf="router.url.match('/stories/accountability$')">
-                                <div class="question-content">
-                                    <div class="question">
-                                        <p>
-                                            Transformative  justice  imagines  a  community-based  response  to  sexual  and  partner  violence  that  humanizes,  rather  than  criminalizes,  people  who  cause  harm.  When  possible,  transformative  justice  can  engage  them  in  a  process  to  take  accountability  for  their  actions  –to  repair  existing  harm  and  transform  underlying  conditions  and  behaviors  to  prevent  future  harm.  What  can  those  processes  look  like? 
-                                        </p>
-                                    </div>
+                                <div class="stories-title" style="padding-top: 70px;">
+                                    Accountability for People Causing Violence
+                                </div>
+                                <div class="stories-content">
+                                    Transformative justice imagines a community-based response to sexual and partner
+                                    violence that humanizes, rather than criminalizes, people who cause harm. When
+                                    possible, transformative justice can engage them in a process to take accountability
+                                    for their actions –to repair existing harm and transform underlying conditions and
+                                    behaviors to prevent future harm. What can those processes look like?
                                 </div>
                             </div>
                             <div *ngIf="router.url.match('/stories/community$')">
-                                <div class="question-content">
-                                   <div class="question">
-                                        <p>
-                                            Transformative  justice  imagines  a  response  to  sexual  and  partner  violence  that  is  community  centered  and  controlled.  What  are  different  ways  to  engage  communities,  rather  than  the  state  or  non-profits,  to  respond  to  violence?
-                                        </p>
-                                    </div>
+                                <div class="stories-title" style="padding-top: 70px;">
+                                    Community Engagement Against Violence
                                 </div>
-                            </div>                      
-                        <router-outlet></router-outlet>
+                                <div class="stories-content">
+                                    Transformative justice imagines a response to sexual and partner violence that is
+                                    community centered and controlled. Ideally, such a response can build community ties
+                                    that have been broken through violence, and hold survivors and (if possible) persons
+                                    who cause harm within a web of healthy relationships. What are different ways to
+                                    engage communities, rather than the state or non-profits, to respond to violence?
+                                </div>
+                            </div>
+                            <router-outlet></router-outlet>
+                        </div>
                     </div>
-                </div> 
-            </div>  
-         </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>

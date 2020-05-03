@@ -1,717 +1,431 @@
-<div *ngIf="router.url == '/stories/support/a'" >
-          <div *ngFor="let question of supportSection_1" >
-              <div class="question-content">
-                <div class="title title-font title-font-bg">
+<div *ngIf="router.url == '/stories/support/a'">
+    <div *ngFor="let question of supportSection_1">
+        <div class="question-content" style="padding-top: 75px;">
+            <div class="title title-font title-font-bg"
+                style="border-bottom: 4px solid #bde5a8;color: #35887f; font-size: 30px;">
+                {{ question.title }}
+            </div>
+        </div>
+        <div class="question-quote-container"
+            style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+            <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+                <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+                    <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+                        <div
+                            style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+                            <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+                                <img style="width:112px;height:114px; overflow:hidden"
+                                    src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                                <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                                    <div class="hvrbox-text">
+                                        {{ getPerson(quote.personId)?.name}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hvrbox-tagline-text"
+                            style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+                            <div class="question-quote-container-innermost" style="font-size: 16px;">
+                                {{ quote.tagline }}
+                            </div>
+                        </div>
+                        <img src="assets/images/expand.png" style="padding-right: 12px;">
+                    </mat-grid-tile>
+                </div>
+            </mat-grid-list>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="router.url == '/stories/support/b'">
+    <div *ngFor="let question of supportSection_2">
+        <div class="question-content" style="padding-top: 75px;">
+            <div class="title title-font title-font-bg"
+                style="border-bottom: 4px solid #bde5a8;color: #35887f; font-size: 30px;">
+                {{ question.title }}
+            </div>
+        </div>
+        <div class="question-quote-container"
+            style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+            <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+                <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+                    <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+                        <div
+                            style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+                            <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+                                <img style="width:112px;height:114px; overflow:hidden"
+                                    src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                                <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                                    <div class="hvrbox-text">
+                                        {{ getPerson(quote.personId)?.name}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hvrbox-tagline-text"
+                            style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+                            <div class="question-quote-container-innermost" style="font-size: 16px;">
+                                {{ quote.tagline }}
+                            </div>
+                        </div>
+                        <img src="assets/images/expand.png" style="padding-right: 12px;">
+                    </mat-grid-tile>
+                </div>
+            </mat-grid-list>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="router.url == '/stories/support/c'">
+    <div *ngFor="let question of supportSection_3">
+        <div class="question-content" style="padding-top: 75px;">
+            <div class="title title-font title-font-bg"
+                style="border-bottom: 4px solid #bde5a8;color: #35887f; font-size: 30px;">
+                {{ question.title }}
+            </div>
+        </div>
+        <div class="question-quote-container"
+            style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+            <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+                <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+                    <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+                        <div
+                            style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+                            <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+                                <img style="width:112px;height:114px; overflow:hidden"
+                                    src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                                <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                                    <div class="hvrbox-text">
+                                        {{ getPerson(quote.personId)?.name}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hvrbox-tagline-text"
+                            style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+                            <div class="question-quote-container-innermost" style="font-size: 16px;">
+                                {{ quote.tagline }}
+                            </div>
+                        </div>
+                        <img src="assets/images/expand.png" style="padding-right: 12px;">
+                    </mat-grid-tile>
+                </div>
+            </mat-grid-list>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="router.url == '/stories/accountability/a'">
+
+    <div style="padding-top: 100px;">
+        <div *ngFor="let question of accountabilitySection_1">
+            <div class="question-content accardion-v2">
+                <div class="title title-font">
                     {{ question.title }}
-<!---                    <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="true"
-                                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}">
-                    </svg-icon>
---->
                 </div>
-                <div class="question">
-                  <p [innerHTML]="question.question"></p>
-                </div>
-              </div>
-        <div class="question-quote-container" style="padding-left:4%">                       
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
+            </div>
+            <div class="question-quote-container"
+                style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+                <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+                    <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+                        <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+                            <div
+                                style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+                                <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+                                    <img style="width:112px;height:114px; overflow:hidden"
+                                        src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                                    <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                                        <div class="hvrbox-text">
+                                            {{ getPerson(quote.personId)?.name}}
+                                        </div>
                                     </div>
-                                </div>                                
-                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >
-                                    {{ quote.tagline }}                      
                                 </div>
-                            </div>                        
-                    </mat-grid-tile>               
-                </div>
-            </mat-grid-list>                            
-        </div>
-    </div>
-</div>
-
-<div *ngIf="router.url == '/stories/support/b'" >
-          <div *ngFor="let question of supportSection_2" >
-          <div class="question-content ">
-            <div class="title title-font title-font-bg">
-                 {{ question.title }}
-<!---                <svg-icon src="/assets/images/nouns/facilitate.svg" [stretch]="true"
-                                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}"></svg-icon>
-     --->          
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
-
-              
-<div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                    </div>
-                                </div>                                
                             </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >    
-                                    {{ quote.tagline }}                      
+                            <div class="hvrbox-tagline-text"
+                                style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+                                <div class="question-quote-container-innermost" style="font-size: 16px;">
+                                    {{ quote.tagline }}
                                 </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
-</div>              
-              
-              
-    </div>
-  </div>
-
-<div *ngIf="router.url == '/stories/support/c'" >
-          <div *ngFor="let question of supportSection_3" >
-          <div class="question-content">
-            <div class="title title-font title-font-bg">
-                
-                {{ question.title }}
-<!---                <svg-icon src="/assets/images/nouns/supportchallenges1.svg" [stretch]="true"
-                [svgStyle]="{'height.px':50,'width.px':50,'padding.px':1,'margin.px':3}"></svg-icon>
-     --->           
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
-<!---              
-          <div class="question-quote-container">
-           <div *ngFor="let quote of question.quotes"
-                 class="quote-box"  
-                 [ngStyle]="{'background-color':'#F2F2f2'}"
-                 (resize)="onResize($event)"
-                 (click)="openQuoteModal(content, quote)">
-              
-              <div style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                        <div style="display:flex;width:60%;justify-content:center">
-                            <div >
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>
                             </div>
-                        </div>
-                        <div style="display:flex;width:32%;justify-content:center;align-content:flex-end;">
-                            {{ getPerson(quote.personId)?.name}} 
-                        </div>
-                        <div style="display:flex">
-                            <hr>
-                        </div>
-                </div>
-                <hr>
-                <div style="display:flex;height:20%; justify-content:center;align-content:flex-start;">
-                    <div class="tagline">
-                        {{ quote.tagline }}
+                            <img src="assets/images/expand.png" style="padding-right: 12px;">
+                        </mat-grid-tile>
                     </div>
-                </div>        
+                </mat-grid-list>
             </div>
         </div>
-      --->        
-              
-<div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                    </div>
-                                </div>                                
-<!---                                
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
---->                                
-                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >                                         
-                                    {{ quote.tagline }}                      
-                                </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
-</div>
-              
     </div>
-  </div>
 
-<div *ngIf="router.url == '/stories/accountability/a'" >
-        <div class="question-content" id="Futures">
-          <div class="title title-font title-font-bg"> 
-              The Beginning
-<!---              <svg-icon src="/assets/images/nouns/beginning.svg" [stretch]="true"
-                [svgStyle]="{'width.px':45,'height.px':45,'padding.px':1,'margin.px':3}"></svg-icon>
---->      
+
 </div>
+
+<div *ngIf="router.url == '/stories/accountability/b'">
+
+    <div style="padding-top: 100px;">
+        <div *ngFor="let question of accountabilitySection_2">
+            <div class="question-content accardion-v2">
+                <div class="title title-font">
+                    {{ question.title }}
+                </div>
+            </div>
+            <div class="question-quote-container"
+                style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+                <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+                    <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+                        <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+                            <div
+                                style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+                                <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+                                    <img style="width:112px;height:114px; overflow:hidden"
+                                        src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                                    <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                                        <div class="hvrbox-text">
+                                            {{ getPerson(quote.personId)?.name}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hvrbox-tagline-text"
+                                style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+                                <div class="question-quote-container-innermost" style="font-size: 16px;">
+                                    {{ quote.tagline }}
+                                </div>
+                            </div>
+                            <img src="assets/images/expand.png" style="padding-right: 12px;">
+                        </mat-grid-tile>
+                    </div>
+                </mat-grid-list>
+            </div>
         </div>
-          <div *ngFor="let question of accountabilitySection_1" >
-          <div class="question-content accardion-v2">
-            <div class="title title-font title-font-bg">
+    </div>
+
+
+</div>
+
+<div *ngIf="router.url == '/stories/accountability/c'">
+
+    <div style="padding-top: 100px;">
+        <div *ngFor="let question of accountabilitySection_3">
+            <div class="question-content accardion-v2">
+                <div class="title title-font">
+                    {{ question.title }}
+                </div>
+            </div>
+            <div class="question-quote-container"
+                style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+                <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+                    <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+                        <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+                            <div
+                                style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+                                <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+                                    <img style="width:112px;height:114px; overflow:hidden"
+                                        src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                                    <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                                        <div class="hvrbox-text">
+                                            {{ getPerson(quote.personId)?.name}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hvrbox-tagline-text"
+                                style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+                                <div class="question-quote-container-innermost" style="font-size: 16px;">
+                                    {{ quote.tagline }}
+                                </div>
+                            </div>
+                            <img src="assets/images/expand.png" style="padding-right: 12px;">
+                        </mat-grid-tile>
+                    </div>
+                </mat-grid-list>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div *ngIf="router.url == '/stories/community/a'">
+    <div *ngFor="let question of communitySection_1">
+        <div class="question-content" style="padding-top: 75px;">
+            <div class="title title-font title-font-bg"
+                style="border-bottom: 4px solid #bde5a8;color: #35887f; font-size: 30px;">
                 {{ question.title }}
             </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
- <!---             
-          <div class="question-quote-container">
-           <div *ngFor="let quote of question.quotes"
-                 class="quote-box"  
-                 [ngStyle]="{'background-color':'#F2F2f2'}"
-                 (resize)="onResize($event)"
-                 (click)="openQuoteModal(content, quote)">
-              
-              <div style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                        <div style="display:flex;width:60%;justify-content:center">
-                            <div >
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>
-                            </div>
-                        </div>
-                        <div style="display:flex;width:32%;justify-content:center;align-content:flex-end;">
-                            {{ getPerson(quote.personId)?.name}} 
-                        </div>
-                        <div style="display:flex">
-                            <hr>
-                        </div>
-                </div>
-                <hr>
-                <div style="display:flex;height:20%; justify-content:center;align-content:flex-start;">
-                    <div class="tagline">
-                        {{ quote.tagline }}
-                    </div>
-                </div>        
-            </div>
         </div>
---->
-              <div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
+        <div class="question-quote-container"
+            style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+            <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+                <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+                    <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+                        <div
+                            style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+                            <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+                                <img style="width:112px;height:114px; overflow:hidden"
+                                    src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                                <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                                    <div class="hvrbox-text">
+                                        {{ getPerson(quote.personId)?.name}}
                                     </div>
-                                </div>                                
-<!---                                
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
----> 
-                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >          
-                                    {{ quote.tagline }}                      
                                 </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
+                            </div>
+                        </div>
+                        <div class="hvrbox-tagline-text"
+                            style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+                            <div class="question-quote-container-innermost" style="font-size: 16px;">
+                                {{ quote.tagline }}
+                            </div>
+                        </div>
+                        <img src="assets/images/expand.png" style="padding-right: 12px;">
+                    </mat-grid-tile>
+                </div>
+            </mat-grid-list>
+        </div>
+    </div>
 </div>
-    </div>
-  </div>
 
-<div *ngIf="router.url == '/stories/accountability/b'" >
-        <div class="question-content" id="Futures">
-          
-            <div class="title title-font title-font-bg"> 
-              The Process
-<!---                
-                <svg-icon src="/assets/images/nouns/process.svg" [stretch]="true"
-                [svgStyle]="{'width.px':45,'height.px':45,'padding.px':1,'margin.px':3}"></svg-icon>
---->
-            </div>
-          
-        </div>
-          <div *ngFor="let question of accountabilitySection_2" >
-          <div class="question-content accardion-v2">
-            <div class="title title-font title-font-bg">
-                {{ question.title }}                
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
-              
-  <!---            
-          <div class="question-quote-container">
-           <div *ngFor="let quote of question.quotes"
-                 class="quote-box"  
-                 [ngStyle]="{'background-color':'#F2F2f2'}"
-                 (resize)="onResize($event)"
-                 (click)="openQuoteModal(content, quote)">
-              
-              <div style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                        <div style="display:flex;width:60%;justify-content:center">
-                            <div >
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>
-                            </div>
-                        </div>
-                        <div style="display:flex;width:32%;justify-content:center;align-content:flex-end;">
-                            {{ getPerson(quote.personId)?.name}} 
-                        </div>
-                        <div style="display:flex">
-                            <hr>
-                        </div>
-                </div>
-                <hr>
-                <div style="display:flex;height:20%; justify-content:center;align-content:flex-start;">
-                    <div class="tagline">
-                        {{ quote.tagline }}
-                    </div>
-                </div>        
-            </div>
-        </div>
----> 
-              
-<div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                    </div>
-                                </div>                                
-<!---                                
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
---->
-                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >                  
-                                    {{ quote.tagline }}                      
-                                </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
-</div>              
-              
-              
-    </div>
-  </div>
-
-<div *ngIf="router.url == '/stories/accountability/c'" >
-        <div class="question-content" id="Futures">
-           
-            <div class="title title-font title-font-bg"> 
-              The End
-                <!---<svg-icon src="/assets/images/nouns/end.svg" [stretch]="true"
-                [svgStyle]="{'width.px':45,'height.px':45,'padding.px':1,'margin.px':3}"></svg-icon>
---->            
-</div>              
-          
-        </div>
-          <div *ngFor="let question of accountabilitySection_3" >
-          <div class="question-content accardion-v2">
-            <div class="title title-font title-font-bg">
-                {{ question.title }}                
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
-<!---              
-          <div class="question-quote-container">
-           <div *ngFor="let quote of question.quotes"
-                 class="quote-box"  
-                 [ngStyle]="{'background-color':'#F2F2f2'}"
-                 (resize)="onResize($event)"
-                 (click)="openQuoteModal(content, quote)">
-              
-              <div style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                        <div style="display:flex;width:60%;justify-content:center">
-                            <div >
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>
-                            </div>
-                        </div>
-                        <div style="display:flex;width:32%;justify-content:center;align-content:flex-end;">
-                            {{ getPerson(quote.personId)?.name}} 
-                        </div>
-                        <div style="display:flex">
-                            <hr>
-                        </div>
-                </div>
-                <hr>
-                <div style="display:flex;height:20%; justify-content:center;align-content:flex-start;">
-                    <div class="tagline">
-                        {{ quote.tagline }}
-                    </div>
-                </div>        
-            </div>
-        </div>
-    --->
-  <div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                    </div>
-                                </div>                                
-<!---                                
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
---->                                 
-                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >                                         
-                                    {{ quote.tagline }}                      
-                                </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
-</div>  
-    </div>
-  </div>
-
-<div *ngIf="router.url == '/stories/community/a'" >
-          <div *ngFor="let question of communitySection_1" >
-          <div class="question-content">
-            <div class="title title-font title-font-bg">
-                 {{ question.title }}
-                <!---<svg-icon src="/assets/images/nouns/communitydefinitions.svg" [stretch]="true"
-                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}"></svg-icon>
-               --->
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
-<!---              
-              
-          <div class="question-quote-container">
-           <div *ngFor="let quote of question.quotes"
-                 class="quote-box"  
-                 [ngStyle]="{'background-color':'#F2F2f2'}"
-                 (resize)="onResize($event)"
-                 (click)="openQuoteModal(content, quote)">
-              
-              <div style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                        <div style="display:flex;width:60%;justify-content:center">
-                            <div >
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>
-                            </div>
-                        </div>
-                        <div style="display:flex;width:32%;justify-content:center;align-content:flex-end;">
-                            {{ getPerson(quote.personId)?.name}} 
-                        </div>
-                        <div style="display:flex">
-                            <hr>
-                        </div>
-                </div>
-                <hr>
-                <div style="display:flex;height:20%; justify-content:center;align-content:flex-start;">
-                    <div class="tagline">
-                        {{ quote.tagline }}
-                    </div>
-                </div>        
-            </div>
-        </div>
---->
-<div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                    </div>
-                                </div>                                
-<!---                                
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
---->                                 
-                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >                                         
-                                    {{ quote.tagline }}                      
-                                </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
-</div>              
-    </div>
-  </div>
-
-<div *ngIf="router.url == '/stories/community/b'" >
-          <div *ngFor="let question of communitySection_2" >
-          <div class="question-content">
-            <div class="title title-font title-font-bg">
+<div *ngIf="router.url == '/stories/community/b'">
+    <div *ngFor="let question of communitySection_2">
+        <div class="question-content" style="padding-top: 75px;">
+            <div class="title title-font title-font-bg"
+                style="border-bottom: 4px solid #bde5a8;color: #35887f; font-size: 30px;">
                 {{ question.title }}
-<!---                <svg-icon src="/assets/images/nouns/involvement.svg" [stretch]="true"
-                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}"></svg-icon>
-     --->           
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
-<!---              
-          <div class="question-quote-container">
-           <div *ngFor="let quote of question.quotes"
-                 class="quote-box"  
-                 [ngStyle]="{'background-color':'#F2F2f2'}"
-                 (resize)="onResize($event)"
-                 (click)="openQuoteModal(content, quote)">
-              
-              <div style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                        <div style="display:flex;width:60%;justify-content:center">
-                            <div >
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>
-                            </div>
-                        </div>
-                        <div style="display:flex;width:32%;justify-content:center;align-content:flex-end;">
-                            {{ getPerson(quote.personId)?.name}} 
-                        </div>
-                        <div style="display:flex">
-                            <hr>
-                        </div>
-                </div>
-                <hr>
-                <div style="display:flex;height:20%; justify-content:center;align-content:flex-start;">
-                    <div class="tagline">
-                        {{ quote.tagline }}
-                    </div>
-                </div>        
             </div>
         </div>
-              --->
-    
-<div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
+        <div class="question-quote-container"
+            style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+            <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+                <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+                    <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+                        <div
+                            style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+                            <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+                                <img style="width:112px;height:114px; overflow:hidden"
+                                    src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+                                <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                                    <div class="hvrbox-text">
+                                        {{ getPerson(quote.personId)?.name}}
                                     </div>
-                                </div>                                
-<!---                                
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
---->                                 
-                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >                                         
-                                    {{ quote.tagline }}                      
                                 </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
-</div>    
-
+                            </div>
+                        </div>
+                        <div class="hvrbox-tagline-text"
+                            style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+                            <div class="question-quote-container-innermost" style="font-size: 16px;">
+                                {{ quote.tagline }}
+                            </div>
+                        </div>
+                        <img src="assets/images/expand.png" style="padding-right: 12px;">
+                    </mat-grid-tile>
+                </div>
+            </mat-grid-list>
+        </div>
     </div>
-  </div>
+</div>
 
 <div *ngIf="router.url == '/stories/community/c'" >
-          <div *ngFor="let question of communitySection_3" >
-          <div class="question-content">
-            <div class="title title-font title-font-bg">
-                {{ question.title }}
-<!---                <svg-icon src="/assets/images/nouns/communitychallenges.svg" [stretch]="true"
-                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}"></svg-icon>
-     --->           
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
-    <!---          
-          <div class="question-quote-container">
-           <div *ngFor="let quote of question.quotes"
-                 class="quote-box"  
-                 [ngStyle]="{'background-color':'#F2F2f2'}"
-                 (resize)="onResize($event)"
-                 (click)="openQuoteModal(content, quote)">
-              
-              <div style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                        <div style="display:flex;width:60%;justify-content:center">
-                            <div >
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>
-                            </div>
-                        </div>
-                        <div style="display:flex;width:32%;justify-content:center;align-content:flex-end;">
-                            {{ getPerson(quote.personId)?.name}} 
-                        </div>
-                        <div style="display:flex">
-                            <hr>
-                        </div>
-                </div>
-                <hr>
-                <div style="display:flex;height:20%; justify-content:center;align-content:flex-start;">
-                    <div class="tagline">
-                        {{ quote.tagline }}
-                    </div>
-                </div>        
-            </div>
-        </div>
-              --->
-    
-<div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                    </div>
-                                </div>                                
-<!---                                
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
---->                                 
-                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >                                         
-                                    {{ quote.tagline }}                      
-                                </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
-</div>    
-    
+    <div *ngFor="let question of communitySection_3">
+  <div class="question-content" style="padding-top: 75px;">
+    <div class="title title-font title-font-bg" style="border-bottom: 4px solid #bde5a8;color: #35887f; font-size: 30px;">
+      {{ question.title }}
     </div>
   </div>
+  <div class="question-quote-container" style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+    <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+      <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+        <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+          <div style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+            <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+              <img style="width:112px;height:114px; overflow:hidden"
+                src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+              <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                <div class="hvrbox-text">
+                  {{ getPerson(quote.personId)?.name}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hvrbox-tagline-text" style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+            <div class="question-quote-container-innermost" style="font-size: 16px;">
+              {{ quote.tagline }}
+            </div>
+          </div>
+          <img src="assets/images/expand.png" style="padding-right: 12px;">
+        </mat-grid-tile>
+      </div>
+    </mat-grid-list>
+  </div>
+</div>
+</div>
 
 <div *ngIf="router.url == '/stories/community/d'" >
-          <div *ngFor="let question of communitySection_4" >
-          <div class="question-content">
-            <div class="title title-font title-font-bg">
-                {{ question.title }}
-<!---                <svg-icon src="/assets/images/nouns/state.svg" [stretch]="true"
-                [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}"></svg-icon>
-     --->           
-            </div>
-            <div class="question">
-              <p [innerHTML]="question.question"></p>
-            </div>
-          </div>
-              
-<!---              
-          <div class="question-quote-container">
-           <div *ngFor="let quote of question.quotes"
-                 class="quote-box"  
-                 [ngStyle]="{'background-color':'#F2F2f2'}"
-                 (resize)="onResize($event)"
-                 (click)="openQuoteModal(content, quote)">
-              
-              <div style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                        <div style="display:flex;width:60%;justify-content:center">
-                            <div >
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>
-                            </div>
-                        </div>
-                        <div style="display:flex;width:32%;justify-content:center;align-content:flex-end;">
-                            {{ getPerson(quote.personId)?.name}} 
-                        </div>
-                        <div style="display:flex">
-                            <hr>
-                        </div>
-                </div>
-                <hr>
-                <div style="display:flex;height:20%; justify-content:center;align-content:flex-start;">
-                    <div class="tagline">
-                        {{ quote.tagline }}
-                    </div>
-                </div>        
-            </div>
-        </div>
---->
-<div class="question-quote-container" style="padding-left:4%">
-            <mat-grid-list [cols]="nbCols" [rowHeight]="rowHeightRatio" gutterSize="50px" (window:resize)="onResize($event)">
-                <div *ngFor="let quote of question.quotes"                 
-                 (click)="openQuoteModal(content, quote)">                
-                    <mat-grid-tile>                        
-                            <div style="display:flex;width:40%;justify-content:flex-start;padding-right:24px">
-                                <div class="hvrbox">
-                                    <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile hvrbox-layer_bottom">
-                                    <div class="hvrbox-layer_top">
-                                        <div class="hvrbox-text">{{ getPerson(quote.personId)?.name}} </div>
-                                    </div>
-                                </div>                                
-<!---                                
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}" class="tile"/> 
---->                                 
-                            </div>
-                            <div style="display:flex; width:60%; justify-content:flex-center;">                        
-                                <div class="question-quote-container-innermost" >                                         
-                                    {{ quote.tagline }}                      
-                                </div>
-                            </div>                        
-                    </mat-grid-tile>               
-            </div>
-        </mat-grid-list>
-</div>              
+    <div *ngFor="let question of communitySection_4">
+  <div class="question-content" style="padding-top: 75px;">
+    <div class="title title-font title-font-bg" style="border-bottom: 4px solid #bde5a8;color: #35887f; font-size: 30px;">
+      {{ question.title }}
     </div>
   </div>
+  <div class="question-quote-container" style="padding:4%; margin-top: -12px; margin-left: 0px; margin-right: 0px;">
+    <mat-grid-list [cols]="nbCols" [rowHeight]="116" gutterSize="10px" (window:resize)="onResize($event)">
+      <div *ngFor="let quote of question.quotes" (click)="openQuoteModal(content, quote)">
+        <mat-grid-tile class="hvrbox-tagline" style="border: .5px solid black;">
+          <div style="display:flex;width:40%; height: 100%; justify-content:flex-start;padding-right:10px;">
+            <div class="hvrbox-clear" style="height: 114px; width: 114px;">
+              <img style="width:112px;height:114px; overflow:hidden"
+                src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}}">
+              <div class="hvrbox-layer_top" style="height: 114px; width: 114px;">
+                <div class="hvrbox-text">
+                  {{ getPerson(quote.personId)?.name}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hvrbox-tagline-text" style="padding-left: 12px; display:flex; width:60%; justify-content:flex-center;">
+            <div class="question-quote-container-innermost" style="font-size: 16px;">
+              {{ quote.tagline }}
+            </div>
+          </div>
+          <img src="assets/images/expand.png" style="padding-right: 12px;">
+        </mat-grid-tile>
+      </div>
+    </mat-grid-list>
+  </div>
+</div>
+</div>
 
 
 
 
 <ng-template #rollover let-c="close">
-  <div class="modal-header">
-    <h4 class="modal-title title-font">{{ selectedRollover.title }}</h4>
-    <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <p [innerHTML]="selectedRollover.quote"></p>
-  </div>
+    <div class="modal-header">
+        <h4 class="modal-title title-font">{{ selectedRollover.title }}</h4>
+        <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p [innerHTML]="selectedRollover.quote"></p>
+    </div>
 </ng-template>
 
 <ng-template #content let-c="close">
-  <div class="modal-header">
-    <h4>
-      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank' *ngIf='getPerson(selectedQuote.personId).link'> 
-          {{ getPerson(selectedQuote.personId)?.name }}
-      </a>
-      <span *ngIf='!getPerson(selectedQuote.personId).link'> 
-          {{ getPerson(selectedQuote.personId)?.name }} : {{ selectedQuote.tagline }} 
-      </span>
-    </h4>
-    <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    <div class="person-photo-container" [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'> 
+    <div class="modal-header">
+        <h4>
+            <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank'
+                *ngIf='getPerson(selectedQuote.personId).link'>
+                {{ getPerson(selectedQuote.personId)?.name }}
+            </a>
+            <span *ngIf='!getPerson(selectedQuote.personId).link'>
+                {{ getPerson(selectedQuote.personId)?.name }} : {{ selectedQuote.tagline }}
+            </span>
+        </h4>
+        <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
-    <p [innerHTML]="selectedQuote.quote"></p>
-  </div>
+    <div class="modal-body">
+        <div class="person-photo-container"
+            [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'>
+        </div>
+        <p [innerHTML]="selectedQuote.quote"></p>
+    </div>
 </ng-template>

@@ -218,7 +218,7 @@
                 </div>
               </div>
             </div>
-            <div style="display:flex; width:60%; justify-content:flex-center;">
+            <div class="hvrbox-tagline-text" style="display:flex; width:60%; justify-content:flex-center;">
               <div class="question-quote-container-innermost">
                 {{ quote.tagline }}
               </div>
@@ -228,38 +228,6 @@
         </div>
       </mat-grid-list>
     </div>
-
-    <!--- <mat-grid-list [cols]="nbCols" rowHeight="2:1" (window:resize)="onResize($event)" > --->
-    <!---          <mat-grid-list [cols]="nbCols" rowHeight="2:1" (window:resize)="onResize($event)">
-            <div *ngFor="let quote of question.quotes"                  
-                  (click)="openQuoteModal(content, quote)">
-                <mat-grid-tile>
-                <img style="width:50%;max-height:50%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>    
-                <p style="font-size:2em;font-style: italic;font-weight: bold;">{{ quote.tagline }}</p>
-                </mat-grid-tile>
-              <div style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                    <div style="display:flex;width:60%;justify-content:center">
-                        <div >                                
-                                <img style="width:100%;max-height:100%; overflow:hidden" src="assets/images/persons/thumbnail/{{ getPerson(quote.personId)?.image}} "/>
-                        </div>
-                    </div>
-                    <div style="display:flex;width:32%;justify-content:center;align-content:flex-end;">
-                        {{ getPerson(quote.personId)?.name}} 
-                    </div>
-                    <div style="display:flex">
-                        <hr>
-                    </div>
-                </div>
-                <hr>
-                <div style="display:flex;height:20%; justify-content:center; align-content:flex-start;">
-                    <div class="tagline">
-                        {{ quote.tagline }}
-                    </div>
-                </div>  
-              
-            </div>
-          </mat-grid-list>
- --->
   </div>
 </div>
 
@@ -360,7 +328,7 @@
 <div class="copyright">
   <div class="content-wrapper">
     <span class="copy">©</span>
-    2019 WRMUS
+    2020 WRMUS
   </div>
 </div>
 

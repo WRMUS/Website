@@ -1,256 +1,1466 @@
-<!---
-        <div class="sidebar-style" >
-            <a class="list-group-item" routerLink="support" >         Support</a> 
-            <a class="list-group-item" routerLink="accountability" >  Accountability </a>
-            <a class="list-group-item" routerLink="community" >       Community</a>
-        </div>
-
---->
-   <div class="sidebar-style">
-            <div *ngIf="router.url.match('/stories/support.*')">
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/a" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            Support Survivors
-                        </div>
+<div class="container" style="padding:0px">
+    <div *ngIf="router.url.includes('/stories/support')">
+        <div class="row">
+            <div class="col-12">
+                <div class="question-content">
+                    <div class="title title-font title-font-bg" style="display: block;">
+                        Support
                     </div>
-                </a> 
-
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/b" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/facilitate.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            Facilitate a Process
-                        </div>
-                    </div>
-                </a> 
-                
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/c" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/supportchallenges1.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            Challenges
-                        </div>
-                    </div>
-                </a> 
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/support/a" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/pec.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
-                            </svg-icon>
-                            Support Survivors
-                        </div>
-                    </div>
-                </a> 
-
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/support/b" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/facilitate.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
-                            </svg-icon>                         
-                            Facilitate a Process
-                        </div>
-                    </div>
-                </a> 
-                
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/support/c" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/supportchallenges1.svg" [stretch]="false"
-                                      [svgStyle]="{'width.px':25}">
-                            </svg-icon>                        
-                            Challenges
-                        </div>
-                    </div>
-                </a> 
-
-            </div>
-            <div *ngIf="router.url.match('/stories/accountability.*')">
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/a" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/beginning.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            The Beginning
-                        </div>
-                    </div>
-                </a> 
-                
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/b" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/process.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            The Process
-                        </div>
-                    </div>
-                </a>
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/c" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/end.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            The End
-                        </div>
-                    </div>
-                </a>                
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/accountability/a" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/beginning.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                            The Beginning
-                        </div>
-                    </div>
-                </a> 
-                
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/accountability/b" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/process.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                            The Process
-                        </div>
-                    </div>
-                </a>
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/accountability/c" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/end.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                            The End
-                        </div>
-                    </div>
-                </a>                
-            </div>
-            <div *ngIf="router.url.match('/stories/community.*')">
-                
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/a" > 
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/communitydefinitions.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            Definitions
-                        </div>
-                    </div>
-                </a> 
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/b" >
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/involvement.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            Community Involvement
-                        </div>
-                    </div>
-                </a>                 
-
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/c" >      
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/communitychallenges.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            Challenges
-                        </div>
-                    </div>
-                </a>
-                
-                <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/d" >     
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/state.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                        </div>
-                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 vcenter">
-                            State & Beyond 
-                        </div>
-                    </div>
-                </a>
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/community/a" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/communitydefinitions.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                            Definitions
-                        </div>
-                    </div>
-                </a> 
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/community/b" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/involvement.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                            Community Involvement
-                        </div>
-                    </div>
-                </a>                 
-
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/community/c" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/communitychallenges.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                            Challenges
-                        </div>
-                    </div>
-                </a>
-                
-                <a class="list-group-item mobile-version-sidemenu" routerLink="/stories/community/d" >                                                    
-                    <div class="row" style="align-items: center">
-                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 vcenter">
-                            <svg-icon src="/assets/images/nouns/state.svg" [stretch]="false"
-                                      [svgStyle]="{'height.px':25,'width.px':25}">
-                            </svg-icon>
-                            State & Beyond 
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
+    </div>
 
-       <div >
-            <a style="color: white;pointer-events:none;border-bottom:none;border-left:none;border-right:none" class="list-group-item" >
-                What challenges have you faced?</a>
+    <div *ngIf="router.url.includes('/stories/accountability')">
+        <div class="row">
+            <div class="col-12">
+                <div class="question-content">
+                    <div class="title title-font title-font-bg" style="display: block;">
+                        Accountability
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="router.url.includes('/stories/community')">
+        <div class="row">
+            <div class="col-12">
+                <div class="question-content">
+                    <div class="title title-font title-font-bg" style="display: block;">
+                        Community
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-style">
+        <div *ngIf="router.url == '/stories/support'">
+            
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/support">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/becris.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Support Survivors
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/facilitate.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Facilitate a Process
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/challenges.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Challenges
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/support/a'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/support/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/becris.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Support Survivors
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/facilitate.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Facilitate a Process
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/challenges.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Challenges
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/support/b'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/becris.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Support Survivors
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/support/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/facilitate.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Facilitate a Process
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/challenges.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Challenges
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/support/c'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/becris.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Support Survivors
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/support/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/facilitate.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Facilitate a Process
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/support/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/challenges.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Challenges
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
 
+        <div *ngIf="router.url == '/movement/principles'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url.match('/movement/principles/a')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url.match('/movement/principles/b')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url.match('/movement/principles/c')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url.match('/movement/principles/d')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url.match('/movement/principles/e')">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/ethos.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Ethos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/people-causing-violence.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Causing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/responsibility.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Concept of Responsibility
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/movement/principles/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/experiencing.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    People Experiencing Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/movement/principles/e">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Response to Violence
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/accountability'">
+            
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/accountability">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/beginning.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Beginning
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/process.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Process
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/end.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The End
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/accountability/a'">
+            
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/accountability/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/beginning.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Beginning
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/process.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Process
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/end.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The End
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/accountability/b'">
+            
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/beginning.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Beginning
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/accountability/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/process.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Process
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/end.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The End
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/accountability/c'">
+            
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/beginning.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Beginning
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/accountability/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/process.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The Process
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/accountability/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/end.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    The End
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="router.url == '/stories/community'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/community">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-definition.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Definitions
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Community Involvement
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/challenges.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Challenges
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/state.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    State & Beyond
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/community/a'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/community/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-definition.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Definitions
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Community Involvement
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/challenges.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Challenges
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/state.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    State & Beyond
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/community/b'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-definition.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Definitions
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/community/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Community Involvement
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/challenges.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Challenges
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/state.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    State & Beyond
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/community/c'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-definition.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Definitions
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Community Involvement
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/community/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/challenges.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Challenges
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/state.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    State & Beyond
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="router.url == '/stories/community/d'">
+            <div class="row">
+                <div class="col-12">
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-overview.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Overview
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/a">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/tj-definition.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Definitions
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/b">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/response.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Community Involvement
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item desktop-version-sidemenu" routerLink="/stories/community/c">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/challenges.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    Challenges
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="list-group-item active desktop-version-sidemenu" routerLink="/stories/community/d">
+                        <div class="row" style="align-items: center">
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 vcenter">
+                                <div class="icon-image">
+                                    <img src="assets/images/state.png">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 vcenter">
+                                <div class="side-title">
+                                    State & Beyond
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 

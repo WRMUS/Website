@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: [  '../hvrbox.css',                
                 '../modal-box.css',                 
                 '../question.css',
-                '../quote-box.css'
+                '../quote-box.css',
+                './stories.component.css'
             ]
   
 })
