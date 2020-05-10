@@ -24,7 +24,8 @@ import { RolloverService } from '../services/rollover.service';
                 '../media-box.css', 
                 '../quote-box.css',
                 '../accardion.css',
-                '../bio-images.css'
+                '../bio-images.css',
+                '../movement-detail/movement-detail.component.css'
             ]
 })
 export class StoriesDetailComponent implements OnInit {

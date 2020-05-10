@@ -5,7 +5,56 @@
     border-bottom:none;
     border-left:none;
     border-right:none;
-    
-    
-    
+
 }
+
+.sidebar-style .list-group-item .icon-image {
+    vertical-align: middle;
+
+    max-width: 63px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    left: 35px;
+}
+
+.sidebar-style .list-group-item {
+    height: 100px;
+    font-size: 20px;
+    line-height: 1.25;
+    color: #020202;
+    border: 1px solid #35887f;
+    border-radius: 0;
+}
+
+.sidebar-style .list-group-item .icon-image img {
+    width: 26px;
+}
+
+.question-content .title {
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: none;
+    color: #e26d5c;
+    margin-bottom: 21px;
+  }
+
+  .side-title {
+      float: left;
+      font-size: 20px;
+      color: black;
+  }
+
+  .sidebar-style {
+     width: 100%;
+  }
+
+ .active {
+    background-color: #bde48e !important;
+    color: black;   
+    opacity: 100;
+}
+  

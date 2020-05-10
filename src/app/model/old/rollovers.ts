@@ -730,7 +730,7 @@ export const ROLLOVERS: Rollover[] = [
   {
     id: 95,
     title: 'Challenging Male Supremacy: Being centered',
-    quote: 'One of our members is a somatics practitioner. GenerationFIVE and Generative Somatics, who are really big on somatics as a way of healing (Staci Haines is in both groups), gave CMS support when we were starting the group by giving us a longer training including somatics. <strong>CMS employs somatics in its work as a way to build self-awareness and capacities</strong> by learning how to feel your body and emotions. <strong>Being centered and feeling yourself is a resource that helps people not commit violence</strong>, because being checked out of your body and your emotions enables violence and the persistence of patriarchy.'
+    quote: 'One of our members is a somatics practitioner. generationFIVE and Generative Somatics, who are really big on somatics as a way of healing (Staci Haines is in both groups), gave CMS support when we were starting the group by giving us a longer training including somatics. <strong>CMS employs somatics in its work as a way to build self-awareness and capacities</strong> by learning how to feel your body and emotions. <strong>Being centered and feeling yourself is a resource that helps people not commit violence</strong>, because being checked out of your body and your emotions enables violence and the persistence of patriarchy.'
   }
 ];
 

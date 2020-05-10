@@ -2,8 +2,6 @@
  text-decoration: none    
 }
 
-
-
 .fa.fa-navicon {
   color:white;
   justify-content: center;
@@ -173,7 +171,7 @@ li{
         padding-bottom:15%;
     }
 }
-@media (max-width: 1230px) { 
+@media (max-width: 1235px) { 
     .logo-name { 
         display: none; 
     } 

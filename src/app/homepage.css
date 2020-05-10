@@ -1,6 +1,30 @@
-.img-responsive{
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    font-family: 'PT serif', serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.img-responsive {
    width:53%;
    opacity: 0; 
+}
+
+.copyright {
+    text-align: center;
+}
+
+.choose-country a .btn-homepage {
+    font-family: 'Overpass', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #e26d5c;
+    padding: 0 43px;
+    line-height: 1.5;
+    height: auto;
 }
 
 .btn-homepage{
@@ -10,12 +34,53 @@
     font-size:3em;    
 }
 
-.backgroung-homepage {
+.choose-country h4 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 24px;
+    color: #35887f;
+    font-weight: 400;
+    margin-bottom: 2px;
+    font-size: 24px;
+}
+
+.choose-country {
+    padding: 45px 0;
+    text-align: center;
+    border-bottom: 2px solid #35887f;
+    box-shadow: 0 -9px 20px #35887f;
+}
+
+.home-content {
+    position: relative;
+    padding-top: 80px;
+} 
+
+.home-content h2 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 46px;
+    display: inline-block;
+    color: #35887f;
+    border-bottom: 4pt solid #bde4a8;
+}
+
+.home-content p {
+    font-size: 28px;
+    color: #124e78;
+}
+
+.kit-image img {
     width: 100%;
-    height: 90%;
-    background-size:     cover;                     
-    background-repeat:   no-repeat;
-    background-position: center center;             
+    height: auto;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1210px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 75px;
+    margin: 0 auto;
+    float: none;
 }
 
 .title-paragraph{
@@ -54,3 +119,71 @@
          url("/assets/fonts/5db8bbfb6a548babd3c88584bc301dd2.ttf") format("truetype"),
          url("/assets/fonts/5db8bbfb6a548babd3c88584bc301dd2.svg#Bemio") format("svg");
 }
+
+/* overpass-regular - latin */
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/overpass-v4-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Overpass Regular'), local('Overpass-Regular'),
+         url('/assets/fonts/overpass-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/fonts/overpass-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/fonts/overpass-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/assets/fonts/overpass-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/assets/fonts/overpass-v4-latin-regular.svg#Overpass') format('svg'); /* Legacy iOS */
+  }
+  /* overpass-italic - latin */
+  @font-face {
+    font-family: 'Overpass';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/assets/fonts/overpass-v4-latin-italic.eot'); /* IE9 Compat Modes */
+    src: local('Overpass Italic'), local('Overpass-Italic'),
+         url('/assets/fonts/overpass-v4-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/fonts/overpass-v4-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/fonts/overpass-v4-latin-italic.woff') format('woff'), /* Modern Browsers */
+         url('/assets/fonts/overpass-v4-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/assets/fonts/overpass-v4-latin-italic.svg#Overpass') format('svg'); /* Legacy iOS */
+  }
+
+  /* PT Serif-regular - latin */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/pt-serif-regular.eot'); /* IE9 Compat Modes */
+    src: local('PT Serif Regular'), local('PT-Serif-Regular'),
+         url('/assets/fonts/pt-serif-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/fonts/pt-serif-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/fonts/pt-serif-regular.woff') format('woff'), /* Modern Browsers */
+         url('/assets/fonts/pt-serif-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/assets/fonts/pt-serif-regular.svg#PT-Serif') format('svg'); /* Legacy iOS */
+  }
+  /* overpass-italic - latin */
+  @font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/assets/fonts/pt-serif-italic.eot'); /* IE9 Compat Modes */
+    src: local('Overpass Italic'), local('Overpass-Italic'),
+         url('/assets/fonts/pt-serif-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/fonts/pt-serif-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/fonts/pt-serif-italic.woff') format('woff'), /* Modern Browsers */
+         url('/assets/fonts/pt-serif-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/assets/fonts/pt-serif-italic.svg#PT-Serif') format('svg'); /* Legacy iOS */
+  }
+
+  /* overpass-extra-bold - latin */
+  /* @font-face { */
+    /* font-family: 'Overpass'; */
+    /* font-style: bold; */
+    /* font-weight: 900; */
+    /* src: url('/assets/fonts/overpass-extrabold.eot'); IE9 Compat Modes */
+    /* src: local('Overpass ExtraBold'), local('Overpass-ExtraBold'), */
+         /* url('/assets/fonts/overpass-extrabold.eot?#iefix') format('embedded-opentype'), IE6-IE8 */
+         /* url('/assets/fonts/overpass-extrabold.woff2') format('woff2'), Super Modern Browsers */
+         /* url('/assets/fonts/overpass-extrabold.woff') format('woff'), Modern Browsers */
+         /* url('/assets/fonts/overpass-extrabold.ttf') format('truetype'), Safari, Android, iOS */
+  /* } */
+

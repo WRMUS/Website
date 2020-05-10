@@ -1,4 +1,4 @@
-<div class="bio-flex-box">
+<div class="bio-flex-box" style="padding-top: 75px;">
     <div>
         <div>
             <div class="person-photo-container">
@@ -28,8 +28,8 @@
                     <div *ngFor = "let quotess of question.quotes" >
                         <div style = "display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
                             <div class="question-content">
-                                <div class="title title-font">
-                                    {{ quotess.tagline }}
+                                <div class="title title-font" style="margin: 1% 0; color: #e26d5c;">
+                                    <em>{{ quotess.tagline }}</em>
                                 </div>                                
                                 <div class="question">
                                     <p [innerHTML]=quotess.quote></p>

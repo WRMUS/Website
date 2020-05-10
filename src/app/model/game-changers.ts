@@ -1,7 +1,7 @@
 export const GAME_CHANGERS_SECTION = [];
 export const GAME_CHANGERS_SECTION_1 = [
   {
-    title: 'Biographies',
+    title: 'Bios',
     nav: 'Bios',
     question: 'The following activist-thinkers involved in community accountability & transformative justice work were interviewed for the "What <em>really</em> makes us safe?" project. Click on their bios below. <br>  <br> In some places, additional activist-thinkers and organizations who were not directly involved in the project are quoted on this website, in the hopes of giving a fuller picture of the movement.'
     ,
@@ -16,12 +16,12 @@ export const GAME_CHANGERS_SECTION_1 = [
       {
         tagline: 'Alix Johnson',
         quote: 'is a core member of the <a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a>, working toward building transformative justice responses to child sexual abuse. She also works as a graduate student researcher and instructor at the University of California, Santa Cruz.',
-        photo: 'alix.jpg',
+        photo: 'tn_alix_ori.jpg',
         personId: 16
       },
       {
         tagline: 'Anna Vo',
-        quote: 'has done community accountability work, mediation, counseling, education and community work around construction and place-making. This means workshops, inclusive engagement, skill-sharing, building stuff and empowerment. They are also a musician, illustrator and writer and their focus is finding strategies to support and scaffold feminists of colour.',
+        quote: 'has done transformative justice work, mediation, counseling, education and community work around construction and place-making. This means workshops, inclusive engagement, skill-sharing, building stuff and empowerment. They are also a musician, illustrator and writer and their focus is finding strategies to support and scaffold feminists of colour.',
         photo: 'Anna.jpg',
         personId: 20
       },
@@ -32,18 +32,11 @@ export const GAME_CHANGERS_SECTION_1 = [
         photo: 'wide.jpg'
       },
       {
-        tagline: 'Andrea Marcos',
-        quote: 'Andrea Marcos is a printmaker, nerd, tender-hearted trouble-maker, queer, ariesyoungestchild, dedicated to collective liberation and radical imagination',
-        personId: 99,
-        photo: 'marcos.jpeg'
-      },
-      {
         tagline: 'Ejeris Dixon',
         quote: 'is an organizer and advocate with over 15 years of experience working in racial justice, LGBTQ, anti-violence, and economic justice movements. She is the Founding Director of <a href="http://www.visionchangewin.com/">Vision Change Win Consulting</a>, where she partners with organizations to build their capacity and deepen the impact of their organizing strategies. She is also the former founding program coordinator of the <a href="http://alp.org/safe-outside-system-sos-collective">Safe OUTside the System Collective</a> at the Audre Lorde Project where she worked on creating community based strategies to address hate and police violence.',
         photo: 'ejeris.JPG',
         personId: 7
       },
-      
       {
         tagline: 'Kiyomi Fujikawa',
         quote: 'is a Seattle-based, trans feminine, mixed-race organizer and cultural worker. She has been involved with the anti-violence movement since 2001 in Asian Pacific Islander, Queer and Trans, punk and diy communities. She was formerly  the Queer Network Program Coordinator at <a href="https://www.apichaya.org/">API Chaya</a>.',
@@ -70,7 +63,7 @@ export const GAME_CHANGERS_SECTION_1 = [
       },
       {
         tagline: 'Melanie Brazzell',
-        quote: 'Initiated and designed the “What really makes us safe?” research project, serving as primary interviewer, researcher, and creator of this website. She has worked in the field of anti-sexual violence education for over a decade as a white person commited to ending white supremacy. Inspired by the visionary work of the community accountability and transformative justice movement, she co-founded the <a href="https://www.transformativejustice.eu/en/">Transformative Justice Kollektiv</a> in Berlin. Currently, she is exploring participatory action research as a movement building tool as a graduate student in sociology at the university of California, Santa Barbara.',
+        quote: 'created the “What really makes us safe?” project. They have found community and purpose in the anti-violence work movement for the last fifteen years and were inspired by the visionary work of women and queer folks of color who built the transformative justice movement. Melanie co-founded the Berlin Transformative Justice Collective and published the “What really makes us safe?” toolkit, as well as a guide to working with people who’ve caused sexual harm (both in German). Currently, they are a graduate student in sociology at the University of California, Santa Barbara, exploring participatory action research as a movement building tool.',
         personId: 0,
         photo: 'melanie.jpg'
       },
@@ -84,7 +77,7 @@ export const GAME_CHANGERS_SECTION_1 = [
         tagline: 'Norma',
         quote: 'is an activist, organizer, grandmother, and queer cis Filipina. She is a lecturer at the University of Washington School of Social Work and a mental health therapist in private practice. Norma also consults with organizations and groups on collective healing and integration of social justice and racial equity practices and principles towards movement building and progressive change.',
         personId: 15,
-        photo: 'purple.png'
+        photo: 'n.png'
       },
       {
         tagline: 'Qui Alexander & Jenna Peters-Golden',
@@ -106,7 +99,13 @@ export const GAME_CHANGERS_SECTION_1 = [
         tagline: 'Veronica',
         quote: 'is an anarchist and anti-prison organizer.',
         personId: 17,
-        photo: 'cute.jpg'
+        photo: 'vee.png'
+      },
+      {
+        tagline: 'Andrea Marcos',
+        quote: 'Andrea Marcos is a printmaker, nerd, tender-hearted trouble-maker, queer, ariesyoungestchild, dedicated to collective liberation and radical imagination.'  + '<br><br><br>' + 'Andrea created the linocut print that serves as the “What really makes us safe?” project ' + '<a href="https://www.whatreallymakesussafe.com/#/home" target="_blank" style="color: #014C8C !important;">' + 'logo' + '</a>' + '. The image reimagines a traditional German sewing kit as a tool box for homemade abolitionist safety.',
+        personId: 99,
+        photo: 'marcos.jpg'
       }
     ]
   }];
@@ -191,7 +190,7 @@ export const GAME_CHANGERS_SECTION_1 = [
     + '<br>' + '…in Philadelphia… <a href="https://phillystandsup.wordpress.com/">Philly Stands Up</a>'
     + '<br>' + '… in Durham… <a href="https://iambecauseweare.wordpress.com/">UBUNTU</a>'
     + '<br>' + '…in Seattle… <a href="http://www.nwnetwork.org/">Northwest Network of Bi, Trans, Lesbian, and Gay Survivors of Abuse</a>, <a href="http://cara-seattle.blogspot.com/">Communities Against Rape & Abuse</a>, <a href="https://forcryingoutloud206.wordpress.com/about/">For Crying Out Loud</a>, <a href="https://www.apichaya.org/">Asian Pacific Islander Chaya</a>'
-    + '<br>' + '…in the Bay Area…<a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a>, <a href="http://www.sfaws.org/">San Francisco Asian Women’s Shelter</a>, <a href="http://www.cuav.org/">Communities United Against Violence</a>, <a href="http://www.creative-interventions.org/">Creative Interventions</a>, <a href="http://www.generationfive.org/">GenerationFIVE</a>'
+    + '<br>' + '…in the Bay Area…<a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a>, <a href="http://www.sfaws.org/">San Francisco Asian Women’s Shelter</a>, <a href="http://www.cuav.org/">Communities United Against Violence</a>, <a href="http://www.creative-interventions.org/">Creative Interventions</a>, <a href="http://www.generationfive.org/">generationFIVE</a>'
     
     
   
@@ -199,7 +198,7 @@ export const GAME_CHANGERS_SECTION_3 = [
   {
     title: 'Organizational wisdom',
     nav: 'Organizations',
-    question: 'This project draws together the organizational wisdom of the many anti-violence, queer, and community-based organizations the interviewees have been involved in. To add perspective and context in some places, I use quotes from published materials (not personal interviews) from scholar-activists affiliated with other organizations. All in all, the website presents quotes from folks who are or have been involved in the following:'
+    question: 'This project draws together the organizational wisdom of my interviewees and other transformative justice practitioners. To add perspective and context, in some places I use quotes from published materials (not personal interviews) from scholar-activists not directly affiliated with this project. All in all, the site quotes people who have been involved in the following groups:'
     + '<br/><br/><br/>' ,
 
     quotes: [

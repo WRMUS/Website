@@ -1,37 +1,15 @@
 <main>
-    <div style="display:flex;justify-content:center">
-        <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="jumbotron">
-                        <h1 *ngIf="router.url.match('/movement/tj')">
-                            Movement for Community Accountability & Transformative Justice
-                        </h1> 
-                        <h1 *ngIf="router.url.match('/movement/principles')">
-                            Movement for Community Accountability & Transformative Justice
-                        </h1> 
-                    </div>
-                </div>
-                <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="row">
-                        <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3">
-                            <ol class="breadcrumb">                                
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/movement/tj')">
-                                    Transformative Justice
-                                    <svg-icon src="/assets/images/nouns/tj.svg" [stretch]="true"
-                                                [svgStyle]="{'height.px':50,'width.px':50,'padding.px':1,'margin.px':3}">"></svg-icon>
-                                </li>
-                                <li class="breadcrumb-item"*ngIf="router.url.match('/movement/principles')">
-                                    Principles
-                                 <svg-icon src="/assets/images/nouns/principles.svg" [stretch]="true"
-                                                [svgStyle]="{'height.px':50,'width.px':50,'padding.px':1,'margin.px':3}"></svg-icon>
-                                </li>
-                            </ol>
-                            <router-outlet name="sidemenu"></router-outlet>
-                        </div>
-                    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                                <div *ngIf="router.url.match('/movement/tj$')">
-                                    <div class="question-content">
-<!---                                        
+  <div style="display:flex;justify-content:center">
+    <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+      <div class="mx-auto col-xs-12 col-sm-12 col-md-10 col-lg-10">
+        <div class="row" style="padding-top: 75px;">
+          <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-5">
+          <router-outlet name="sidemenu"></router-outlet>
+        </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+            <div *ngIf="router.url.match('/movement/tj$')">
+              <!---                                        
                                         <div class="title title-font title-font-bg">
                                             Transformative Justice
 <!---                                            <svg-icon src="/assets/images/nouns/tj.svg" [stretch]="true"
@@ -39,92 +17,113 @@
 
                                         </div> 
                                         --->
-                                        <div class="question">
-                                            <p>
-                                                “Transformative  justice”  and  “community  accountability”–  what  do  these  words  mean?  What  are  their  social  movement  roots  and  what  visions  of  the  future  do  they  point  towards? 
-                                            </p>
-                                        </div>
-                                    </div>                        
-                                </div>
-                            <div *ngIf="router.url.match('/movement/principles$')">
-                                <div class="question-blocks">
-                                    <div class="question-content" id="CarceralTransformative">
-<!---                                         <div class="title title-font title-font-bg">
+              <div class="tj-content" style="padding-top: 70px;">
+
+                Transformative justice imagines <b>a community-based response to sexual and partner violence</b> that
+                humanizes, rather than criminalizes, people who cause harm. When possible, transformative justice can
+                engage them in a process to take accountability for their actions –to repair existing harm and transform
+                underlying conditions and behaviors to prevent future harm. What can those processes look like?
+
+              </div>
+            </div>
+            <div *ngIf="router.url.match('/movement/principles$')">
+              <div class="question-blocks">
+                <div class="question-content" id="CarceralTransformative">
+                  <!---                                         <div class="title title-font title-font-bg">
                                             Principles: From Carceral to Transformative
                                            <svg-icon src="/assets/images/nouns/principles.svg" [stretch]="true"
                                                 [svgStyle]="{'height.px':100,'width.px':100,'padding.px':1,'margin.px':3}"></svg-icon>
 
                                         </div>
 --->
-                                        <div class="title title-font">
-                                            From carceral to transformative approaches
-                                        </div>
-                                          <div class="question">
-                                             While the other sections of this site focus mainly on practice, this section offers a more theoretical view on community accountability. Drawing on both interview excerpts and other resources by movement activist-thinkers, I propose several main principles that unite various community accountability & transformative justice responses to violence.
-                                            Each of the following 5 principles compares a carceral approach to violence with a transformative one.  This chart gives a brief summary:
-                                            <br>
-                                            <div class="chart-container">
-                                              <table class="chart">
-                                                <thead class="chart__head">
-                                                  <th class="chart__col-title"></th>
-                                                  <th class="chart__col-title">Carceral</th>
-                                                  <th class="chart__col-title">Approach</th>
-                                                  <th class="chart__col-title">Transformative</th>
-                                                  <th class="chart__col-title">Approach</th>
-                                                </thead>
-                                                <tbody class="chart__body">
-                                                  <tr class="chart__row">
-                                                    <td class="chart__cell">Ethos</td>
-                                                    <td class="chart__cell">Individual</td>
-                                                    <td class="chart__cell">“bad apples” & individual solutions</td>
-                                                    <td class="chart__cell">Collective</td>
-                                                    <td class="chart__cell">collective problem & community solutions</td>
-                                                  </tr>
-                                                  <tr class="chart__row">
-                                                    <td class="chart__cell">People Causing Violence</td>
-                                                    <td class="chart__cell">Criminalization</td>
-                                                    <td class="chart__cell">Good vs. evil, demonize or minimize</td>
-                                                    <td class="chart__cell">Humanization</td>
-                                                    <td class="chart__cell">everyone can cause or experience harm</td>
-                                                  </tr>
-                                                  <tr class="chart__row">
-                                                    <td class="chart__cell">Concept of Responsibility</td>
-                                                    <td class="chart__cell">Blame & Punishment</td>
-                                                    <td class="chart__cell">‘just deserts’ ‘eye for an eye’ debt</td>
-                                                    <td class="chart__cell">Accountability</td>
-                                                    <td class="chart__cell">personal & structural prevention, intervention, reparation, transformation</td>
-                                                  </tr>
-                                                  <tr class="chart__row">
-                                                    <td class="chart__cell">People Experiencing Violence</td>
-                                                    <td class="chart__cell">Security</td>
-                                                    <td class="chart__cell">paternalistic protection</td>
-                                                    <td class="chart__cell">Safety</td>
-                                                    <td class="chart__cell">tools for healing & self determination</td>
-                                                  </tr>
-                                                  <tr class="chart__row">
-                                                    <td class="chart__cell">Response to Violence</td>
-                                                    <td class="chart__cell">Containment & Disposal</td>
-                                                    <td class="chart__cell">"dangerous" people contained or removed</td>
-                                                    <td class="chart__cell">Connection & Community</td>
-                                                    <td class="chart__cell">building relationships and collective power</td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                            </div>
-                                            The following video from Dean Spade and Reina Gossett, part of a series called “No One is Disposable: Everyday Practices of Prison Abolition”, provides a great explanation of the differences between a carceral and a transformative approach:
-                                            <div class="video-frame">
-                                              <img src="//img.youtube.com/vi/XDQlW1uJ8uQ/0.jpg" alt="What would really make us safe?" class='video-frame__img'>
-                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/XDQlW1uJ8uQ?ecver=1" frameborder="0" allowfullscreen class='video-frame__video'></iframe>
-                                            </div>
-                                          </div> 
-                                        </div>
-                                 </div>
-                            </div>
-                    <router-outlet></router-outlet>
-                    
-                </div>  
-                    </div></div>
-    
+                  <div class="title title-font title-font-bg" style="padding-top: 70px;">
+                    From carceral to transformative approaches
+                  </div>
+                  <div class="question">
+                    <p style="font-size: 1.1em;">
+                    This section offers a more
+                    theoretical view. Drawing on both interview excerpts and other resources
+                    by movement activist-thinkers, I propose several main principles that unite various community
+                    accountability & transformative justice responses to violence.
+                    Each of the following 5 principles compares a carceral approach to violence with a transformative
+                    one. This chart gives a brief summary:
+                  </p>
+                    <div class="chart-container">
+                      <table class="chart">
+                        <thead class="chart__head">
+                          <th class="chart__col-title"></th>
+                          <th class="chart__col-title"><span>Carceral</span></th>
+                          <th class="chart__col-title"><span>Approach</span></th>
+                          <th class="chart__col-title"><span>Transformative</span></th>
+                          <th class="chart__col-title"><span>Approach</span></th>
+                        </thead>
+                        <tbody class="chart__body">
+                          <tr class="chart__row">
+                            <td class="chart__cell">Ethos</td>
+                            <td class="chart__cell">Individual</td>
+                            <td class="chart__cell">“bad apples” & individual solutions</td>
+                            <td class="chart__cell">Collective</td>
+                            <td class="chart__cell">collective problem & community solutions</td>
+                          </tr>
+                          <tr class="chart__row">
+                            <td class="chart__cell">People Causing Violence</td>
+                            <td class="chart__cell">Criminalization</td>
+                            <td class="chart__cell">Good vs. evil, demonize or minimize</td>
+                            <td class="chart__cell">Humanization</td>
+                            <td class="chart__cell">everyone can cause or experience harm</td>
+                          </tr>
+                          <tr class="chart__row">
+                            <td class="chart__cell">Concept of Responsibility</td>
+                            <td class="chart__cell">Blame & Punishment</td>
+                            <td class="chart__cell">‘just deserts’ ‘eye for an eye’ debt</td>
+                            <td class="chart__cell">Accountability</td>
+                            <td class="chart__cell">personal & structural prevention, intervention, reparation,
+                              transformation</td>
+                          </tr>
+                          <tr class="chart__row">
+                            <td class="chart__cell">People Experiencing Violence</td>
+                            <td class="chart__cell">Security</td>
+                            <td class="chart__cell">paternalistic protection</td>
+                            <td class="chart__cell">Safety</td>
+                            <td class="chart__cell">tools for healing & self determination</td>
+                          </tr>
+                          <tr class="chart__row">
+                            <td class="chart__cell">Response to Violence</td>
+                            <td class="chart__cell">Containment & Disposal</td>
+                            <td class="chart__cell">"dangerous" people contained or removed</td>
+                            <td class="chart__cell">Connection & Community</td>
+                            <td class="chart__cell">building relationships and collective power</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p style="font-size: 1.1em;">
+                    The following video from Dean Spade and Reina Gossett, part of a series called “No One is
+                    Disposable: Everyday Practices of Prison Abolition”, provides a great explanation of the differences
+                    between a carceral and a transformative approach:
+                  </p>
+                    <div class="video-frame">
+                      <img src="//img.youtube.com/vi/XDQlW1uJ8uQ/0.jpg" alt="What would really make us safe?"
+                        class='video-frame__img'>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/XDQlW1uJ8uQ?ecver=1"
+                        frameborder="0" allowfullscreen class='video-frame__video'></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <router-outlet></router-outlet>
+
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+  <div class="copyright">
+    <div class="content-wrapper" style="text-align: left; padding-bottom: 48px;">
+        <span class="copy">©</span>
+        2020 WRMUS
     </div>
+</div>
 </main>

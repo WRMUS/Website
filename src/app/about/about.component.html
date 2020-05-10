@@ -1,102 +1,307 @@
-<main> 
-    <div style="display:flex;justify-content:center">
-        <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="jumbotron">
-                    <h1>Project</h1>
-                </div>                
+<main>
+  <div style="display:flex;justify-content:center">
+    <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 75px;">
+      <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+          <div class="mx-auto col-xs-12 col-sm-12 col-md-10 col-lg-10">
+            <div *ngIf="router.url.match('/about$')">
+              <div class="container">
+
+                <div class="question-content">
+                  <div class="title title-font title-font-bg" style="display: block;">
+                    About The "What <i>Really</i> Makes Us Safe?" Project
+                  </div>
+                  <!-- <div class="question">
+                    "Melanie Brazzell"
+                  </div> -->
+                  <div id="Beginnings" class="title" style="font-weight: 700;">Research process</div>
+                  <div class="row">
+                    <div class="col-lg-6 order-lg-2">
+                      <img src="assets/images/research-process.png"
+                        style="width: 100%; padding-bottom: 6px; margin-bottom: 20px;">
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                      <div class="question">
+                        The “What <i>Really</i> Makes Us Safe?” Project began as an informal exchange between
+                        transformative justice practitioners responding to sexual and partner violence. Over the years,
+                        it grew into an interview project that became academic research, the results of which are
+                        presented here on this website as a movement resource and archive. 
+                        <!-- As <a
+                          (click)="showBio(0, content)" style="cursor:pointer;"> initiator</a> -->
+                          As initiator of of the project, I also
+                        brought back its lessons to my home context in Berlin, Germany, resulting in <a
+                          href="http://whatreallymakesussafe.com/en">public events and a toolkit</a>.
+                      </div>
+                      <p>
+                        I want to narrate a bit of the project’s evolution. Our fledgling <a
+                          href="https://www.transformativejustice.eu/en/" target='_blank'>transformative justice
+                          collective </a> in Berlin was inspired by organizing in the U.S. but geographically far from
+                        the mothership. We often turned to U.S.-based activists for guidance, sharing our surprises and
+                        struggles. Dialoguing with those who had helped create this movement became a way to both give
+                        and take account of one another.
+                      </p>
+                      <p>
+                        That informal exchange expanded into a participatory research project in 2013 as the foundations
+                        of my Master’s thesis. The research explored the theoretical underpinnings of community
+                        accountability and transformative justice, like: What does it mean to be accountable, actually?
+                        And who, or what, is a community?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+
+                <div class="question-content">
+                  <div id="PAR" class="title" style="font-weight: 700;">Participatory action research?</div>
+                  <div class="row">
+                    <div class="col-lg-6" style="position: relative;">
+                      <img class="vertical-center" src="assets/images/PAR.png" style="width: 100%; padding-bottom: 6px; margin-bottom: 20px; padding-top: 10%;">
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="question">
+                        Participatory action research is an approach that understands all participants in a research
+                        process to be co-creators of the project’s goals, methods, and outcomes.
+                      </div>
+                      <p>
+                        In my interviews with transformative justice practitioners, our dialogue offered an opportunity
+                        to think through questions emerging out of our respective practices. Interview partners shared
+                        organizational materials, connected me with other interviewees, and worked with me to ensure
+                        their voices were properly documented.
+                      </p>
+                      <p>
+                        Fuller participation in the project was limited by capacity and distance (interviewees were
+                        scattered across North America). Unable to all sit at a table, the project took the shape of a
+                        net weaving from one node of organizing to another, as questions and ideas developed in one
+                        conversation were carried to the next. What is documented here is a map of that process, putting
+                        those conversations into dialogue with one another directly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+
+                <div class="question-content" style="margin-bottom: 30px;">
+                  <div id="Who" class="title" style="font-weight: 700;">Who was involved?</div>
+                  <div class="row">
+                    <div class="col-lg-6 order-lg-2">
+                      <img src="assets/images/results.png"
+                        style="width: 100%; padding-bottom: 6px; margin-bottom: 20px;">
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                      <p>
+                        All in all, 16 activist-thinkers gave interviews. You can read their full biographies <a
+                          routerLink="/people/a">here</a>. I was the primary interviewer, and several early interviews
+                        were done by comrades from the <a href="https://www.transformativejustice.eu/en/"
+                          target='_blank'>Transformative Justice Kollektiv Berlin</a>.
+                      </p>
+                      <div id="What" class="title" style="font-weight: 700;">What were the results?</div>
+                      <p>
+                        Many interviewees described the need to share and archive transformative justice work, as our
+                        practices are nascent and experimental and rarely documented. As a result, I built this site to
+                        amplify oral histories from the movement and share knowledge with other practitioners. It also
+                        introduces a broader audience to the practices and principles of transformative justice. I
+                        filled in any gaps on the site left by my interviews with additional quotes from the writing of
+                        other transformative justice practitioners and thinkers not directly involved in this project,
+                        in the hope of giving the fullest possible picture of the movement.
+                      </p>
+                      <p>
+                        Academic publications resulting from this project can be found <a
+                          href="https://ucsb.academia.edu/MelanieBrazzell" target='_blank'>here</a>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="question-content">
+                  <div class="title title-font title-font-bg" style="display: block;">
+                    About The Website
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="about-box" style="margin-bottom: 20px;">
+                        <div style="padding: 68px;">
+                          <div id="About" class="title" style="font-weight: 700; font-size: 28px">Collective Rather Than
+                            SIngle-Story Approach
+                          </div>
+                          <p>
+                            Many accounts of transformative justice work offer stories or models for a single
+                            community-based process, following the narrative arcs of ecstatic ups and catastrophic downs
+                            and the interactions between various players as they move through one process.
+                          </p>
+                          <p>
+                            This website approaches transformative justice differently. Rather than looking at full
+                            stories, the website gathers several voices and hears what they each have to say about the
+                            same general question: What is a community after all? How do we get people to change? Where
+                            is the movement headed?
+                          </p>
+                          <p style="margin: 0px;">
+                            As we move away from the vision of a single, holistic process as the main way to do
+                            transformative justice work, I hope this equips us with more heterogenous and eclectic
+                            approaches.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="attributions-box">
+                        <div style="padding: 68px;">
+                          <div id="Attributions" class="title" style="font-weight: 700; font-size: 28px;">Attributions
+                          </div>
+                          <div class="attributions-header">
+                            <p>
+                              Web:
+                            </p>
+                          </div>
+                          <div class="attributions-content">
+                            <p>
+                              Harmeet Singh
+                              <br />
+                              Tiffany Chow
+                              <br />
+                              Aaron & Brandon Beasley
+                              <br />
+                              Katie O'Connor
+                            </p>
+                          </div>
+                          <div class="attributions-header">
+                            <p>
+                              Illustration:
+                            </p>
+                          </div>
+                          <div class="attributions-content">
+                            <p>
+                              Andrea Marcos
+                              <br />
+                              Katherine Spingarn
+                            </p>
+                          </div>
+                          <div class="attributions-header">
+                            <p>
+                              Creative Commons License for Icons from the Noun Project:
+                            </p>
+                          </div>
+                          <div class="attributions-content">
+                            <p style="margin-bottom: 0px;">
+                              Sewing Box by Jaap Knevel
+                              <br />
+                              Eye by Icon Island
+                              <br />
+                              Finder by Aaron K. Kim
+                              <br />
+                              DNA by Arthur Shlain, World
+                              <br />
+                              Brain Gears by Kathleen Black
+                              <br />
+                              Writing by Takao Umehara
+                              <br />
+                              Forward Time by Chinnaking
+                              <br />
+                              Assistance by Tomas Knopp
+                              <br />
+                              Challenges by Becris
+                              <br />
+                              Revolution by Symbolon
+                              <br />
+                              25% / 50% / 75% Filled Water by Holvonix LLC
+                              <br />
+                              Link by Shastry
+                              <br />
+                              Link by Stella Cohen
+                              <br />
+                              Boat by Dinosoft Labs
+                              <br />
+                              Meeting by Chunk Icons, IN
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="copyright" style="padding-top: 40px; padding-bottom: 40px;">
+                  <div class="content-wrapper" style="text-align: left;">
+                      <span class="copy">©</span>
+                      2020 WRMUS
+                  </div>
+              </div>
+              </div>
             </div>
-            
-            <div class="mx-auto col-xs-12 col-sm-12 col-md-12 col-lg-12">                          
-                    <div class="row">            
-                        <div class="mx-auto col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                            <div *ngIf="router.url.match('/about$')"> 
-                                <div class="question-content">
-                                    <div class="title title-font title-font-bg">
-                                        About the research                                            
-                                    </div> 
-                                    <div id="Beginnings" class="title">Process</div>
-                                    <div class="question">
-                                        The “What <i>really</i> makes us safe?” research project began as an informal exchange between organizers working on community accountability and transformative justice responses to sexual violence. As the <a (click)="showBio(0, content)" style="cursor:pointer;color: #709a98" > initiator</a> of the project, I want to discuss how it evolved. 
-
-                                        Our fledgling <a href="https://www.transformativejustice.eu/en/" target='_blank'>transformative justice collective in Berlin, Germany</a> was influenced by transformative justice thought and organizing in the U.S. but geographically far from the ‘mothership’. Dialoguing with those who had created and propelled this work became a mode of both giving and taking account of one another. 
-                                    </div>
-                                  </div>
-                                  <div class="question-content">
-                                    <div id="Participatory Action Research" class="title">Participatory Action Research</div>
-                                    <div class="question">
-                                      That informal exchange expanded into a participatory research project in 2013 as the foundations of my Master’s thesis. The research explored the theoretical underpinnings of CA-TJ, like what does it mean to be <span style="font-style: italic;">accountable</span> after all? And who or what is <span style="font-style: italic;">a community?</span>
-                                      <br><br>
-                                      <a href="http://www.incite-national.org/page/participatory-action-research" target='_blank'>Participatory action research</a> is an approach that understands all participants in a research process to be co-creators of the project’s goals, methods, and outcomes. In my interviews, our dialogues offered an opportunity to collectively think through questions emerging out of our respective practices. Interview partners shared organizational materials, connected me with other activists, and even read parts of my thesis.
-                                      However, this project was not fully participatory from start to finish. Participants were scattered across the U.S. and Canada, so we could not meet at one table and political work put limits on time. The research took the shape of a net weaving from one node of organizing to another, as a set of questions and ideas developed in one conversation was carried into the next. This site allows me to put all those conversations side by side.
-                                    </div>
-                                  </div>
-                                  <div class="question-content">
-                                    <div id="Who was involved?" class="title">Who was involved?</div>
-                                    <div class="question">
-                                      All in all, 16 activist-thinkers gave interviews. You can read their full biographies <a routerLink="/people/a">here</a>. I was the primary interviewer, and several early interviews were done by comrades from the Transformative Justice Kollektiv Berlin.
-                                    </div>
-                                  </div>
-                                  <div class="question-content">
-                                    <div id="What were the results?" class="title">What were the results?</div>
-                                    <div class="question">
-                                    Many interviewees described the need to archive and document transformative justice work. As a result, this site was built in order to amplify oral histories from the movement and share knowledge with other practitioners. The interviews left gaps in some places, which I filled with quotes from other activist-thinkers and organizations not directly involved in the project, in the hopes of giving a fuller picture of the movement.
-                                    <br><br>
-                                    In addition, academic-oriented papers resulting from this project can be found <a href="https://ucsb.academia.edu/MelanieBrazzell" target='_blank'> on my academia.edu site</a>.
-                                      <br>
-                                      <br>
-                                      <span style="float: right;"><div class="question-content"> <div class="title-font-name">- Melanie Brazzell </div></div></span>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div *ngIf="router.url.match('/about/a$')"> 
-                                <div class="question-content">
-                                    <div class="title title-font title-font-bg">
-                                        About the website                                           
-                                    </div> 
-                                    <div class="title">Vertical, not horizontal approach</div>
-                                    <div class="question">
-                                         Many accounts of CA-TJ work currently out there offer narratives or models for a single community-based process, following narrative arcs of ups and downs and the interactions between various players as they move through a process.
-                                         This website approaches CA-TJ work differently: by cutting it vertically rather than horizontally. Rather than looking at full stories, the website gathers several voices and hears what they each have to say about the same general question: What is a community after all? How do we get people to change? Where is the movement headed?
-                                    </div>
-                                  </div>
-                                  <div class="question-content">
-                                    <div id="Participatory Action Research" class="title">How to navigate the site</div>
-                                    <div class="question">
-                                        To access these questions, you can navigate through various 'chapters':
-                                        <br><br>                        
-                                        <ul>
-                                            <li>
-                                                <a routerLink="/people/a" target="_blank">‘Collaborators’</a> offers biographies of the activists interviewed, as well as their personal  and organizational stories. 
-                                            </li>
-
-                                            <li>
-                                                The chapter <a routerLink="/movement/tj" target="_blank">‘Movement’</a> puts the movement in its larger historical and social context, including a section on the <a routerLink="/movement/principles" target="_blank">Principles</a> behind the work. 
-                                            </li>
-                                            <li>
-                                                <a routerLink="/stories/support" target="_blank">‘Stories’</a> focuses on the interviewees’ praxis: <a routerLink="/stories/support/c" target="_blank">Support</a> for survivors, <a routerLink="/stories/accountability" target="_blank">Accountability</a> for those who cause harm, and engagement with the broader <a routerLink="/stories/community" target="_blank">Community</a>.                  
-                                            </li>
-
-                                        </ul>                    
-                                    </div>
-                                  </div>
-
-                                <div class="question-content">
-                                    <div id="Participatory Action Research" class="title">Attributions</div>
-                                    <div class="question">
-                                        Creative Commons license for Icons from the<a href="https://thenounproject.com/" target='_blank'> Noun Project</a>. Attributions: radiate by Colleen Wilson, finder by Aaron K. Kim,  Branding by Becris, chrysalis by parkjisun,  life  cycle  by  Jae  Aquino,  Writing  by  Takao  Umehara,  tactics  by  Aldric  Rodríguez,  path  by  Nick  Kinling,  Kite  Fight  by  Chameleon  Design,  Blueprint  by  sahua  d,  mind  by  Gregor  Cresnar,  link  by  Stella  Cohen,  connection  by  Petai  Jantrapoon,  Lighthouse  by  Alex  Furgiuele,  assistance  by  Tomas  Knopp,  Boat  by  Dinosoft  Labs,  Challenges  by  Becris,  Sewing  Box  by  Jaap  Knevel,  Flag  by  Roman  J.  Sokolov,  link  by  Shastry,  25%  /  50%  /  75%  Filled  Water  by  Holvonix  LLC,  Share  by  mikicon,  public  opinion  and  Revolution  by  Symbolon,  Neglected  yard  by  Peter  van  Driel,  Maze  by Lilit Kalachyan.
-                                        <br>                                           
-                                        <br>
-                                        <br>
-                                    </div>
-                                  </div>
-                            </div>            
-                            <router-outlet></router-outlet> 
-                        </div>             
-                    </div>               
+          </div>
+          <div *ngIf="router.url.match('/about/a$')">
+            <div class="question-content">
+              <div class="title title-font title-font-bg">
+                About the website
+              </div>
+              <div class="title">Vertical, not horizontal approach</div>
+              <div class="question">
+                Many accounts of CA-TJ work currently out there offer narratives or models for a single community-based
+                process, following narrative arcs of ups and downs and the interactions between various players as they
+                move through a process.
+                This website approaches CA-TJ work differently: by cutting it vertically rather than horizontally.
+                Rather
+                than looking at full stories, the website gathers several voices and hears what they each have to say
+                about the same general question: What is a community after all? How do we get people to change? Where is
+                the movement headed?
+              </div>
             </div>
+            <div class="question-content">
+              <div id="Participatory Action Research" class="title">How to navigate the site</div>
+              <div class="question">
+                To access these questions, you can navigate through various 'chapters':
+                <br><br>
+                <ul>
+                  <li>
+                    <a routerLink="/people/a" target="_blank">‘Collaborators’</a> offers biographies of the activists
+                    interviewed, as well as their personal and organizational stories.
+                  </li>
+
+                  <li>
+                    The chapter <a routerLink="/movement/tj" target="_blank">‘Movement’</a> puts the movement in its
+                    larger historical and social context, including a section on the <a
+                      routerLink="/movement/principles" target="_blank">Principles</a> behind the work.
+                  </li>
+                  <li>
+                    <a routerLink="/stories/support" target="_blank">‘Stories’</a> focuses on the interviewees’ praxis:
+                    <a routerLink="/stories/support/c" target="_blank">Support</a> for survivors, <a
+                      routerLink="/stories/accountability" target="_blank">Accountability</a> for those who cause harm,
+                    and engagement with the broader <a routerLink="/stories/community" target="_blank">Community</a>.
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="question-content">
+              <div id="Participatory Action Research" class="title">Attributions</div>
+              <div class="question">
+                Creative Commons license for Icons from the<a href="https://thenounproject.com/" target='_blank'> Noun
+                  Project</a>. Attributions: radiate by Colleen Wilson, finder by Aaron K. Kim, Branding by Becris,
+                chrysalis by parkjisun, life cycle by Jae Aquino, Writing by Takao Umehara, tactics by Aldric Rodríguez,
+                path by Nick Kinling, Kite Fight by Chameleon Design, Blueprint by sahua d, mind by Gregor Cresnar, link
+                by Stella Cohen, connection by Petai Jantrapoon, Lighthouse by Alex Furgiuele, assistance by Tomas
+                Knopp,
+                Boat by Dinosoft Labs, Challenges by Becris, Sewing Box by Jaap Knevel, Flag by Roman J. Sokolov, link
+                by
+                Shastry, 25% / 50% / 75% Filled Water by Holvonix LLC, Share by mikicon, public opinion and Revolution
+                by
+                Symbolon, Neglected yard by Peter van Driel, Maze by Lilit Kalachyan.
+                <br>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+          <router-outlet></router-outlet>
         </div>
+      </div>
+
     </div>
+  </div>
 </main>
 
 
@@ -114,7 +319,8 @@
 <ng-template #content let-c="close">
   <div class="modal-header">
     <h4 class="modal-title title-font">
-      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank' *ngIf='getPerson(selectedQuote.personId).link'> {{ getPerson(selectedQuote.personId)?.name }}</a>
+      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank'
+        *ngIf='getPerson(selectedQuote.personId).link'> {{ getPerson(selectedQuote.personId)?.name }}</a>
       <span *ngIf='!getPerson(selectedQuote.personId).link'> {{ getPerson(selectedQuote.personId)?.name }}</span>
     </h4>
 
@@ -123,8 +329,10 @@
     </button>
   </div>
   <div class="modal-body">
-    <div class="person-photo-container" *ngIf='selectedQuote.photo || selectedQuote.photo2' [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'>
-      <img src="/assets/images/persons/{{selectedQuote.photo}}" alt="{{ getPerson(selectedQuote.personId)?.name }}" class='person-photo' *ngIf='selectedQuote.photo'>
+    <div class="person-photo-container" *ngIf='selectedQuote.photo || selectedQuote.photo2'
+      [class.person-photo-container_double]='selectedQuote.photo && selectedQuote.photo2'>
+      <img src="/assets/images/persons/{{selectedQuote.photo}}" alt="{{ getPerson(selectedQuote.personId)?.name }}"
+        class='person-photo' *ngIf='selectedQuote.photo'>
     </div>
     <p [innerHTML]="selectedQuote.quote"></p>
   </div>
