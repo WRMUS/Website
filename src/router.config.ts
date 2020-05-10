@@ -20,6 +20,7 @@ import { BioDetailComponent }       from "./app/bio-detail/bio-detail.component"
 import { MovementDetailComponent }  from "./app/movement-detail/movement-detail.component";
 import { PeopleDetailComponent }    from "./app/people-detail/people-detail.component";
 import { StoriesDetailComponent }   from "./app/stories-detail/stories-detail.component";
+import { TransComponent } from "./app/trans/trans.component";
 
 
 export const routerConfig: Routes = [
@@ -39,6 +40,10 @@ export const routerConfig: Routes = [
     {
         path: 'dehome',
         component: DelandingComponent
+    },
+    {
+        path: 'trans',
+        component: TransComponent
     },
     {
         path: 'about',

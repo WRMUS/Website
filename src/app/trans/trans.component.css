@@ -1,0 +1,35 @@
+.question-content .title {
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: none;
+    color: #e26d5c;
+}
+
+.question-content .title-font-bg {
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    color: #e26d5c;
+    margin-bottom: 21px;
+}
+
+.video-frame{
+    width: 700px;
+    max-width: 100%;
+    margin: 20px auto;
+    position: relative;
+  }
+
+  .video-frame__video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .question p {
+    margin-bottom: 25px !important;
+    color: #124e78 !important;
+    font-size: 20px !important;
+}

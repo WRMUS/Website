@@ -36,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 
 import { MatToolbarModule, MatCardModule, MatGridListModule } from '@angular/material';
+import { TransComponent } from './trans/trans.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { MatToolbarModule, MatCardModule, MatGridListModule } from '@angular/mat
     PeopleDetailComponent,
     StoriesDetailComponent,
     BioDetailComponent,
-    DelandingComponent
+    DelandingComponent,
+    TransComponent
   ],
   imports: [
     MatToolbarModule,
