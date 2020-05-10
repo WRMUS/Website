@@ -328,6 +328,7 @@ app-detail-menu {
   color: #fff;
   color: #fff;
   text-align: left;
+  position: relative;
   background-color: #709a98;
   /*text-transform: lowercase;*/
   cursor: pointer;
@@ -343,11 +344,23 @@ app-detail-menu {
 .accardion .title::before {
   float: right !important;
   content: '+';
+  font-size: 48px;
+  position: absolute;
+  text-align: right;
+  top: 50%;
+  left: 95%;
+  transform: translate(-95%, -50%);
 }
 
 .accardion-v2 .title::before {
   float: right !important;
   content: '+';
+  font-size: 48px;
+  position: absolute;
+  text-align: right;
+  top: 50%;
+  left: 95%;
+  transform: translate(-95%, -50%);
 }
 
 .accardion .question,
