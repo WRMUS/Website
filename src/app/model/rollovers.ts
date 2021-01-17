@@ -190,7 +190,7 @@ export const ROLLOVERS: Rollover[] = [
   },
   {
     id: 24,
-    title: 'See myself in perpetrators or survivors',
+    title: 'Empathize with perpetrators or survivors',
     quote: 'I couldn\’t do this work if I wasn\’t able to <strong>see myself in perpetrators</strong>. That\’s why I can\’t do survivor support right now because, and I haven\’t been able to for a while, because <strong>seeing myself in the survivors</strong> is too... is <strong>not something I can handle</strong>. And it goes both ways, people can\’t do perpetrator work because they can\’t empathize with the perpetrator, and there is nothing wrong with that.'
     + '<br><br>' + 'I can empathize... and also I get to be a \‘bad cop\’ a lot of times – I hate that I just said \‘cop,\’ [but] you know what I mean. I would be the one being really mean in the meetings. I am not just like, "Oh, I am compassionate to you."'
     + '<br><br>' + '-Colin Atrophy Hagendorf'

@@ -27,7 +27,7 @@ export const GAME_CHANGERS_SECTION_1 = [
       },
       {
         tagline:'Colin Atrophy Hagendorf',
-        quote: 'is an adult punk rocker and aspiring long-term soberdog. He loves eating pizza, working to dismantle systematic structures of oppression, and carefree afternoon naps. He is the creator of the blog, fanzine, and book <a href="http://www.colinhagendorf.com/book/">Slice Harvester: A Memoir In Pizza</a>, based on his experience reviewing a plain slice from every pizza parlor in Manhattan. He worked with <a href="https://supportny.org/">Support New York</a> for ten years and currently lives in Austin, Texas with his girlfriend, his cats, and her dog.',
+        quote: 'worked with <a href="https://supportny.org/">Support New York</a> forom 2005-2015 facilitating accountability processes. They now focus their activism on providing advocacy and peer-support for transgender and nonbinary people seeking medical care. They are the author of <a href="http://www.colinhagendorf.com/book/">Slice Harvester: A Memoir In Pizza</a>, a book about eating pizza and getting sober, and the host of <a href="http://www.colinhagendorf.com/audio">Life Harvester Radio</a>, a monthly podcast featuring interviews with other queers, punks, artists, and activists.',
         personId: 2,
         photo: 'wide.jpg'
       },
@@ -314,7 +314,7 @@ export const GAME_CHANGERS_SECTION_3 = [
         personId: 17
       },
       {
-        tagline: 'Seeing myself in perpetrators or survivors',
+        tagline: 'Empathize with perpetrators or survivors',
         quote: 'I couldn\'t do this work if I wasn\'t able to <strong>see myself in perpetrators</strong>. That\'s why I can\'t do survivor support right now because, and I haven\'t been able to for a while, because <strong>seeing myself in the survivors is too... is not something I can handle</strong>. And it goes both ways, people can\'t do perpetrator work because they can\'t empathize with the perpetrator, and there is nothing wrong with that. I feel that I can empathize... and also I get to be a "bad cop"" a lot of times -- I hate that I just said "a cop," [but] you know what I mean. I would be the one being really mean in the meetings, I am not just like, "Oh, I am compassionate to you."',
         personId: 2
       },
