@@ -75,5 +75,5 @@
 
 .bio-flex-box{
   display: -webkit-flex; /* Safari */
-  flex-direction: column;
+  /* flex-direction: column; */
 }

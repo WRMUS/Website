@@ -15,7 +15,7 @@ export const GAME_CHANGERS_SECTION_1 = [
       },            
       {
         tagline: 'Alix Johnson',
-        quote: 'is a core member of the <a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a>, working toward building transformative justice responses to child sexual abuse. She also works as a graduate student researcher and instructor at the University of California, Santa Cruz.',
+        quote: 'was a core member of the <a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a> from 2011-2016, working toward building transformative justice responses to child sexual abuse. She also worked as a graduate student researcher and instructor at the University of California, Santa Cruz.',
         photo: 'tn_alix_ori.jpg',
         personId: 16
       },
@@ -219,7 +219,7 @@ export const GAME_CHANGERS_SECTION_3 = [
         personId: 7
       },
       {
-        tagline: 'Accountability within group',
+        tagline: 'Accountability within our group',
         quote: '<strong>All of us know the experience of having caused harm and needing to be accountable</strong> for it. And all of us, as a collective, have in different ways been engaged in accountability with one another. So, you know, as we\'ve worked together, conflicts and harmful dynamics have arisen in our group and we\'ve seen it as a <strong>practice for our work</strong>, learning to manage that well.'
         + '<br><br>' +'But also we have <strong>worked closely with folks, in different capacities, who have done sexual harm and sought accountability</strong> around it. This is really important - for the perspective they have around accountability, and because there\'s a real lack of resources for people who have done abuse. Folks who have chosen to do that kind of work for themselves can help others do the same.',
         personId: 16
