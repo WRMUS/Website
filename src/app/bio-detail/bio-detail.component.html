@@ -24,9 +24,7 @@
     <br>
     <br>
     <div class="row">
-        <div class="col-3"></div>
         <div class="col-9">
-            <div style="padding-left: 5px;">
             <div *ngFor="let question of gameChangerQuotes">
                 <div *ngIf="question.title==bioID">
                     <a ng-click="togglle()" href="javscript:void(0)" data-toggle="collapse"
@@ -53,7 +51,5 @@
                     </div>
                 </div>
             </div>
-            </div>
-        </div>
     </div>
 </div>
