@@ -256,7 +256,7 @@ export const GAME_CHANGERS_QUOTES = [
       },
       {
         tagline: 'Limits & boundaries',
-        quote: 'A lot of our <strong>failures</strong>, we realized over the years, came from an <strong>inability to see our own limits and set boundaries</strong> for ourselves with people who we are working with. We needed to do anything because otherwise why we are doing anything even, you know?'
+        quote: 'A lot of our <strong>failures</strong>, we realized over the years, came from an <strong>inability to see our own limits and set boundaries</strong> for ourselves with people who we are working with. We needed to do <em>everything</em> because otherwise why we are even doing anything, you know?'
         + '<br><br>'
       },
       {
