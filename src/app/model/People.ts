@@ -36,7 +36,7 @@ export const PEOPLE: Person[] = [
     color: '#E9D9EA',
     contrastColor: '#cca8cf',
     fontColor: 'white'
-    ,image:'tn_wide_ori.jpg'
+    ,image:'Updated_Colin_Photo.png'
     },
   {
     id: 3,

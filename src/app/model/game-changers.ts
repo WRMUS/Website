@@ -29,7 +29,7 @@ export const GAME_CHANGERS_SECTION_1 = [
         tagline:'Colin Atrophy Hagendorf',
         quote: 'worked with <a href="https://supportny.org/">Support New York</a> forom 2005-2015 facilitating accountability processes. They now focus their activism on providing advocacy and peer-support for transgender and nonbinary people seeking medical care. They are the author of <a href="http://www.colinhagendorf.com/book/">Slice Harvester: A Memoir In Pizza</a>, a book about eating pizza and getting sober, and the host of <a href="http://www.colinhagendorf.com/audio">Life Harvester Radio</a>, a monthly podcast featuring interviews with other queers, punks, artists, and activists.',
         personId: 2,
-        photo: 'wide.jpg'
+        photo: 'Updated_Colin_Photo.png'
       },
       {
         tagline: 'Ejeris Dixon',
