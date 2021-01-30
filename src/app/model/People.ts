@@ -114,7 +114,7 @@ export const PEOPLE: Person[] = [
     contrastColor: '#cdc4a9',
     fontColor: 'white',
     link: 'http://www.generationfive.org/'
-    ,image:'tn_generationfive_ori.jpg'
+    ,image:'tn_generationfive.jpg'
   },
   {
     id: 12,
