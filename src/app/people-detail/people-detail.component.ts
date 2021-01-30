@@ -151,7 +151,7 @@ public openModalFromOtherPage(content: any, pageName: string, personId: number, 
   
   public openBioQuoteWindow(id: any ): void {
     this.bioID = id
-    window.open('#/bio/'+id, '_blank');
+    window.open('#/bio/'+id, '_parent');
   }
   
   private flattenFragmentId(fragment: string): string {

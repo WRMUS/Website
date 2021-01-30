@@ -1,45 +1,55 @@
-<div class="bio-flex-box" style="padding-top: 75px;">
-    <div>
-        <div>
+<div class="container">
+    <div class="row">
+        <div class="bio-flex-box" style="padding-top: 75px;">
             <div class="person-photo-container">
-                <img src="/assets/images/persons/{{getPersonPhoto(bioID)}}" alt="{{ getPerson(bioID)?.name }}" class='person-photo' >
-            </div>
-            <div class="question-content" id="Futures">
-                <div class="title-font-bg">
-                        {{ getPerson(bioID)?.name }}       
+                <div class="col-3">
+                    <img src="/assets/images/persons/{{getPersonPhoto(bioID)}}" alt="{{ getPerson(bioID)?.name }}"
+                        class='person-photo'>
                 </div>
             </div>
-        </div>
-        <div class="question-content">
-            <div class="question">
-                <p [innerHTML] = getPersonQuote(bioID)></p>
+            <div class="col-9">
+                <div class="question-content" id="Futures">
+                    <div class="title-font-bg">
+                        {{ getPerson(bioID)?.name }}
+                    </div>
+                </div>
+                <div class="question-content">
+                    <div class="question">
+                        <p [innerHTML]=getPersonQuote(bioID)></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <br>
     <br>
-    <div *ngFor="let question of gameChangerQuotes" >
-        <div *ngIf = "question.title==bioID">
-            <a ng-click="togglle()" href = "javscript:void(0)"  data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <b>Read</b></a> all of {{ getPerson(bioID)?.name }}'s quotes
-            <br><br>
-            <div class="collapse" id="collapseExample">
-                <div class = "question-quote-container" >
-                    <div *ngFor = "let quotess of question.quotes" >
-                        <div style = "display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-                            <div class="question-content">
-                                <div class="title title-font" style="margin: 1% 0; color: #e26d5c;">
-                                    <em>{{ quotess.tagline }}</em>
-                                </div>                                
-                                <div class="question">
-                                    <p [innerHTML]=quotess.quote></p>
+    <div class="row">
+        <div class="col-9">
+            <div *ngFor="let question of gameChangerQuotes">
+                <div *ngIf="question.title==bioID">
+                    <a ng-click="togglle()" href="javscript:void(0)" data-toggle="collapse"
+                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <b>Read</b></a> all of {{ getPerson(bioID)?.name }}'s quotes
+                    <br><br>
+                    <div class="collapse" id="collapseExample">
+                        <div class="question-quote-container">
+                            <div *ngFor="let quotess of question.quotes">
+                                <div
+                                    style="display:flex;height:65%;flex-wrap:wrap;justify-content:space-between;align-items:center;">
+                                    <div class="question-content">
+                                        <div class="title title-font" style="margin: 1% 0; color: #e26d5c;">
+                                            <em>{{ quotess.tagline }}</em>
+                                        </div>
+                                        <div class="question">
+                                            <p [innerHTML]=quotess.quote></p>
+                                        </div>
+                                    </div>
                                 </div>
+                                <br><br>
                             </div>
                         </div>
-                        <br><br>
                     </div>
                 </div>
             </div>
-        </div>    
     </div>
 </div>

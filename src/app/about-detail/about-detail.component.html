@@ -21,15 +21,15 @@
           <br>
           <ul>
             <li>
-                <a routerLink="/people/a" target="_blank">‘Collaborators’</a> offers biographies of the activists interviewed, as well as their personal  and organizational stories. 
+                <a routerLink="/people/a">‘Collaborators’</a> offers biographies of the activists interviewed, as well as their personal  and organizational stories. 
             </li>
               <br/>
             <li>
-                The chapter <a routerLink="/movement/tj" target="_blank">‘Movement’</a> puts the movement in its larger historical and social context, including a section on the <a routerLink="/movement/principles" target="_blank">Principles</a> behind the work. 
+                The chapter <a routerLink="/movement/tj">‘Movement’</a> puts the movement in its larger historical and social context, including a section on the <a routerLink="/movement/principles">Principles</a> behind the work. 
             </li>
                <br/>
               <li>
-                  <a routerLink="/stories/support" target="_blank">‘Stories’</a> focuses on the interviewees’ praxis: <a routerLink="/stories/support/c" target="_blank">Support</a> for survivors, <a routerLink="/stories/accountability" target="_blank">Accountability</a> for those who cause harm, and engagement with the broader <a routerLink="/stories/community" target="_blank">Community</a>. 
+                  <a routerLink="/stories/support">‘Stories’</a> focuses on the interviewees’ praxis: <a routerLink="/stories/support/c">Support</a> for survivors, <a routerLink="/stories/accountability">Accountability</a> for those who cause harm, and engagement with the broader <a routerLink="/stories/community">Community</a>. 
                   
               </li>
               <br/>            
@@ -55,7 +55,7 @@
 <ng-template #content let-c="close">
   <div class="modal-header">
     <h4>
-      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank' *ngIf='getPerson(selectedQuote.personId).link'> 
+      <a href="{{ getPerson(selectedQuote.personId).link }}" *ngIf='getPerson(selectedQuote.personId).link'> 
           {{ getPerson(selectedQuote.personId)?.name }}
       </a>
       <span *ngIf='!getPerson(selectedQuote.personId).link'> 

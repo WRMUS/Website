@@ -22,7 +22,7 @@ export const SUPPORT_SECTION_1 = [
         + '<br>' + '4.F. <strong>Taking Accountability</strong>. How Do We Change Violence?'
         + '<br>' + '4.G. <strong>Working Together</strong>. How Do We Work Together as a Team?'
         + '<br>' + '4.H. <strong>Keeping on Track</strong>. How Do We Move Forward?'
-        + '<br><br>' + '-<a href="http://www.creative-interventions.org/wp-content/uploads/2012/06/CI-Toolkit-Complete-Pre-Release-Version-06.2012-.pdf#page=153">\"The Creative Interventions Toolkit: A Practical Guide to Stop Interpersonal Violence\"</a>',
+        + '<br><br>' + '-<a href="http://www.creative-interventions.org/wp-content/uploads/2012/06/CI-Toolkit-Complete-Pre-Release-Version-06.2012-.pdf#page=153" target="_blank">\"The Creative Interventions Toolkit: A Practical Guide to Stop Interpersonal Violence\"</a>',
         personId: 12
       },
       {
@@ -38,25 +38,25 @@ export const SUPPORT_SECTION_1 = [
         + '<br>' + '•	Holding accountability'
         + '<br>' + '•	Working for community transformation'
         + '<br>' + '•	Strengthening collective resistance'
-        + '<br><br>' + '<a href="http://www.generationfive.org/wp-content/uploads/2013/07/G5_Toward_Transformative_Justice-Document.pdf#page=38">-\"Toward Transformative Justice: A Liberatory Approach to Child Sexual Abuse and other forms of Intimate and Community Violence\", p. 32</a>',
+        + '<br><br>' + '<a href="http://www.generationfive.org/wp-content/uploads/2013/07/G5_Toward_Transformative_Justice-Document.pdf#page=38" target="_blank">-\"Toward Transformative Justice: A Liberatory Approach to Child Sexual Abuse and other forms of Intimate and Community Violence\", p. 32</a>',
         personId: 11  },
       {
         tagline: 'Healing circle',
         quote: 'A group of people connected with Women and Girls CAN formed a <strong>healing circle of trusted friends and colleagues to support a member of our community</strong> who had been sexually assaulted by someone in the social justice community. The healing circle created a communal space for her to tell her story and for the group to talk about its impact on us. The healing circle process was very powerful. The group recognized that it wasn\'t just an individual problem, but a community problem, and that the community as a whole could take action on it. As the survivor says, "Until we were all in the room, I kept thinking it was just my problem and I wasn\'t sure what steps to take to make sure other people would be safe. This <strong>circle was empowering for all of us</strong>, but especially for me, in large part because we took action together." Through our healing circle, we came up with strategies to create accountability for the violence. We wrote a collective letter to the perpetrator and we alerted people who might be working with him about the incident and the potential for future violence.'
         + '<br><br>' + '-Melissa Spatz & Ann Russo'
-        + '<br><br>' + 'from "<a href="https://www.transformativejustice.eu/wp-content/uploads/2010/11/communities_engaged.pdf">Communities Engaged in Resisting Violence</a>," p. 24',
+        + '<br><br>' + 'from "<a href="https://www.transformativejustice.eu/wp-content/uploads/2010/11/communities_engaged.pdf" target="_blank">Communities Engaged in Resisting Violence</a>," p. 24',
         personId: 6
       },
       {
         tagline: 'Support checklists',
         quote: 'Supporting survivors or victims can look many different ways to many different people. This tool offers ideas of possible types of support that survivors or victims have said have been helpful over time.'
-        + '<br><br>' + '<a href="http://www.creative-interventions.org/wp-content/uploads/2012/06/CI-Toolkit-Complete-Pre-Release-Version-06.2012-.pdf#page=325">What Does the Survivor or Victim Need? Checklist</a>'
+        + '<br><br>' + '<a href="http://www.creative-interventions.org/wp-content/uploads/2012/06/CI-Toolkit-Complete-Pre-Release-Version-06.2012-.pdf#page=325" target="_blank">What Does the Survivor or Victim Need? Checklist</a>'
         + '<br><br>' + '-\"The Creative Interventions Toolkit: A Practical Guide to Stop Interpersonal Violence\", p. 4.E-24',
         personId: 12
       },
       {
         tagline: 'Support & boundary exercises',
-        quote: 'Click<a href="https://static1.squarespace.com/static/566c7f0c2399a3bdabb57553/t/566c9be29cadb6bf7efc8e1e/1449958370563/It-Takes-A-Village-People-Web-Version.pdf#page=15" target="_blankc"> here</a> for the \"a little help from my friends\" checklists and exercises</a>'
+        quote: 'Click<a href="https://static1.squarespace.com/static/566c7f0c2399a3bdabb57553/t/566c9be29cadb6bf7efc8e1e/1449958370563/It-Takes-A-Village-People-Web-Version.pdf#page=15" target="_blank"> here</a> for the \"a little help from my friends\" checklists and exercises</a>'
         + '<br><br>' + '-\"It Takes A Village, People! Advocacy, Friends & Family, and LGBT Survivors of Abuse\", p. 15',
         personId: 26
       },
@@ -92,7 +92,7 @@ export const SUPPORT_SECTION_1 = [
         + '<br><br>' + '<strong>Resources</strong>'
         + '<br>' + '• What resources are needed that may not be available within this intimate network or community to help develop safety? (This could include: healing and support resources, housing and job resources, other economic support, free legal services, offender treatment, community organizing support and organizations, etc.)'
         + '<br>' + '• What organizations, community institutions, or people can be allied with to access these needs or help to meet them?'
-        + '<br><br>' + '<a href="http://www.generationfive.org/wp-content/uploads/2013/07/G5_Toward_Transformative_Justice-Document.pdf#page=50">-\"Toward Transformative Justice: A Liberatory Approach to Child Sexual Abuse and other forms of Intimate and Community Violence\", p. 44</a>',
+        + '<br><br>' + '<a href="http://www.generationfive.org/wp-content/uploads/2013/07/G5_Toward_Transformative_Justice-Document.pdf#page=50" target="_blank">-\"Toward Transformative Justice: A Liberatory Approach to Child Sexual Abuse and other forms of Intimate and Community Violence\", p. 44</a>',
         personId: 11
       }
     ]
@@ -194,13 +194,13 @@ export const SUPPORT_SECTION_1 = [
         + '<br><br>' + 'Therefore our work is in finding ways to hold both <strong>compassion and critique</strong> while also building our awareness of when to use which tool.'
         + '<br><br>' + 'As a practical step I would suggest examining when and why we use judgment in our conversations with each other and whether we\'re seeking to <strong>educate or support</strong>. We can reframe both education and support in nonjudgmental ways. For instance, education can include sharing tools for de-escalating conflict that a person can try to use before calling 911. We can achieve compassion without judgment when we focus on making sure that people feel heard, understood and not isolated. Compassionately discussing calling 911 with someone can sound like this:'
         + '<br><br>' + 'I\'m so sorry that happened. It seems like you didn\'t have very many options. If it\'s helpful, I\'m happy to be someone you call on if you ever find yourself in that situation again.'
-        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation">Building Community Safety: Steps Towards Liberatory Transformation.</a>." In Truthout, Aug. 15, 2015.',
+        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation" target="_blank">Building Community Safety: Steps Towards Liberatory Transformation.</a>." In Truthout, Aug. 15, 2015.',
         personId: 7
       },
       {
         tagline: 'Survivor participation chart',
         quote: 'While Creative Interventions encourages active survivor or victim participation, this can happen at different levels. This chart helps you sort out what level of survivor or victim participation best describes your intervention process – or – which level best describes what you would like your process to look like.'
-        + '<br><br>' + '<a href="http://www.creative-interventions.org/wp-content/uploads/2012/06/CI-Toolkit-Complete-Pre-Release-Version-06.2012-.pdf#page=330">Survivor or Victim Participation in an Intervention Chart</a>'
+        + '<br><br>' + '<a href="http://www.creative-interventions.org/wp-content/uploads/2012/06/CI-Toolkit-Complete-Pre-Release-Version-06.2012-.pdf#page=330" target="_blank">Survivor or Victim Participation in an Intervention Chart</a>'
         + '<br><br>' + '-\"The Creative Interventions Toolkit: A Practical Guide to Stop Interpersonal Violence\", p. 4.E-29',
         personId: 12
       }

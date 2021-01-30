@@ -365,7 +365,18 @@ export const QUESTION_MAP: {[key: string]: Question[]} = {
           quote: '“What are you already doing to try to address the violence that is happening?”[People] have more skills than they knew they did.  This is already the alternative underway. This is already a new form of life being developed in the midst of this form of life, but how do you articulate that? And how do you show, how do you give evidence-based research that this is having an effect? How do you quantify it for people who want to know what to do with the \'worst of the worst\'? So I do think a lot more work needs to happen...'
           + '<\/br><\/br>' + 'Well I don’t know I’m really torn about this, because in some ways the mechanisms for legitimating community accountability are the old mechanisms of the carceral state. So, in some ways I’m really happy to have this work to be happening under the radar, and in these very interstitial spaces where it’s not clear where the outcome is going to be, it’s not clear what’s going to happen next, because that in some way escapes the carceral state, or it happens just under the radar within it. But if prisons are going to be abolished, if we are going to live in a world without rape and without sexual assault, and I think we can, then we have to scale it up or we have to articulate it in ways that more people can interact with and understand and buy into.',
           personId: 3
+        },
+        {
+          tagline: 'Question of scale',
+          quote: 'On what <strong>scale</strong> are we willing to do [state-type stuff], on what scale is it appropriate to do that? If we want to create something different, are we willing to say or even experiment with...<strong>what about a state of 7</strong>? What is the <strong>difference between a state and a household</strong>? Are these the scales that we want to operate on?'
+          + '<br><br>' +'And how concrete are we willing to be in what we would want to replace the present state? You know, like what are <strong>future states of being</strong> that we would be willing to imagine concretely enough to commit to? And would we be willing to do that, is it possible to do that, to create a state, in a way that still acknowledges the need for the poetic intervention, the <strong>inevitable insufficiency of a state</strong>.',
+          personId: 1
         }
+
+
+
+
+        
       ]
       // end of questions for what is ca-tj
     }

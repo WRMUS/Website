@@ -621,7 +621,7 @@
 <ng-template #content let-c="close">
   <div class="modal-header">
     <h4>
-      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank'
+      <a href="{{ getPerson(selectedQuote.personId).link }}"
         *ngIf='getPerson(selectedQuote.personId).link'>
         {{ getPerson(selectedQuote.personId)?.name }}
       </a>

@@ -163,7 +163,7 @@ export class BioDetailComponent implements OnInit {
   public openBioQuoteWindow( quote: Quote, id: any ): void {
     this.selectedQuote = quote;
     this.bioID = id
-    window.open('#/people/bio/'+id, '_blank');
+    window.open('#/people/bio/'+id, '_parent');
   }
   
   private flattenFragmentId(fragment: string): string {
