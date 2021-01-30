@@ -9,13 +9,13 @@ export const GAME_CHANGERS_SECTION_1 = [
     quotes: [
       {
         tagline: 'Dr. Alexis Pauline Gumbs',
-        quote: 'is a queer black troublemaker, a black feminist love evangelist, a prayer poet priestess and has a PhD in English, African and African-American Studies, and Women and Gender Studies from Duke University. <a href="http://alexispauline.com/">Alexis</a> has been living in Durham, NC for more than a decade and has been transformed and enriched by holistic organizing to end gendered violence and to replace it with sustaining transformative love. Locally she is a founding member of <a href="https://iambecauseweare.wordpress.com/">UBUNTU</a>, a women of color and survivor-led coalition to end sexual violence.',
+        quote: 'is a queer black troublemaker, a black feminist love evangelist, a prayer poet priestess and has a PhD in English, African and African-American Studies, and Women and Gender Studies from Duke University. <a href="http://alexispauline.com/" target="_blank">Alexis</a> has been living in Durham, NC for more than a decade and has been transformed and enriched by holistic organizing to end gendered violence and to replace it with sustaining transformative love. Locally she is a founding member of <a href="https://iambecauseweare.wordpress.com/" target="_blank">UBUNTU</a>, a women of color and survivor-led coalition to end sexual violence.',
         personId: 1,
         photo: 'apg-headshot.jpg'
       },            
       {
         tagline: 'Alix Johnson',
-        quote: 'was a core member of the <a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a> from 2011-2016, working toward building transformative justice responses to child sexual abuse. She also worked as a graduate student researcher and instructor at the University of California, Santa Cruz.',
+        quote: 'was a core member of the <a href="https://batjc.wordpress.com/" target="_blank">Bay Area Transformative Justice Collective</a> from 2011-2016, working toward building transformative justice responses to child sexual abuse. She also worked as a graduate student researcher and instructor at the University of California, Santa Cruz.',
         photo: 'tn_alix_ori.jpg',
         personId: 16
       },
@@ -27,49 +27,49 @@ export const GAME_CHANGERS_SECTION_1 = [
       },
       {
         tagline:'Colin Atrophy Hagendorf',
-        quote: 'worked with <a href="https://supportny.org/">Support New York</a> forom 2005-2015 facilitating accountability processes. They now focus their activism on providing advocacy and peer-support for transgender and nonbinary people seeking medical care. They are the author of <a href="http://www.colinhagendorf.com/book/">Slice Harvester: A Memoir In Pizza</a>, a book about eating pizza and getting sober, and the host of <a href="http://www.colinhagendorf.com/audio">Life Harvester Radio</a>, a monthly podcast featuring interviews with other queers, punks, artists, and activists.',
+        quote: 'worked with <a href="https://supportny.org/" target="_blank">Support New York</a> forom 2005-2015 facilitating accountability processes. They now focus their activism on providing advocacy and peer-support for transgender and nonbinary people seeking medical care. They are the author of <a href="http://www.colinhagendorf.com/book/" target="_blank">Slice Harvester: A Memoir In Pizza</a>, a book about eating pizza and getting sober, and the host of <a href="http://www.colinhagendorf.com/audio" target="_blank">Life Harvester Radio</a>, a monthly podcast featuring interviews with other queers, punks, artists, and activists.',
         personId: 2,
         photo: 'Updated_Colin_Photo.png'
       },
       {
         tagline: 'Ejeris Dixon',
-        quote: 'is an organizer and advocate with over 15 years of experience working in racial justice, LGBTQ, anti-violence, and economic justice movements. She is the Founding Director of <a href="http://www.visionchangewin.com/">Vision Change Win Consulting</a>, where she partners with organizations to build their capacity and deepen the impact of their organizing strategies. She is also the former founding program coordinator of the <a href="http://alp.org/safe-outside-system-sos-collective">Safe OUTside the System Collective</a> at the Audre Lorde Project where she worked on creating community based strategies to address hate and police violence.',
+        quote: 'is an organizer and advocate with over 15 years of experience working in racial justice, LGBTQ, anti-violence, and economic justice movements. She is the Founding Director of <a href="http://www.visionchangewin.com/" target="_blank">Vision Change Win Consulting</a>, where she partners with organizations to build their capacity and deepen the impact of their organizing strategies. She is also the former founding program coordinator of the <a href="http://alp.org/safe-outside-system-sos-collective" target="_blank">Safe OUTside the System Collective</a> at the Audre Lorde Project where she worked on creating community based strategies to address hate and police violence.',
         photo: 'ejeris.JPG',
         personId: 7
       },
       {
         tagline: 'Kiyomi Fujikawa',
-        quote: 'is a Seattle-based, trans feminine, mixed-race organizer and cultural worker. She has been involved with the anti-violence movement since 2001 in Asian Pacific Islander, Queer and Trans, punk and diy communities. She was formerly  the Queer Network Program Coordinator at <a href="https://www.apichaya.org/">API Chaya</a>.',
+        quote: 'is a Seattle-based, trans feminine, mixed-race organizer and cultural worker. She has been involved with the anti-violence movement since 2001 in Asian Pacific Islander, Queer and Trans, punk and diy communities. She was formerly  the Queer Network Program Coordinator at <a href="https://www.apichaya.org/" target="_blank">API Chaya</a>.',
         photo: 'kiyomi.jpg',
         personId: 4
       },
       {
         tagline: 'Leah Todd and Lauren Spencer',
-        quote: 'are members of <a href="https://supportny.org/">Support New York</a>, a collective dedicated to healing the effects of sexual assault and abuse. Our aim is to empower survivors, to hold accountable those who have perpetuated harm, and to maintain a community dialogue about consent, mutual aid, transformative justice, and our society\’s narrow views of abuse. We believe that everyone has a role to play in ending interpersonal violence, and we look to those who have been most affected to guide us.',
+        quote: 'are members of <a href="https://supportny.org/" target="_blank">Support New York</a>, a collective dedicated to healing the effects of sexual assault and abuse. Our aim is to empower survivors, to hold accountable those who have perpetuated harm, and to maintain a community dialogue about consent, mutual aid, transformative justice, and our society\’s narrow views of abuse. We believe that everyone has a role to play in ending interpersonal violence, and we look to those who have been most affected to guide us.',
         personId: 18,
         photo: 'snylogo.jpg'
       },
       {
         tagline: 'Dr. Hediana Utarti',
-        quote: 'Currently its Community Projects Coordinator, Hediana has dedicated almost 17 years to <a href="http://www.sfaws.org/">San Francisco Asian Women\'s Shelter</a>.  Besides serving as the point person for Anti-Trafficking Program and Services, like her co-workers, she also takes crisis line weekly and is involved in AWS Community Building programs. Previously she lived and worked in Honolulu, Hawai\’i where she obtained her Ph. D in political science.  She started her community based anti-violence work in 1995, when she joined Family Peace Center in Honolulu as a Support Group Facilitator for survivors of domestic violence.',
+        quote: 'Currently its Community Projects Coordinator, Hediana has dedicated almost 17 years to <a href="http://www.sfaws.org/" target="_blank">San Francisco Asian Women\'s Shelter</a>.  Besides serving as the point person for Anti-Trafficking Program and Services, like her co-workers, she also takes crisis line weekly and is involved in AWS Community Building programs. Previously she lived and worked in Honolulu, Hawai\’i where she obtained her Ph. D in political science.  She started her community based anti-violence work in 1995, when she joined Family Peace Center in Honolulu as a Support Group Facilitator for survivors of domestic violence.',
         photo: 'Hediana.png',
         personId: 19
       },
       {
         tagline: 'Maura M. Bairley',
-        quote: '(MA) is a social change facilitator, consultant, and coach. Her approach to transformative leadership development is rooted in her 20-year commitment to anti-violence and social justice movements. She has worked with myriad projects and organizations, including <a href="http://www.movetoendviolence.org/">Move to End Violence</a>, <a href="http://www.corealign.org/">Core Align</a>, the <a href="https://avp.org/">NYC Gay and Lesbian Anti-Violence Project</a>, and the <a href="https://health.columbia.edu/sexual-violence-response">Sexual Violence Prevention and Response Program</a> at Barnard/Columbia.',
+        quote: '(MA) is a social change facilitator, consultant, and coach. Her approach to transformative leadership development is rooted in her 20-year commitment to anti-violence and social justice movements. She has worked with myriad projects and organizations, including <a href="http://www.movetoendviolence.org/" target="_blank">Move to End Violence</a>, <a href="http://www.corealign.org/" target="_blank">Core Align</a>, the <a href="https://avp.org/" target="_blank">NYC Gay and Lesbian Anti-Violence Project</a>, and the <a href="https://health.columbia.edu/sexual-violence-response" target="_blank">Sexual Violence Prevention and Response Program</a> at Barnard/Columbia.',
         personId: 8,
         photo: 'maura.jpg'
       },
       {
         tagline: 'Melanie Brazzell',
-        quote: 'created the “What really makes us safe?” project. They have found community and purpose in the anti-violence work movement for the last fifteen years and were inspired by the visionary work of women and queer folks of color who built the transformative justice movement. Melanie co-founded the Berlin Transformative Justice Collective and published the “What really makes us safe?” <a href="https://www.edition-assemblage.de/buecher/was-macht-uns-wirklich-sicher/">toolkit</a>, as well as a <a href="https://www.unrast-verlag.de/neuerscheinungen/was-tun-bei-sexualisierter-gewalt-detail">guide</a> to working with people who’ve caused sexual harm (both in German). Currently, they are a graduate student in sociology at the University of California, Santa Barbara, exploring participatory action research as a movement building tool.',
+        quote: 'created the “What really makes us safe?” project. They have found community and purpose in the anti-violence work movement for the last fifteen years and were inspired by the visionary work of women and queer folks of color who built the transformative justice movement. Melanie co-founded the Berlin Transformative Justice Collective and published the “What really makes us safe?” <a href="https://www.edition-assemblage.de/buecher/was-macht-uns-wirklich-sicher/" target="_blank">toolkit</a>, as well as a <a href="https://www.unrast-verlag.de/neuerscheinungen/was-tun-bei-sexualisierter-gewalt-detail" target="_blank">guide</a> to working with people who’ve caused sexual harm (both in German). Currently, they are a graduate student in sociology at the University of California, Santa Barbara, exploring participatory action research as a movement building tool.',
         personId: 0,
         photo: 'melanie.jpg'
       },
       {
         tagline: 'Melissa Spatz',
-        quote: 'brings nearly 25 years experience in the social justice field as a legal services attorney, community organizer, nonprofit director, writer and consultant.  She has directed two awarded-winning community organizing groups in Chicago, and founded the <a href="http://womenandgirlscan.org/?i=1">Women & Girls Collective Action Network</a>. She is currently Director of the <a href="http://www.proteusfund.org/piper">Piper Fund</a>, a Proteus Fund Initiative.',
+        quote: 'brings nearly 25 years experience in the social justice field as a legal services attorney, community organizer, nonprofit director, writer and consultant.  She has directed two awarded-winning community organizing groups in Chicago, and founded the <a href="http://womenandgirlscan.org/?i=1">Women & Girls Collective Action Network</a>. She is currently Director of the <a href="http://www.proteusfund.org/piper" target="_blank">Piper Fund</a>, a Proteus Fund Initiative.',
         personId: 6,
         photo: 'melisa.jpeg'
       },
@@ -81,10 +81,10 @@ export const GAME_CHANGERS_SECTION_1 = [
       },
       {
         tagline: 'Qui Alexander & Jenna Peters-Golden',
-        quote: '<strong>Jenna Peters-Golden</strong> is a queer anti-zionist Jew based in Philadelphia. She was a member of the <a href="https://phillystandsup.wordpress.com/">Philly Stands Up Collective</a> for 8 years and continues to be inspired by transformative justice that envisions community safety without police or prisons. Jenna is a founding worker-owner of <a href="http://aorta.coop/">AORTA [the Anti Oppression Resource and Training Alliance]</a> and also is a lover of science fiction and comic books.'
+        quote: '<strong>Jenna Peters-Golden</strong> is a queer anti-zionist Jew based in Philadelphia. She was a member of the <a href="https://phillystandsup.wordpress.com/" target="_blank">Philly Stands Up Collective</a> for 8 years and continues to be inspired by transformative justice that envisions community safety without police or prisons. Jenna is a founding worker-owner of <a href="http://aorta.coop/" target="_blank">AORTA [the Anti Oppression Resource and Training Alliance]</a> and also is a lover of science fiction and comic books.'
         
         + '<br><br><br>' +'<img src="/assets/images/persons/Qui.png" class="person-photo" ><strong>Qui Alexander</strong> is a queer, trans, Black Latinx educator, organizer, yoga teacher and consultant based in Philadelphia. His work centers the intersections of gender, sexuality and racial justice; healing justice and transformative/restorative justice anti-violence work. Believing the personal is political, his work strives to focus on personal liberation and healing to make movement work more sustainable.'
-        + '<br><br><br>' +'Qui and Jenna are members of the <a href="https://phillystandsup.wordpress.com/">Philly Stands Up Collective</a>, a small collective of individuals working in Philadelphia to confront sexual assault in our various communities using a transformative justice framework. We believe in restoring trust and justice within our community by working with both survivors and perpetrators of sexual assault. We work with people who have assaulted others to hold them accountable to the survivor(s) and restore their relationships within their communities.',
+        + '<br><br><br>' +'Qui and Jenna are members of the <a href="https://phillystandsup.wordpress.com/" target="_blank">Philly Stands Up Collective</a>, a small collective of individuals working in Philadelphia to confront sexual assault in our various communities using a transformative justice framework. We believe in restoring trust and justice within our community by working with both survivors and perpetrators of sexual assault. We work with people who have assaulted others to hold them accountable to the survivor(s) and restore their relationships within their communities.',
         photo: 'jenna.jpg',
         photo2: 'Qui.png',
         personId: 9
@@ -103,7 +103,7 @@ export const GAME_CHANGERS_SECTION_1 = [
       },
       {
         tagline: 'Andrea Marcos',
-        quote: 'Andrea Marcos is a printmaker, nerd, tender-hearted trouble-maker, queer, ariesyoungestchild, dedicated to collective liberation and radical imagination.'  + '<br><br><br>' + 'Andrea created the linocut print that serves as the “What really makes us safe?” project ' + '<a href="https://www.whatreallymakesussafe.com/#/home" target="_blank" style="color: #014C8C !important;">' + 'logo' + '</a>' + '. The image reimagines a traditional German sewing kit as a tool box for homemade abolitionist safety.',
+        quote: 'Andrea Marcos is a printmaker, nerd, tender-hearted trouble-maker, queer, ariesyoungestchild, dedicated to collective liberation and radical imagination.'  + '<br><br><br>' + 'Andrea created the linocut print that serves as the “What really makes us safe?” project ' + '<a href="https://www.whatreallymakesussafe.com/#/home" style="color: #014C8C !important;">' + 'logo' + '</a>' + '. The image reimagines a traditional German sewing kit as a tool box for homemade abolitionist safety.',
         personId: 99,
         photo: 'marcos.jpg'
       }
@@ -184,12 +184,12 @@ export const GAME_CHANGERS_SECTION_1 = [
     ]
   }];
   
-  + '<br><br>' + '...in Chicago… <a href="http://howardbrown.org/wp/byc/">Broadway Youth Center</a> & <a href="http://www.womenandgirlscan.org/?i=1">Women and Girls Collective Action Network</a>'
-    + '<br>' + '…in New York… <a href="http://alp.org/safe-outside-system-sos-collective">Safe OUTside the System Collective</a> at the Audre Lorde Project, <a href="https://supportny.org/">Support New York</a>, <a href="http://challengingmalesupremacy.org/">Challenging Male Supremacy Project</a>, <a href="http://www.fiercenyc.org/">FIERCE</a>, <a href="http://criticalresistance.org/wp-content/uploads/2014/05/HFZ-NY.pdf">Harm Free Zone Project</a>t, & <a href="https://avp.org/">Anti-Violence Project</a>'
-    + '<br>' + '…in Philadelphia… <a href="https://phillystandsup.wordpress.com/">Philly Stands Up</a>'
-    + '<br>' + '… in Durham… <a href="https://iambecauseweare.wordpress.com/">UBUNTU</a>'
-    + '<br>' + '…in Seattle… <a href="http://www.nwnetwork.org/">Northwest Network of Bi, Trans, Lesbian, and Gay Survivors of Abuse</a>, <a href="http://cara-seattle.blogspot.com/">Communities Against Rape & Abuse</a>, <a href="https://forcryingoutloud206.wordpress.com/about/">For Crying Out Loud</a>, <a href="https://www.apichaya.org/">Asian Pacific Islander Chaya</a>'
-    + '<br>' + '…in the Bay Area…<a href="https://batjc.wordpress.com/">Bay Area Transformative Justice Collective</a>, <a href="http://www.sfaws.org/">San Francisco Asian Women’s Shelter</a>, <a href="http://www.cuav.org/">Communities United Against Violence</a>, <a href="http://www.creative-interventions.org/">Creative Interventions</a>, <a href="http://www.generationfive.org/">generationFIVE</a>'
+  + '<br><br>' + '...in Chicago… <a href="http://howardbrown.org/wp/byc/" target="_blank">Broadway Youth Center</a> & <a href="http://www.womenandgirlscan.org/?i=1" target="_blank">Women and Girls Collective Action Network</a>'
+    + '<br>' + '…in New York… <a href="http://alp.org/safe-outside-system-sos-collective" target="_blank">Safe OUTside the System Collective</a> at the Audre Lorde Project, <a href="https://supportny.org/" target="_blank">Support New York</a>, <a href="http://challengingmalesupremacy.org/" target="_blank">Challenging Male Supremacy Project</a>, <a href="http://www.fiercenyc.org/" target="_blank">FIERCE</a>, <a href="http://criticalresistance.org/wp-content/uploads/2014/05/HFZ-NY.pdf" target="_blank">Harm Free Zone Project</a>t, & <a href="https://avp.org/" target="_blank">Anti-Violence Project</a>'
+    + '<br>' + '…in Philadelphia… <a href="https://phillystandsup.wordpress.com/" target="_blank">Philly Stands Up</a>'
+    + '<br>' + '… in Durham… <a href="https://iambecauseweare.wordpress.com/" target="_blank">UBUNTU</a>'
+    + '<br>' + '…in Seattle… <a href="http://www.nwnetwork.org/" target="_blank">Northwest Network of Bi, Trans, Lesbian, and Gay Survivors of Abuse</a>, <a href="http://cara-seattle.blogspot.com/" target="_blank">Communities Against Rape & Abuse</a>, <a href="https://forcryingoutloud206.wordpress.com/about/" target="_blank">For Crying Out Loud</a>, <a href="https://www.apichaya.org/" target="_blank">Asian Pacific Islander Chaya</a>'
+    + '<br>' + '…in the Bay Area…<a href="https://batjc.wordpress.com/" target="_blank">Bay Area Transformative Justice Collective</a>, <a href="http://www.sfaws.org/" target="_blank">San Francisco Asian Women’s Shelter</a>, <a href="http://www.cuav.org/" target="_blank">Communities United Against Violence</a>, <a href="http://www.creative-interventions.org/" target="_blank">Creative Interventions</a>, <a href="http://www.generationfive.org/" target="_blank">generationFIVE</a>'
     
     
   

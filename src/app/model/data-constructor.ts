@@ -103,7 +103,7 @@ export const FUTURE_SECTION = [
       {
         tagline: 'Where you can start...',
         quote: 'Therefore the question is <strong>what can you help build?</strong> What conversations can you start to increase the safety of your community? What <strong>new structures or collaborations</strong> will you create to decrease your reliance on the criminal legal system? Perhaps you want to think about one form of violence to work on and build your knowledge from there. You could start simply by <strong>having a dinner with your friends, family and chosen family</strong> to discuss how you all can better support each other. Or you could raise the issue of police violence and harassment at your next <strong>tenants association meeting</strong> and see if there\'s a way that your neighbors want to engage with each other as opposed to the police. Next, you could research ways that people can get emergency medical assistance outside of 911. The possibilities are endless.'
-        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation">Building Community Safety: Steps Towards Liberatory Transformation</a>" in Truthout, Aug. 15, 2015',
+        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation target="_blank"">Building Community Safety: Steps Towards Liberatory Transformation</a>" in Truthout, Aug. 15, 2015',
         personId: 7
       },
     ]

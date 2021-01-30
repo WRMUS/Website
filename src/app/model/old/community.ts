@@ -59,7 +59,7 @@ export const COMMUNITY_SECTION = [
       },
       {
         tagline: 'Pod',
-        quote: '"<a href="https://batjc.wordpress.com/pods-and-pod-mapping-worksheet">Pods and Pod Mapping Worksheet</a>"',
+        quote: '"<a href="https://batjc.wordpress.com/pods-and-pod-mapping-worksheet" target="_blank">Pods and Pod Mapping Worksheet</a>"',
         personId: 30
       },
       {
@@ -76,7 +76,7 @@ export const COMMUNITY_SECTION = [
         + '<br><br>' + 'This strategy is not without complications. For many people, particularly <strong>women and gender nonconforming people</strong>, the act of <strong>engaging with strangers can open us up to harassment and even violence</strong>. At the same time these challenges shouldn\'t prevent us from building relationships; they may merely shift the ways that we go about it. Attending community events is also a great way to build relationships.'
         + '<br><br>' + 'Additionally we must also be cognizant of the way that <strong>class, educational privilege, and gentrification</strong> can impact relationship building. Gentrification is its own form of violence within many low-income neighborhoods. Many gentrifiers\/newcomers can act fearful and do not shop within their communities, attend events, or build relationships with their neighbors. Gentrifiers\/newcomers who are also movement leaders tend to create movements and strategies that are not grounded within the lived experiences of the people most impacted by violence.'
         + '<br><br>' + 'While I don\'t believe that we can separate ourselves from our <strong>privileges</strong>, I think we can <strong>leverage them toward justice</strong>. My educational privilege and relationships mean that I know a lot of lawyers and have knowledge about our rights during police encounters. I\'ve made sure to share "know your rights" information with my neighbors, observe the cops alongside my neighbors, and given legal referrals. Through these moments I\'ve been able to build stronger relationships with my neighbors and deepen trust.'
-        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation">Building Community Safety: Steps Towards Liberatory Transformation.</a>" In Truthout, Aug. 15, 2015.',
+        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation" target="_blank">Building Community Safety: Steps Towards Liberatory Transformation.</a>" In Truthout, Aug. 15, 2015.',
         personId: 7
       },
       {

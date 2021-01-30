@@ -17,7 +17,7 @@ export const GAME_CHANGERS_QUOTES = [
         quote: 'Security, to many, means having access to the <strong>violent means that the state uses to defend itself</strong>, the police, the national guard, the private security forces that companies use to protect their wealth. For those of us, black, queer, young, radical, and grassroots, who are not often seen as part of the state\’s project to reproduce itself (except when we are targeted as consumers) <strong>those sources of security are not dependable</strong>. As far as we can tell <strong>security comes from weapons</strong>. And only works if you got more, faster, bigger weapons than whoever makes you insecure.'
           + '<br><br>' + 'We acknowledge that in a world where violence against queer and gender queer young people of color is common, security is not a light matter. We have also decided, however, that <strong>security is not enough</strong>. Our intention is for <strong>our journey to be SAFE</strong>.'
           + '<br><br>' + 'Safety, to us, means being able to be <strong>comfortable in our skin</strong>, having the <strong>freedom to move</strong>, being able to <strong>sleep restfully and wake renewed</strong> and excited about the journey.  Safety comes from knowing that <strong>we are held by a community</strong> that <strong>has our backs</strong>. Safety comes from knowing that all along the road there are home-spaces with comrades who will welcome us and who will answer if we call on them. <strong>Safety comes from relationships and people</strong>.'
-          + '<br><br>' + '-"<a href="http://www.mobilehomecoming.org/about-2/safety-an-abolitionist-vision/">Safety: An Abolitionist Vision</a>" from the Mobile Homecoming Website.'
+          + '<br><br>' + '-"<a href="http://www.mobilehomecoming.org/about-2/safety-an-abolitionist-vision/" target="_blank">Safety: An Abolitionist Vision</a>" from the Mobile Homecoming Website.'
           + '<br><br>'
       },
       {
@@ -58,7 +58,7 @@ export const GAME_CHANGERS_QUOTES = [
           + '<br><br>' + 'For example: I have heard <strong>survivors of violence</strong> express that accountability would mean having their experiences validated; feeling a shift in their community spaces; having a coherent narrative of what happened to them. <strong>Sometimes, it is important for these things to work in relation to the person who did the violence; other times, it\’s not. Sometimes it is, but that isn\’t possible</strong> – or at least not in the way they envision, right now. But sometimes there are other ways to get a piece of what they need. Having supported or facilitated conversations with loved ones might feel validating. Having a meeting at their work, school, or organizing space might start to shift dynamics that allowed violence to take place. Exchanging letters or other mediated communication with the person who did violence might allow a survivor to articulate their experience in a helpful way. These are actions all of us are capable of supporting right now. I have heard <strong>people who bore witness to violence</strong> describe accountability as expressing support for survivors; holding clear and consistent boundaries amongst themselves; learning the skills they need to better intervene. An organization might show their support for survivors through a collective statement, or simply through daily actions of interdependent care. A family might learn to express and respect boundaries by practicing open communication and consent. A group of friends might prepare themselves to prevent and stop violence by taking a course in mediation, de-escalation, or medical care. These, too, are things that many of us can do.'
           + '<br><br>' + '<strong>This doesn\’t mean that everyone is always satisfied</strong> – sometimes folks don\’t get what they want – or what they want changes – and it can be painful and unfair. But starting from a <strong>contextual, not a prescriptive</strong> understanding of what accountability means and looks like gets us closer to making it in real, if imperfect ways.'
           + '<br><br>' + '-Alix Johnson'
-          + '<\/br>' + '<a href="https://batjc.wordpress.com/2016/08/11/healing-and-justice-together-and-apart-accountability-beyond-the-process/">\"Healing and Justice, Together and Apart: Accountability Beyond the \‘Process\’\"</a>, Bay Area Transformative Justice Collective blog.'
+          + '<\/br>' + '<a href="https://batjc.wordpress.com/2016/08/11/healing-and-justice-together-and-apart-accountability-beyond-the-process/" target="_blank">\"Healing and Justice, Together and Apart: Accountability Beyond the \‘Process\’\"</a>, Bay Area Transformative Justice Collective blog.'
       },
       {
         tagline: 'Relationship-building',
@@ -279,7 +279,7 @@ export const GAME_CHANGERS_QUOTES = [
         tagline: 'Saved by relationships',
         quote: '<strong>Violence and oppression break community ties and breed fear and distrust</strong>. At its core, the work of creating safety is to build meaningful, accountable relationships within our neighborhoods and communities<strong>. Within the S.O.S. Collective, we made it a point to do outreach in the immediate area after incidents of violence</strong>. While it often felt terrifying to talk about the work of preventing and ending violence against LGBTQ people of color, we built strong allies and had life-changing conversations. Time and time again I\'ve known peoplee who were saved by the relationships they built. […]'
           + '<br><br>' + '-Ejeris Dixon'
-          + '<\/br>' + '<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation>\"Building Community Safety: Steps Towards Liberatory Transformation\"</a> in Truthout, Aug. 15, 2015.'
+          + '<\/br>' + '<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation" target="_blank">\"Building Community Safety: Steps Towards Liberatory Transformation\"</a> in Truthout, Aug. 15, 2015.'
           + '<br><br>'
       },
       {
@@ -297,7 +297,7 @@ export const GAME_CHANGERS_QUOTES = [
           + '<br><br>' + 'My mom grew up in New Orleans in the 1940s, 1950s and 1960s. Her entire life was marked by <strong>experiences of state violence and Jim Crow segregation</strong>. The police, white citizens councils and the Klan intermingled and formed the backbone of a racist political and economic system. Her experiences were not unique. Historically and currently most marginalized communities - including Black people, poor people, queer and trans people, and people with disabilities - have experienced <strong>violence and discrimination from police, emergency services and the legal system</strong>.'
           + '<br><br>' + 'Just as the use of state violence against Black communities is <strong>not new</strong>, neither are the ideas of transformative justice or community accountability.'
           + '<br><br>' + '-Ejeris Dixon'
-          + '<br>' + '<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation>\"Building Community Safety: Steps Towards Liberatory Transformation\"</a> in Truthout, Aug. 15, 2015'
+          + '<br>' + '<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation" target="_blank">\"Building Community Safety: Steps Towards Liberatory Transformation\"</a> in Truthout, Aug. 15, 2015'
       },
       {
         tagline: 'Safe outside the system training',
@@ -329,7 +329,7 @@ export const GAME_CHANGERS_QUOTES = [
       {
         tagline: 'Where you can start...',
         quote: 'Therefore the question is <strong>what can you help build?</strong> What conversations can you start to increase the safety of your community? What <strong>new structures or collaborations</strong> will you create to decrease your reliance on the criminal legal system? Perhaps you want to think about one form of violence to work on and build your knowledge from there. You could start simply by <strong>having a dinner with your friends, family and chosen family</strong> to discuss how you all can better support each other. Or you could raise the issue of police violence and harassment at your next <strong>tenants association meeting</strong> and see if there\'s a way that your neighbors want to engage with each other as opposed to the police. Next, you could research ways that people can get emergency medical assistance outside of 911. The possibilities are endless.'
-        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation">Building Community Safety: Steps Towards Liberatory Transformation</a>" in Truthout, Aug. 15, 2015'
+        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation" target="_blank">Building Community Safety: Steps Towards Liberatory Transformation</a>" in Truthout, Aug. 15, 2015'
         + '<br><br>'
       },
       {
@@ -394,7 +394,7 @@ export const GAME_CHANGERS_QUOTES = [
         + '<br><br>' + 'Therefore our work is in finding ways to hold both <strong>compassion and critique</strong> while also building our awareness of when to use which tool.'
         + '<br><br>' + 'As a practical step I would suggest examining when and why we use judgment in our conversations with each other and whether we\'re seeking to <strong>educate or support</strong>. We can reframe both education and support in nonjudgmental ways. For instance, education can include sharing tools for de-escalating conflict that a person can try to use before calling 911. We can achieve compassion without judgment when we focus on making sure that people feel heard, understood and not isolated. Compassionately discussing calling 911 with someone can sound like this:'
         + '<br><br>' + 'I\'m so sorry that happened. It seems like you didn\'t have very many options. If it\'s helpful, I\'m happy to be someone you call on if you ever find yourself in that situation again.'
-        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation">Building Community Safety: Steps Towards Liberatory Transformation.</a>." In Truthout, Aug. 15, 2015.'
+        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation" target="_blank">Building Community Safety: Steps Towards Liberatory Transformation.</a>." In Truthout, Aug. 15, 2015.'
         + '<br><br>'
       },
       {
@@ -417,7 +417,7 @@ export const GAME_CHANGERS_QUOTES = [
         + '<br><br>' + 'This strategy is not without complications. For many people, particularly <strong>women and gender nonconforming people</strong>, the act of <strong>engaging with strangers can open us up to harassment and even violence</strong>. At the same time these challenges shouldn\'t prevent us from building relationships; they may merely shift the ways that we go about it. Attending community events is also a great way to build relationships.'
         + '<br><br>' + 'Additionally we must also be cognizant of the way that <strong>class, educational privilege, and gentrification</strong> can impact relationship building. Gentrification is its own form of violence within many low-income neighborhoods. Many gentrifiers\/newcomers can act fearful and do not shop within their communities, attend events, or build relationships with their neighbors. Gentrifiers\/newcomers who are also movement leaders tend to create movements and strategies that are not grounded within the lived experiences of the people most impacted by violence.'
         + '<br><br>' + 'While I don\'t believe that we can separate ourselves from our <strong>privileges</strong>, I think we can <strong>leverage them toward justice</strong>. My educational privilege and relationships mean that I know a lot of lawyers and have knowledge about our rights during police encounters. I\'ve made sure to share "know your rights" information with my neighbors, observe the cops alongside my neighbors, and given legal referrals. Through these moments I\'ve been able to build stronger relationships with my neighbors and deepen trust.'
-        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation">Building Community Safety: Steps Towards Liberatory Transformation</a>" In Truthout, Aug. 15, 2015'
+        + '<br><br>' + '-from "<a href="http://www.truth-out.org/opinion/item/32489-building-community-safety-practical-steps-toward-liberatory-transformation" target="_blank">Building Community Safety: Steps Towards Liberatory Transformation</a>" In Truthout, Aug. 15, 2015'
         + '<br><br>'
       },
       {
@@ -630,7 +630,7 @@ export const GAME_CHANGERS_QUOTES = [
         tagline: 'Perpetuators',
         quote: 'We’re accessible to those who are impacted by and those who have <strong>perpetuated</strong> violence. Some youth may be <strong>both survivors and perpetrators</strong>.'
           + '<br><br>' + '-Lara Brooks of The Broadway Youth Center'
-          + '<\/br>' + 'quoted in <a href="http://www.usprisonculture.com/blog/wp-content/uploads/2012/03/communities_engaged.pdf#page=14">Communities Engaged in Resisting Violence</a>, by Melissa Spatz & Ann Russo, p. 12'
+          + '<\/br>' + 'quoted in <a href="http://www.usprisonculture.com/blog/wp-content/uploads/2012/03/communities_engaged.pdf#page=14" target="_blank">Communities Engaged in Resisting Violence</a>, by Melissa Spatz & Ann Russo, p. 12'
       },
       {
         tagline: 'Non-profit industrial complex',
@@ -679,7 +679,7 @@ export const GAME_CHANGERS_QUOTES = [
         tagline: 'Healing circle',
         quote: 'A group of people connected with Women and Girls CAN formed a <strong>healing circle of trusted friends and colleagues to support a member of our community</strong> who had been sexually assaulted by someone in the social justice community. The healing circle created a communal space for her to tell her story and for the group to talk about its impact on us. The healing circle process was very powerful. The group recognized that it wasn\'t just an individual problem, but a community problem, and that the community as a whole could take action on it. As the survivor says, "Until we were all in the room, I kept thinking it was just my problem and I wasn\'t sure what steps to take to make sure other people would be safe. This <strong>circle was empowering for all of us</strong>, but especially for me, in large part because we took action together." Through our healing circle, we came up with strategies to create accountability for the violence. We wrote a collective letter to the perpetrator and we alerted people who might be working with him about the incident and the potential for future violence.'
         + '<br><br>' + '-Melissa Spatz & Ann Russo'
-        + '<br><br>' + 'from "<a href="https://www.transformativejustice.eu/wp-content/uploads/2010/11/communities_engaged.pdf">Communities Engaged in Resisting Violence</a>," p. 24'
+        + '<br><br>' + 'from "<a href="https://www.transformativejustice.eu/wp-content/uploads/2010/11/communities_engaged.pdf" target="_blank">Communities Engaged in Resisting Violence</a>," p. 24'
         + '<br><br>'
       }
     ]
@@ -970,7 +970,7 @@ export const GAME_CHANGERS_QUOTES = [
       ,
       {
         tagline: 'Road map to accountability',
-        quote: 'This <a href="http://www.usprisonculture.com/blog/wp-content/uploads/2012/03/accountabilityroadmap.pdf#page=7">"Road Map to Accountability"</a> was developed by Qui & Jenna\'s collective, Philly Stands Up.'
+        quote: 'This <a href="http://www.usprisonculture.com/blog/wp-content/uploads/2012/03/accountabilityroadmap.pdf#page=7" target="_blank">"Road Map to Accountability"</a> was developed by Qui & Jenna\'s collective, Philly Stands Up.'
           + '<br><br>' + '-The Abolitionist newspaper, 2012, p. 7'
       }
       ,

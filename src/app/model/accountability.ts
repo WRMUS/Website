@@ -118,7 +118,7 @@ export const ACCOUNTABILITY_SECTION_1 = [
           + '<br>' + '•	If we miss this opportunity will another arise in the near future?'
           + '<br>' + '•	If we take this opportunity in the short term, what are the long-term consequences and how can we prepare for them?'
           + '<br>' + '•	If we do not take this opportunity, what are the consequences?'
-          + '<br><br>' + '-<a href="http://www.blackandpink.org/wp-content/upLoads/G5_Toward_Transformative_Justice-1.pdf#page=47">\"Toward Transformative Justice: A Liberatory Approach to Child Sexual Abuse and other forms of Intimate and Community Violence\", p. 41',
+          + '<br><br>' + '-<a href="http://www.blackandpink.org/wp-content/upLoads/G5_Toward_Transformative_Justice-1.pdf#page=47" target="_blank">\"Toward Transformative Justice: A Liberatory Approach to Child Sexual Abuse and other forms of Intimate and Community Violence\", p. 41',
         personId: 11
       }
     ]
@@ -147,7 +147,7 @@ export const ACCOUNTABILITY_SECTION_1 = [
       },
       {
         tagline: 'Road map to accountability',
-        quote:'This <a href="http://www.usprisonculture.com/blog/wp-content/uploads/2012/03/accountabilityroadmap.pdf#page=7">"Road Map to Accountability"</a> was developed by Qui & Jenna\'s collective, Philly Stands Up.'
+        quote:'This <a href="http://www.usprisonculture.com/blog/wp-content/uploads/2012/03/accountabilityroadmap.pdf#page=7" target="_blank">"Road Map to Accountability"</a> was developed by Qui & Jenna\'s collective, Philly Stands Up.'
         + '<br><br>' +'-The Abolitionist newspaper, 2012, p. 7',
         personId: 9
       },
@@ -173,7 +173,7 @@ export const ACCOUNTABILITY_SECTION_1 = [
           + '<br>' + '<strong>Step 3</strong> Recognize the consequences of violence without excuses, even if unintended'
           + '<br>' + '<strong>Step 2</strong> Recognize the violence'
           + '<br>' + '<strong>Step 1</strong> Stop immediate violence or stop it enough to go to next step'
-          + '<br><br>' +'<a href="http://www.creative-interventions.org/wp-content/uploads/2012/06/CI-Toolkit-Complete-Pre-Release-Version-06.2012-.pdf#page=389">-\"The Creative Interventions Toolkit: A Practical Guide to Stop Interpersonal Violence\", p. 4F-57</a>',
+          + '<br><br>' +'<a href="http://www.creative-interventions.org/wp-content/uploads/2012/06/CI-Toolkit-Complete-Pre-Release-Version-06.2012-.pdf#page=389" target="_blank">-\"The Creative Interventions Toolkit: A Practical Guide to Stop Interpersonal Violence\", p. 4F-57</a>',
         personId: 12
       },
       {
@@ -206,7 +206,7 @@ export const ACCOUNTABILITY_SECTION_1 = [
           + '<br>' + '• In what ways could any of these things be mobilized to discredit, attack, or harm the survivor, allies and/or a commitment to a Transformative Justice response?'
           + '<br>' + '• Who or what else could the Transformative Justice collective mobilize to create relationships of accountability and support transformation?'
           + '<br>' + '• What can the Transformative Justice Collective do with people who abuse and who have not shown a commitment to any level of accountability?'
-          + '<br><br>' + '-<a href="http://www.generationfive.org/wp-content/uploads/2013/07/G5_Toward_Transformative_Justice-Document.pdf#page=56">\"Toward Transformative Justice: A Liberatory Approach to Child Sexual Abuse and other forms of Intimate and Community Violence\", p. 50',
+          + '<br><br>' + '-<a href="http://www.generationfive.org/wp-content/uploads/2013/07/G5_Toward_Transformative_Justice-Document.pdf#page=56" target="_blank">\"Toward Transformative Justice: A Liberatory Approach to Child Sexual Abuse and other forms of Intimate and Community Violence\", p. 50',
         personId: 11
       },
       {
@@ -366,7 +366,7 @@ export const ACCOUNTABILITY_SECTION_1 = [
         quote: 'We might start from questions like: <strong>What does accountability mean? What does accountability look like? How does accountability feel?</strong> This is not to say that accountability can be anything - we push folks to think about their actions and impact, the amends they owe, and the changes they need to make. We ask people to consider <strong>what they need for their safety and healing</strong>, and what it would take for lasting transformation to take place. We ask them <strong>what might get in the way of accountability</strong> - what experiences or memories they might need to revisit, what beliefs or messaging they might need to unlearn. But it is to acknowlege that accountability means different things to different people, and those specificities shoul shape the process and its goals.'
           + '<br><br>' +'For example: I have heard <strong>survivors of violence</strong> express that accountability would mean having their experiences valiated; feeling a shift in their community spaces; having a coherent narrative of what happened to them. <strong>Sometimes, it is important for these things to work in relation to the person who did the violence; other times, it\'s not. Sometimes it is, but that isn\'t possible</strong> - or at least not in the way they envision, right now. But sometimes there are other ways to get a piece of what they need. Having supported or facilitated conversations with loved ones might feel validating. Having a meeting at their work, school, or organizing space might start to shift dynamics that allowed violence to take place. Exchanging letters or other mediate communication with the person who did violence might allow a survivor to articulate their experience in a helpful way. These are actions all of us are capable of supporting right now. I have heard <strong>people who bore witness to violence</strong> describe accountability as expressing support for survivors; holding clear and consistent boundaries amongst themselves; learning the skills they need to better intervene. An organization might show their support for survivors through a collective statement, or simply through daily actions of interdependent care. A family might learn to express and respect boundaries by practicing open communication and consent. A group of friends might prepare themselves to prevent and stop violence by taking a course in mediation, de-escalation, or medical care. These, too, are things that many of us can do.'
           + '<br><br>' +'<strong>This doesn\'t mean that everyone is always satisfied</strong> - sometimes folks don\'t get what they want - or what they want changes - and it can be painful and unfair. But starting from a <strong>contextual, not a prescriptive</strong> understanding of what accountability means and looks like gets us closer to making it in real, if imperfect ways.'
-          + '<br><br>' +'-<a href="https://batjc.wordpress.com/2016/08/11/healing-and-justice-together-and-apart-accountability-beyond-the-process">"Healing and Justice, Together and Apart: Accountability Beyond the \'Process\'"</a>.',
+          + '<br><br>' +'-<a href="https://batjc.wordpress.com/2016/08/11/healing-and-justice-together-and-apart-accountability-beyond-the-process" target="_blank">"Healing and Justice, Together and Apart: Accountability Beyond the \'Process\'"</a>.',
         personId: 16
       },
       {

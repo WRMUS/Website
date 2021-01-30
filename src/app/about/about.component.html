@@ -256,20 +256,20 @@
                 <br><br>
                 <ul>
                   <li>
-                    <a routerLink="/people/a" target="_blank">‘Collaborators’</a> offers biographies of the activists
+                    <a routerLink="/people/a">‘Collaborators’</a> offers biographies of the activists
                     interviewed, as well as their personal and organizational stories.
                   </li>
 
                   <li>
-                    The chapter <a routerLink="/movement/tj" target="_blank">‘Movement’</a> puts the movement in its
+                    The chapter <a routerLink="/movement/tj">‘Movement’</a> puts the movement in its
                     larger historical and social context, including a section on the <a
-                      routerLink="/movement/principles" target="_blank">Principles</a> behind the work.
+                      routerLink="/movement/principles">Principles</a> behind the work.
                   </li>
                   <li>
-                    <a routerLink="/stories/support" target="_blank">‘Stories’</a> focuses on the interviewees’ praxis:
-                    <a routerLink="/stories/support/c" target="_blank">Support</a> for survivors, <a
-                      routerLink="/stories/accountability" target="_blank">Accountability</a> for those who cause harm,
-                    and engagement with the broader <a routerLink="/stories/community" target="_blank">Community</a>.
+                    <a routerLink="/stories/support">‘Stories’</a> focuses on the interviewees’ praxis:
+                    <a routerLink="/stories/support/c">Support</a> for survivors, <a
+                      routerLink="/stories/accountability">Accountability</a> for those who cause harm,
+                    and engagement with the broader <a routerLink="/stories/community">Community</a>.
                   </li>
 
                 </ul>
@@ -319,7 +319,7 @@
 <ng-template #content let-c="close">
   <div class="modal-header">
     <h4 class="modal-title title-font">
-      <a href="{{ getPerson(selectedQuote.personId).link }}" target='_blank'
+      <a href="{{ getPerson(selectedQuote.personId).link }}"
         *ngIf='getPerson(selectedQuote.personId).link'> {{ getPerson(selectedQuote.personId)?.name }}</a>
       <span *ngIf='!getPerson(selectedQuote.personId).link'> {{ getPerson(selectedQuote.personId)?.name }}</span>
     </h4>
