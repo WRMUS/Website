@@ -265,6 +265,11 @@ export const GAME_CHANGERS_QUOTES = [
         + '<br><br>'
       },
       {
+        tagline: 'Try with anybody willing',
+        quote: '[On working with all kinds of perpetrators] <strong>I would try to do a process with anybody that was willing, but I\'d have some doubts</strong> that some \'bro dude\' would be receptive, you know?',
+        personId: 2
+      },
+      {
         tagline: '"Fuck you, I’m done!"',
         quote: 'I had another process where I was like <strong>"Fuck you, I\'m done!</strong>" This is the last time you\'re gonna be 45 minutes late to a meeting, didn\'t do the reading, and had some lousy excuse that you had some crisis in your family or that you had to do something for your Mom. You know what, you had two weeks to do this reading. If you text us with \'I\'m running late, I have to blah blah blah\' that\'s one thing, but you should be doing your reading before you were on the train on the way to the fucking meeting. I can\'t do this anymore, you\'re lying all the time, I don\'t ever feel like you\'re being honest to me, I can\'t do this anymore, I\'m outta here."'
         + '<br><br>' + '<strong>It was shitty of me because I just snapped and let out all these critiques and quit the process without checking in with my co-facilitators first</strong>. And then I had this real George Costanza moment because I was like "I\'m out" and went straight to the bathroom and realized that I forgot my backpack at the table, and then after I had this dramatic exit, I had to walk back over and take back my backpack and leave again and totally de-dramatize my whole shit.'
