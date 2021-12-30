@@ -37,6 +37,8 @@ export class BioDetailComponent implements OnInit {
   
   public gameChangerQuotes: any;
   
+  currentYear: number = new Date().getFullYear();
+
   public selectedQuote: Quote;
   public selectedBioQuote: Quote;
   public selectedRollover: Rollover;

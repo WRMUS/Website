@@ -15,6 +15,7 @@ import { Router } from '@angular/router';
 })
 export class StoriesComponent implements OnInit {
 
+  currentYear: number = new Date().getFullYear();
   router;
   constructor(private _router: Router) 
   {

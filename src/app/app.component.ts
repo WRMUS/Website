@@ -20,6 +20,7 @@ import { Router } from '@angular/router';
 })
 
 export class AppComponent {
+  currentYear: number = new Date().getFullYear();
   title = 'app works!';
   router;
   constructor(private _router: Router) {

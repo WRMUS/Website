@@ -11,6 +11,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class TransComponent implements OnInit {
 
+  currentYear: number = new Date().getFullYear();
   router;
   constructor(private route: ActivatedRoute,
               private modalService: NgbModal,
