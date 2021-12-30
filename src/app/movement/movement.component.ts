@@ -26,6 +26,7 @@ import { Router } from '@angular/router';
 })
 export class MovementComponent implements OnInit {
 
+  currentYear: number = new Date().getFullYear();
   router;
   constructor(private _router: Router) {
     this.router = _router;

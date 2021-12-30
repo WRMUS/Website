@@ -31,7 +31,7 @@ import { Router } from '@angular/router';
 })
 
 export class AboutComponent implements OnInit {
-
+  currentYear: number = new Date().getFullYear();
   public futureSection: any;
   public selectedDetail: Section;
   public gameChangers = DATA_MODEL[1];

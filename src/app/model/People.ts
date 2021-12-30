@@ -8,7 +8,7 @@ export const PEOPLE: Person[] = [
     color: '#D9ECD9',
     contrastColor: '#b1aacc',
     fontColor: 'white'
-    ,image:'tn_melanie_ori.jpg'
+    ,image:'tn_melanie_new.jpg'
     },
   {
     id: 1,
@@ -17,7 +17,7 @@ export const PEOPLE: Person[] = [
     color: '#DDDAE9',
     contrastColor: '#b1aacc',
     fontColor: 'white'
-    ,image:'tn_apg-headshot_ori.jpg'
+    ,image:'tn_apg-headshot_new.jpg'
     },  
     
     {
@@ -27,7 +27,7 @@ export const PEOPLE: Person[] = [
     color: '#DDDAE9',
     contrastColor: '#b1aacc',
     fontColor: 'white',
-    image:'marcos.jpg'
+    image:'marcos_new.jpg'
     },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const PEOPLE: Person[] = [
     color: '#E9D9EA',
     contrastColor: '#cca8cf',
     fontColor: 'white'
-    ,image:'Updated_Colin_Photo.png'
+    ,image:'Updated_Colin_Photo_new.png'
     },
   {
     id: 3,
@@ -45,16 +45,15 @@ export const PEOPLE: Person[] = [
     color: '#EADADE',
     contrastColor: '#cea9b2',
     fontColor: 'white'
-    ,image:'tn_tyson_ori.jpg'},
+    ,image:'tn_tyson_new.jpg'},
   {
     id: 4,
     name: 'Kiyomi Fujikawa',
     shortName: 'K',
     color: '#E7E9D9',
     contrastColor: '#c8cda9',
-    fontColor: 'white'
-    ,image:'tn_kiyomi_ori.jpg'
-    },
+    fontColor: 'white',
+    image:'tn_kiyomi_new.jpg'},
   {
     id: 5,
     name: 'Dr. Beth Richie',
@@ -68,8 +67,8 @@ export const PEOPLE: Person[] = [
     shortName: 'MS',
     color: '#DAE5E9',
     contrastColor: '#aac3cc',
-    fontColor: 'white'
-    ,image:'tn_melisa_ori.jpeg'
+    fontColor: 'white',
+    image:'tn_melisa_new.jpg'
     },
   {
     id: 7,
@@ -78,7 +77,7 @@ export const PEOPLE: Person[] = [
     color: '#00b0e1',
     contrastColor: '#6ddfff',
     fontColor: 'white'
-    ,image:'tn_ejeris_ori.jpg'
+    ,image:'tn_ejeris_new.jpg'
     },
   {
     id: 8,
@@ -87,7 +86,7 @@ export const PEOPLE: Person[] = [
     color: '#00b0e1',
     contrastColor: '#6ddfff',
     fontColor: 'white'
-    ,image:'tn_maura_ori.jpg'
+    ,image:'tn_maura_new.jpg'
     },
   {
     id: 9,
@@ -96,7 +95,7 @@ export const PEOPLE: Person[] = [
     color: '#EADADA',
     contrastColor: '#cea9a9',
     fontColor: 'white'
-    ,image:'tn_jq.png'
+    ,image:'tn_jq_new.jpg'
     },
   {
     id: 10,
@@ -157,7 +156,7 @@ export const PEOPLE: Person[] = [
     color: '#DAE9E2',
     contrastColor: '#aaccbc',
     fontColor: 'white',
-    image:'tn_alix_ori.jpg'
+    image:'tn_alix_new.jpg'
   },
   {
     id: 17,
@@ -165,7 +164,8 @@ export const PEOPLE: Person[] = [
     shortName: 'V',
     color: '#E5DAE9',
     contrastColor: '#c3aacc',
-    fontColor: 'white',image:'vee.png'
+    fontColor: 'white',
+    image:'vee.png'
   },
   {
     id: 18,
@@ -173,7 +173,8 @@ export const PEOPLE: Person[] = [
     shortName: 'L&L',
     color: '#DADAE9',
     contrastColor: '#aaaacc',
-    fontColor: 'white',image:'tn_snylogo.jpg'
+    fontColor: 'white',
+    image:'tn_snylogo.jpg'
   },
   {
     id: 19,
@@ -182,7 +183,7 @@ export const PEOPLE: Person[] = [
     color: '#E9E9D9',
     contrastColor: '#cdcda9',
     fontColor: 'white',
-    image:'tn_hediana_ori.png'
+    image:'tn_hediana_new.jpg'
   },
   {
     id: 20,
@@ -191,7 +192,7 @@ export const PEOPLE: Person[] = [
     color: '#D9E9DC',
     contrastColor: '#a9cdaf',
     fontColor: 'white',
-    image:'tn_anna_ori.jpg'
+    image:'tn_anna_new.jpg'
   },
   {
     id: 21,
@@ -209,8 +210,8 @@ export const PEOPLE: Person[] = [
     color: '#DADFE8',
     contrastColor: '#abb6cb',
     fontColor: 'white',
-    link: 'https://briarpatchmagazine.com/articles/view/intervening-in-violence'
-    ,image:'tn_minikim_ori.jpg'
+    link: 'https://briarpatchmagazine.com/articles/view/intervening-in-violence',
+    image:'tn_minikim_new.jpg'
   },
   {
     id: 23,
@@ -246,8 +247,8 @@ export const PEOPLE: Person[] = [
     color: '#E7E1D9',
     contrastColor: '#c9bcaa',
     fontColor: 'white',
-    link: 'http://www.nwnetwork.org/'
-    ,image:'tn_northwestnetwork_ori.jpg'
+    link: 'http://www.nwnetwork.org/',
+    image:'tn_northwestnetwork_ori.jpg'
   },
   {
     id: 27,
@@ -256,8 +257,8 @@ export const PEOPLE: Person[] = [
     color: '#D9E6E7',
     contrastColor: '#aac7c9',
     fontColor: 'white',
-    link: 'https://www.warresisters.org/win/win-summer-2007/harm-free-zones'
-    ,image:'tn_harmfreezone_ori.jpg'
+    link: 'https://www.warresisters.org/win/win-summer-2007/harm-free-zones',
+    image:'tn_harmfreezone_ori.jpg'
   },
   {
     id: 28,
@@ -284,8 +285,8 @@ export const PEOPLE: Person[] = [
     color: '#E4E0D7',
     contrastColor: '#c5bda9',
     fontColor: 'white',
-    link: 'https://batjc.wordpress.com/'
-    ,image:'tn_bayarea_ori.jpg'
+    link: 'https://batjc.wordpress.com/',
+    image:'tn_bayarea_ori.jpg'
   },
   {
     id: 30,

@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 })
 export class PeopleComponent implements OnInit {
 
+  currentYear: number = new Date().getFullYear();
   router;
   constructor( private _router: Router ) 
   {
